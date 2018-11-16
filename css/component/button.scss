@@ -1,0 +1,72 @@
+@import "../common/varible";
+@import "../common/function";
+
+.yu-button{
+  font-family: $font-family;
+  font-size: $normal;
+  padding: $tiny-space $normal-space;
+  margin: 0 $small-space $normal-space 0;
+  display: inline-block;
+  color: $text;
+  box-sizing: border-box;
+  border-radius: $radius;
+  background-color: #fff;
+  border: 1px solid $border;
+  cursor: pointer;
+  transition: border $transition-time, color $transition-time;
+  outline: none;
+  &:not(.disabled):hover{
+    border: 1px solid $primary;
+    color: $primary;
+    z-index: 1;
+  }
+  &:not(.disabled):focus{
+    color: $primary;
+  }
+  &.disabled{
+    color:$lighter-text;
+    background: $background;
+    cursor: not-allowed;
+  }
+  @include generalAllColorButton();
+  &.circle{
+    padding: 0;
+    width: $normal-height;
+    height: $normal-height;
+    border-radius: 50%;
+  }
+  &.plain{
+    &:hover:not(.disabled),&:focus:not(.disabled) {
+      border: 1px solid $primary;
+      color: $primary;
+      background: #fff;
+    }
+    @include generalAllColorPlainButton();
+  }
+  &.large{
+    padding: $small-space $large-space;;
+    font-size: $large;
+  }
+  &.small{
+    padding-top: 2px;
+    padding-bottom: 2px;
+  }
+}
+
+.yu-button-group{
+  font-size: 0;
+  .yu-button{
+    margin-right: -1px;
+    float: left;
+    position: relative;
+    border-radius: 0;
+  }
+  .yu-button:first-child{
+    border-radius: $radius 0 0 $radius;
+  }
+  .yu-button:last-child{
+    border-radius: 0 $radius $radius 0;
+  }
+  display: inline-block;
+  margin-right: $small-space;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yu.css.ui</title>
+    <link rel="stylesheet" href="../../dist/main.css">
+</head>
+<body>
+<div class="web-container">
+    <h4 class="web-title">单选框</h4>
+    <label class="yu-radio">
+      <span class="radio">
+        <input type="radio">
+      </span>
+        <span>单选框</span>
+    </label>
+    <h4 class="web-title">激活</h4>
+    <label class="yu-radio checked">
+      <span class="radio">
+        <input type="radio">
+      </span>
+        <span>单选框</span>
+    </label>
+    <h4 class="web-title">禁用</h4>
+    <label class="yu-radio disabled">
+      <span class="radio">
+        <input type="radio">
+      </span>
+        <span>单选框</span>
+    </label>
+    <label class="yu-radio checked disabled">
+      <span class="radio">
+        <input type="radio">
+      </span>
+        <span>单选框</span>
+    </label>
+    <h4 class="web-title">切换动态</h4>
+    <label id="yu-radio" class="yu-radio">
+      <span class="radio">
+        <input type="radio">
+      </span>
+        <span>单选框</span>
+    </label>
+</div>
+</body>
+<script>
+    var on = false
+    document.getElementById('yu-radio').addEventListener('click', function (e) {
+        e.preventDefault();
+        on = !on
+        e.currentTarget.className = (on ? 'yu-radio checked' : 'yu-radio')
+    })
+</script>
+</html>

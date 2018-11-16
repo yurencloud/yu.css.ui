@@ -1,0 +1,28 @@
+
+// 仅测试使用
+@import "common/varible";
+@import "index";
+
+body{
+  font-family: $font-family;
+  color: $text;
+  font-size: $normal;
+}
+
+.web-index{
+  margin: 20px;
+}
+
+.web-container{
+  margin: 30px;
+  font-size: 0;
+  .web-title{
+    font-size: $normal;
+    border-left: 2px solid $primary;
+    padding-left: $normal-space;
+  }
+  .web-dark-background{
+    background-color: $text;
+    padding: $normal-space;
+  }
+}

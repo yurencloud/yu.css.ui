@@ -1,0 +1,25 @@
+{
+  "name": "yurencloud",
+  "version": "1.0.0",
+  "description": "new yurencloud project",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server . --port=9000 --watch=.",
+    "watch": "node-sass  -w -r css -o dist"
+  },
+  "keywords": [
+    "yurencloud",
+    "yuren",
+    "yu",
+    "mackwang",
+    "yurencloud.com"
+  ],
+  "author": {
+    "name": "mackwang",
+    "email": "641212003@qq.com",
+    "url": "http://www.yurencloud.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+  }
+}
