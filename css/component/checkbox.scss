@@ -1,0 +1,105 @@
+@import "../common/varible";
+
+.yu-checkbox {
+  font-size: $normal;
+  color: $text;
+  cursor: pointer;
+  margin-right: $small-space;
+  input {
+    display: none;
+  }
+  .checkbox {
+    transition: background-color $transition-time;
+    margin-right: $tiny-space;
+    margin-bottom: -2px;
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border: 1px solid $dark-border;
+    border-radius: 2px;
+    background-color: #fff;
+    &:hover {
+      border: 1px solid $primary;
+    }
+  }
+  &.checked {
+    .checkbox {
+      position: relative;
+      border: 1px solid $primary;
+      border-radius: 2px;
+      background-color: $primary;
+      & + span {
+        color: $primary;
+      }
+      &:after {
+        content: '\00a0';
+        display: inline-block;
+        border: 2px solid #fff;
+        border-top-width: 0;
+        border-right-width: 0;
+        width: 10px;
+        height: 4px;
+        -webkit-transform: rotate(-50deg);
+        position: absolute;
+        top: 3px;
+        left: 1px;
+      }
+    }
+  }
+
+  &.checked.disabled {
+    .checkbox {
+      border: 1px solid $lighter-text;
+      background-color: $lighter-text;
+      & + span {
+        color: $lighter-text;
+      }
+    }
+  }
+  &.disabled {
+    color: $lighter-text;
+    .checkbox:hover {
+      border: 1px solid $dark-border;
+    }
+  }
+
+  &.control {
+    display: block;
+    margin-bottom: $small-space;
+    &.part {
+      .checkbox {
+        position: relative;
+        border: 1px solid $primary;
+        border-radius: 2px;
+        background-color: $primary;
+        & + span {
+          color: $primary;
+        }
+        &:after {
+          content: '\00a0';
+          display: inline-block;
+          border: 2px solid #fff;
+          border-top-width: 0;
+          border-right-width: 0;
+          border-left-width: 0;
+          width: 10px;
+          height: 5px;
+          -webkit-transform: rotate(180deg);
+          position: absolute;
+          top: 6px;
+          left: 1px;
+        }
+      }
+    }
+  }
+}
+
+.yu-checkbox-group {
+  margin-bottom: $normal-space;
+  &.vertical {
+    .yu-checkbox {
+      display: block;
+      margin-bottom: $normal-space;
+    }
+  }
+}

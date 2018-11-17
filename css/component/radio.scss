@@ -1,6 +1,6 @@
 @import "../common/varible";
 
-.yu-radio{
+.yu-radio {
   font-family: $font-family;
   font-size: $normal;
   color: $text;
@@ -20,7 +20,7 @@
     border: 1px solid $dark-border;
     border-radius: 50%;
     background-color: #fff;
-    &:hover{
+    &:hover {
       border: 1px solid $primary;
     }
   }
@@ -40,7 +40,7 @@
 
   &.disabled {
     color: $lighter-text;
-    .radio:hover{
+    .radio:hover {
       border: 1px solid lighten($border, 1);
     }
   }
@@ -53,9 +53,19 @@
       & + span {
         color: $lighter-text;
       }
-      &:hover{
+      &:hover {
         border: 5px solid lighten($border, 1);
       }
+    }
+  }
+}
+
+.yu-radio-group {
+  margin-bottom: $normal-space;
+  &.vertical {
+    .yu-radio {
+      display: block;
+      margin-bottom: $normal-space;
     }
   }
 }

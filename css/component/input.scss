@@ -1,0 +1,188 @@
+@import "../common/varible";
+@import "../common/animation";
+@import "../common/function";
+@import "button";
+
+.yu-input {
+  position: relative;
+  display: block;
+  margin-right: $small-space;
+  margin-bottom: $normal-space;
+  font-size: 0;
+  input {
+    width: $default-input-width;
+    padding: $tiny-space $normal-space;
+    outline: none;
+    font-size: $normal;
+    color: $text;
+    font-family: $font-family;
+    box-sizing: border-box;
+    height: $normal-height;
+    &::placeholder {
+      color: $lighter-text;
+      font-weight: lighter;
+    }
+    border: 1px solid $border;
+    border-radius: $radius;
+    &:hover {
+      border: 1px solid $lighter-text;
+    }
+    &:focus {
+      border: 1px solid $primary;
+    }
+    transition: all ease $transition-time;
+    &.prefix {
+      padding-left: $big-space;
+    }
+    &.suffix {
+      padding-right: $big-space;
+    }
+    &.large{
+      height: $large-height;
+    }
+    &.small{
+      height: $small-height;
+    }
+    &.full{
+      width: 100%;
+    }
+  }
+  &.textarea {
+    height: auto;
+  }
+  &.disabled {
+    input {
+      color: $lighter-text;
+      background-color: $background;
+      &:hover {
+        border: 1px solid $border;
+        cursor: not-allowed;
+      }
+      &:focus {
+        border: 1px solid $border;
+      }
+    }
+  }
+
+  span.prefix {
+    position: relative;
+    color: $lighter-text;
+    i {
+      position: absolute;
+      left: 10px;
+      top: -14px;
+    }
+  }
+
+  span.clearable {
+    position: relative;
+    i {
+      position: absolute;
+      left: -25px;
+      top: -14px;
+      color: $lighter-text;
+      transition: color .1s;
+      cursor: pointer;
+      &:hover {
+        color: $light-text;
+      }
+    }
+  }
+
+  span.suffix {
+    position: relative;
+    color: $lighter-text;
+    i {
+      position: absolute;
+      left: -25px;
+      top: -14px;
+    }
+  }
+
+  textarea {
+    padding: 8px;
+    border-color: $border;
+    border-radius: 4px;
+    font-size: $normal;
+    outline: none;
+    box-sizing: border-box;
+    &:hover {
+      border: 1px solid $lighter-text;
+    }
+    &:focus {
+      border: 1px solid $primary;
+    }
+    transition: all ease .4s;
+    &::placeholder {
+      color: $dark-border;
+      font-weight: lighter;
+    }
+  }
+
+  input.append {
+    border-radius: $radius 0 0 $radius;
+  }
+
+  input.prepend {
+    border-radius: 0 $radius $radius 0;
+  }
+
+  input.number {
+    padding-right: 0;
+  }
+
+  .options {
+    background-color: #fff;
+    position: absolute;
+    top: 35px;
+    z-index: 1000;
+    min-width: 175px;
+    border: 1px solid $border;
+    margin-top: 8px;
+    border-radius: 4px;
+    color: $text;
+    box-shadow: $box-shadow;
+    &.overflow {
+      overflow: auto;
+      max-height: 150px;
+      &::-webkit-scrollbar {
+        width: 4px
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        background-color: $border;
+      }
+    }
+    .option {
+      font-size: $normal;
+      padding: 12px 8px;
+      &:hover {
+        background-color: $background;
+      }
+      &.active {
+        background-color: $background;
+        font-weight: bold;
+        color: $primary;
+      }
+      &.hide {
+        display: none;
+      }
+      &.disabled {
+        color: $lighter-text;
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  .yu-button.prepend {
+    margin: 0;
+    border-radius: $radius 0 0 $radius;
+    vertical-align: top;
+  }
+  .yu-button.append {
+    margin: 0;
+    border-radius: 0 $radius $radius 0;
+    vertical-align: top;
+  }
+
+}

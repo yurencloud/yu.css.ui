@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yu.css.ui</title>
+    <link rel="stylesheet" href="../../dist/main.css">
+</head>
+<body>
+<div class="web-container">
+    <h4 class="web-title">多选框</h4>
+    <label class="yu-checkbox">
+        <span class="checkbox"><input type="checkbox"></span>
+        <span>苹果</span>
+    </label>
+
+    <h4 class="web-title">激活</h4>
+    <label class="yu-checkbox checked">
+        <span class="checkbox"><input type="checkbox"></span>
+        <span>苹果</span>
+    </label>
+
+    <h4 class="web-title">禁用</h4>
+    <label class="yu-checkbox disabled">
+        <span class="checkbox"><input type="checkbox"></span>
+        <span>苹果</span>
+    </label>
+
+    <label class="yu-checkbox checked disabled">
+        <span class="checkbox"><input type="checkbox"></span>
+        <span>苹果</span>
+    </label>
+
+
+    <h4 class="web-title">多选框组(水平)</h4>
+    <div class="yu-checkbox-group">
+        <label class="yu-checkbox">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>苹果</span>
+        </label>
+        <label class="yu-checkbox">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>香蕉</span>
+        </label>
+        <label class="yu-checkbox">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>桃子</span>
+        </label>
+    </div>
+
+    <h4 class="web-title">多选框组(垂直)</h4>
+    <div class="yu-checkbox-group vertical">
+        <label class="yu-checkbox">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>苹果</span>
+        </label>
+        <label class="yu-checkbox">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>香蕉</span>
+        </label>
+        <label class="yu-checkbox">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>桃子</span>
+        </label>
+    </div>
+
+    <h4 class="web-title">多选框组控制器</h4>
+    <div class="yu-checkbox-group">
+        <label class="yu-checkbox control">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>全部</span>
+        </label>
+        <label class="yu-checkbox">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>苹果</span>
+        </label>
+        <label class="yu-checkbox">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>香蕉</span>
+        </label>
+        <label class="yu-checkbox">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>桃子</span>
+        </label>
+    </div>
+    <hr>
+    <div class="yu-checkbox-group">
+        <label class="yu-checkbox control part">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>部分</span>
+        </label>
+        <label class="yu-checkbox checked">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>苹果</span>
+        </label>
+        <label class="yu-checkbox checked">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>香蕉</span>
+        </label>
+        <label class="yu-checkbox">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>桃子</span>
+        </label>
+    </div>
+    <hr>
+    <div class="yu-checkbox-group">
+        <label class="yu-checkbox control checked">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>全部</span>
+        </label>
+        <label class="yu-checkbox checked">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>苹果</span>
+        </label>
+        <label class="yu-checkbox checked">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>香蕉</span>
+        </label>
+        <label class="yu-checkbox checked">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>桃子</span>
+        </label>
+    </div>
+    <hr>
+    <div class="yu-checkbox-group vertical">
+        <label class="yu-checkbox control">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>全部</span>
+        </label>
+        <label class="yu-checkbox">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>苹果</span>
+        </label>
+        <label class="yu-checkbox">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>香蕉</span>
+        </label>
+        <label class="yu-checkbox">
+            <span class="checkbox"><input type="checkbox"></span>
+            <span>桃子</span>
+        </label>
+    </div>
+    <h4 class="web-title">切换动态</h4>
+    <label id="yu-checkbox" class="yu-checkbox">
+        <span class="checkbox"><input type="checkbox"></span>
+        <span>苹果</span>
+    </label>
+</div>
+</body>
+<script>
+    var on = false
+    document.getElementById('yu-checkbox').addEventListener('click', function (e) {
+        e.preventDefault();
+        on = !on
+        e.currentTarget.className = (on ? 'yu-checkbox checked' : 'yu-checkbox')
+    })
+</script>
+</html>

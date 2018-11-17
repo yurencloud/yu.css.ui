@@ -36,23 +36,20 @@ $huge: 20px !default;
 $big: 18px !default;
 $large: 16px !default;
 $normal: 14px !default;
-$small: 13px !default;
-$tiny: 12px !default;
+$small: 12px !default;
+$tiny: 10px !default;
 
 // padding和margin通用变量
-$big-space: 30px !default;
-$large-space: 20px !default;
+$big-space: 32px !default;
+$large-space: 22px !default;
 $normal-space: 14px !default;
 $small-space: 8px !default;
 $tiny-space: 4px !default;
 
-// 控制元素的大小，主要是由height和padding来控制
-// normal和medium用14px字体，small和mini用12px字体
-$large-height: 40px !default;
-$normal-height: 36px !default;
-$medium-height: 32px !default;
-$small-height: 28px !default;
-$mini-height: 22px !default;
+// ant-design 主要有 large 32 normal 28 small 22
+$large-height: 32px !default;
+$normal-height: 28px !default;
+$small-height: 22px !default;
 
 $types: primary, success, warning, info, danger !default;
 $colors: (
@@ -71,6 +68,8 @@ $box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1) !default;
 $radius: 4px !default;
 
 $transition-time: .4s;
+
+$default-input-width: 175px;
 
 
 
