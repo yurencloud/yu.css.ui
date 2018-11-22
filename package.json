@@ -2,7 +2,7 @@
   "name": "yu.css.ui",
   "version": "1.0.1",
   "description": "new yurencloud project",
-  "main": "index.js",
+  "main": "src/index.scss",
   "scripts": {
     "start": "live-server . --port=9000 --watch=.",
     "watch": "node-sass  -w -r css -o dist"
