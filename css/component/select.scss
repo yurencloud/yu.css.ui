@@ -1,0 +1,34 @@
+@import "../common/varible";
+@import "input";
+@import "option";
+
+.yu-select {
+  @include zoomInTop();
+  position: relative;
+  @include angleAnimation();
+  &.prepend {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0;
+    input {
+      border-radius: $radius 0 0 $radius;
+    }
+    & > .yu-input {
+      margin: 0;
+    }
+  }
+  &.append {
+    display: inline-block;
+    vertical-align: top;
+    input {
+      border-radius: 0 $radius $radius 0;
+    }
+    & > .yu-input {
+      margin: 0;
+    }
+  }
+  .selected {
+    margin-top: 12px;
+  }
+}
+

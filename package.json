@@ -1,6 +1,6 @@
 {
-  "name": "yurencloud",
-  "version": "1.0.0",
+  "name": "yu.css.ui",
+  "version": "1.0.1",
   "description": "new yurencloud project",
   "main": "index.js",
   "scripts": {
@@ -20,6 +20,5 @@
     "url": "http://www.yurencloud.com"
   },
   "license": "MIT",
-  "dependencies": {
-  }
+  "dependencies": {}
 }

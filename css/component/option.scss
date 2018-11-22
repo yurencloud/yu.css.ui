@@ -1,0 +1,52 @@
+@import "../common/varible";
+
+.yu-option {
+  background-color: #fff;
+  position: absolute;
+  top: 30px;
+  z-index: 1000;
+  min-width: $default-input-width;
+  border: 1px solid $border;
+  margin-top: $small-space;
+  border-radius: $radius;
+  color: $text;
+  box-shadow: $box-shadow;
+  padding-inline-start: 0;
+  &.overflow {
+    overflow: auto;
+    max-height: 150px;
+    &::-webkit-scrollbar {
+      width: 4px
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background-color: $border;
+    }
+  }
+  li{
+    list-style: none;
+  }
+  & > .option {
+    box-sizing: border-box;
+    height: $normal-height;
+    font-size: $normal;
+    padding: $tiny-space $small-space;
+
+    &:hover:not(.disabled) {
+      background-color: $background;
+    }
+    &.active {
+      background-color: $background;
+      font-weight: bold;
+      color: $primary;
+    }
+    &.hide {
+      display: none;
+    }
+    &.disabled {
+      color: $lighter-text;
+      cursor: not-allowed;
+    }
+  }
+}
+

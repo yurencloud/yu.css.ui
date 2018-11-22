@@ -97,6 +97,13 @@
     height: $normal-height;
     vertical-align: top;
     display: inline-block;
+    &.large{
+      height: $large-height;
+    }
+    &.small{
+      height: $small-height;
+      line-height: $small-height;
+    }
     button {
       height: 50%;
       background-color: #fff;

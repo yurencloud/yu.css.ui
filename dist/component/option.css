@@ -1,0 +1,38 @@
+.yu-option {
+  background-color: #fff;
+  position: absolute;
+  top: 30px;
+  z-index: 1000;
+  min-width: 175px;
+  border: 1px solid #E4E7ED;
+  margin-top: 8px;
+  border-radius: 4px;
+  color: #606266;
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  padding-inline-start: 0; }
+  .yu-option.overflow {
+    overflow: auto;
+    max-height: 150px; }
+    .yu-option.overflow::-webkit-scrollbar {
+      width: 4px; }
+    .yu-option.overflow::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background-color: #E4E7ED; }
+  .yu-option li {
+    list-style: none; }
+  .yu-option > .option {
+    box-sizing: border-box;
+    height: 28px;
+    font-size: 14px;
+    padding: 4px 8px; }
+    .yu-option > .option:hover:not(.disabled) {
+      background-color: #f5f5f9; }
+    .yu-option > .option.active {
+      background-color: #f5f5f9;
+      font-weight: bold;
+      color: #409EFF; }
+    .yu-option > .option.hide {
+      display: none; }
+    .yu-option > .option.disabled {
+      color: #C0C4CC;
+      cursor: not-allowed; }
