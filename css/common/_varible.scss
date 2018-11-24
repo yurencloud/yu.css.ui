@@ -71,5 +71,12 @@ $transition-time: .4s;
 
 $default-input-width: 175px;
 
+// 双击不想选中，可以继承此类
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
 
 
