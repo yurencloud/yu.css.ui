@@ -9,6 +9,9 @@
   input {
     display: none;
   }
+  span{
+    @extend .unselectable;
+  }
   .radio {
     transition: border .1s;
     margin-right: 6px;

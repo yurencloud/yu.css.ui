@@ -1,4 +1,17 @@
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 .yu-button {
+  height: 28px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
   font-size: 14px;
   padding: 4px 14px;
@@ -104,8 +117,8 @@
       background-color: #fab4b4; }
   .yu-button.circle {
     padding: 0;
-    width: 36px;
-    height: 36px;
+    width: 28px;
+    height: 28px;
     border-radius: 50%; }
   .yu-button.plain:hover:not(.disabled), .yu-button.plain:focus:not(.disabled) {
     border: 1px solid #409EFF;
@@ -182,11 +195,13 @@
       background-color: #F56C6C;
       color: #fff; }
   .yu-button.large {
-    padding: 8px 20px;
-    font-size: 16px; }
+    padding: 8px 22px;
+    font-size: 16px;
+    height: 32px; }
   .yu-button.small {
     padding-top: 2px;
-    padding-bottom: 2px; }
+    padding-bottom: 2px;
+    height: 22px; }
 
 .yu-button-group {
   font-size: 0;

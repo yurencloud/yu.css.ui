@@ -213,6 +213,18 @@
 .icon-loading:before {
   content: "\e6c7"; }
 
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 .yu-button {
   height: 28px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
@@ -420,6 +432,12 @@
   .yu-button-group .yu-button:last-child {
     border-radius: 0 4px 4px 0; }
 
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 .yu-radio {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
   font-size: 14px;
@@ -468,7 +486,14 @@
     display: block;
     margin-bottom: 14px; }
 
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 .yu-checkbox {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
   font-size: 14px;
   color: #606266;
   cursor: pointer;
@@ -544,6 +569,30 @@
   .yu-checkbox-group.vertical .yu-checkbox {
     display: block;
     margin-bottom: 14px; }
+
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 .yu-button {
   height: 28px;
@@ -884,6 +933,24 @@
     border-radius: 0 4px 4px 0;
     vertical-align: top; }
 
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 .yu-button {
   height: 28px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
@@ -1090,6 +1157,30 @@
     border-radius: 4px 0 0 4px; }
   .yu-button-group .yu-button:last-child {
     border-radius: 0 4px 4px 0; }
+
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 .yu-button {
   height: 28px;
@@ -1553,6 +1644,36 @@
   .yu-counter-side.left input {
     border-radius: 0 4px 4px 0; }
 
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
 .yu-button {
   height: 28px;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
@@ -1891,6 +2012,12 @@
     margin: 0;
     border-radius: 0 4px 4px 0;
     vertical-align: top; }
+
+.unselectable, .yu-radio span, .yu-checkbox span {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
 
 .yu-option {
   background-color: #fff;
