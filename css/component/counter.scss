@@ -27,10 +27,10 @@
     margin: 0;
     font-size: $large;
     line-height: $large;
-    &.sub {
+    &:first-child {
       border-radius: $radius 0 0 $radius;
     }
-    &.add {
+    &:last-child {
       border-radius: 0 $radius $radius 0;
     }
   }

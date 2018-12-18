@@ -1543,9 +1543,9 @@
     margin: 0;
     font-size: 16px;
     line-height: 16px; }
-    .yu-counter .yu-button.sub {
+    .yu-counter .yu-button:first-child {
       border-radius: 4px 0 0 4px; }
-    .yu-counter .yu-button.add {
+    .yu-counter .yu-button:last-child {
       border-radius: 0 4px 4px 0; }
 
 .yu-counter-side {
