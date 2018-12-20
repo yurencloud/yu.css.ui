@@ -8,7 +8,7 @@
   display: block;
   margin: 0 $small-space $normal-space 0;
   font-size: 0;
-  input {
+  & > input {
     width: $default-input-width;
     padding: $tiny-space $normal-space;
     outline: none;
@@ -36,13 +36,13 @@
     &.suffix {
       padding-right: $big-space;
     }
-    &.large{
+    &.large {
       height: $large-height;
     }
-    &.small{
+    &.small {
       height: $small-height;
     }
-    &.full{
+    &.full {
       width: 100%;
     }
   }
@@ -50,7 +50,7 @@
     height: auto;
   }
   &.disabled {
-    input {
+    & > input {
       color: $lighter-text;
       background-color: $background;
       &:hover {
@@ -63,19 +63,19 @@
     }
   }
 
-  span.prefix {
+  & > span.prefix {
     position: relative;
     color: $lighter-text;
-    i {
+    & > i {
       position: absolute;
       left: 10px;
       top: -14px;
     }
   }
 
-  span.clearable {
+  & > span.clearable {
     position: relative;
-    i {
+    & > i {
       position: absolute;
       left: -25px;
       top: -14px;
@@ -88,17 +88,17 @@
     }
   }
 
-  span.suffix {
+  & > span.suffix {
     position: relative;
     color: $lighter-text;
-    i {
+    & > i {
       position: absolute;
       left: -25px;
       top: -14px;
     }
   }
 
-  textarea {
+  & > textarea {
     padding: 8px;
     border-color: $border;
     border-radius: 4px;
@@ -118,19 +118,19 @@
     }
   }
 
-  input.append {
+  & > input.append {
     border-radius: $radius 0 0 $radius;
   }
 
-  input.prepend {
+  & > input.prepend {
     border-radius: 0 $radius $radius 0;
   }
 
-  input.number {
+  & > input.number {
     padding-right: 0;
   }
 
-  .options {
+  & > .options {
     background-color: #fff;
     position: absolute;
     top: 35px;
@@ -173,12 +173,12 @@
     }
   }
 
-  .yu-button.prepend {
+  & > .yu-button.prepend {
     margin: 0;
     border-radius: $radius 0 0 $radius;
     vertical-align: top;
   }
-  .yu-button.append {
+  & > .yu-button.append {
     margin: 0;
     border-radius: 0 $radius $radius 0;
     vertical-align: top;

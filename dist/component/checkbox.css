@@ -1,4 +1,4 @@
-.unselectable, .yu-checkbox span {
+.unselectable, .yu-checkbox > span {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -10,9 +10,7 @@
   color: #606266;
   cursor: pointer;
   margin-right: 8px; }
-  .yu-checkbox input {
-    display: none; }
-  .yu-checkbox .checkbox {
+  .yu-checkbox > .checkbox {
     transition: background-color 0.4s;
     margin-right: 4px;
     margin-bottom: -2px;
@@ -22,16 +20,18 @@
     border: 1px solid #DCDFE6;
     border-radius: 2px;
     background-color: #fff; }
-    .yu-checkbox .checkbox:hover {
+    .yu-checkbox > .checkbox:hover {
       border: 1px solid #409EFF; }
-  .yu-checkbox.checked .checkbox {
+    .yu-checkbox > .checkbox > input {
+      display: none; }
+  .yu-checkbox.checked > .checkbox {
     position: relative;
     border: 1px solid #409EFF;
     border-radius: 2px;
     background-color: #409EFF; }
-    .yu-checkbox.checked .checkbox + span {
+    .yu-checkbox.checked > .checkbox + span {
       color: #409EFF; }
-    .yu-checkbox.checked .checkbox:after {
+    .yu-checkbox.checked > .checkbox:after {
       content: '\00a0';
       display: inline-block;
       border: 2px solid #fff;
@@ -43,26 +43,26 @@
       position: absolute;
       top: 3px;
       left: 1px; }
-  .yu-checkbox.checked.disabled .checkbox {
+  .yu-checkbox.checked.disabled > .checkbox {
     border: 1px solid #C0C4CC;
     background-color: #C0C4CC; }
-    .yu-checkbox.checked.disabled .checkbox + span {
+    .yu-checkbox.checked.disabled > .checkbox + span {
       color: #C0C4CC; }
   .yu-checkbox.disabled {
     color: #C0C4CC; }
-    .yu-checkbox.disabled .checkbox:hover {
+    .yu-checkbox.disabled > .checkbox:hover {
       border: 1px solid #DCDFE6; }
   .yu-checkbox.control {
     display: block;
     margin-bottom: 8px; }
-    .yu-checkbox.control.part .checkbox {
+    .yu-checkbox.control.part > .checkbox {
       position: relative;
       border: 1px solid #409EFF;
       border-radius: 2px;
       background-color: #409EFF; }
-      .yu-checkbox.control.part .checkbox + span {
+      .yu-checkbox.control.part > .checkbox + span {
         color: #409EFF; }
-      .yu-checkbox.control.part .checkbox:after {
+      .yu-checkbox.control.part > .checkbox:after {
         content: '\00a0';
         display: inline-block;
         border: 2px solid #fff;
@@ -78,6 +78,6 @@
 
 .yu-checkbox-group {
   margin-bottom: 14px; }
-  .yu-checkbox-group.vertical .yu-checkbox {
+  .yu-checkbox-group.vertical > .yu-checkbox {
     display: block;
     margin-bottom: 14px; }

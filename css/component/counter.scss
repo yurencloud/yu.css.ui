@@ -6,24 +6,24 @@
   display: inline-block;
   font-size: 0;
   margin: 0 $small-space $normal-space 0;
-  .yu-input {
+  & > .yu-input {
     vertical-align: top;
     display: inline-block;
     box-sizing: border-box;
     margin: 0;
-    input {
+    & > input {
       width: 80px;
       border-radius: 0;
       text-align: center;
     }
   }
-  .yu-button.counter {
+  & > .yu-button.counter {
     vertical-align: top;
     background: $background;
     margin-right: 0;
     width: 50px;
   }
-  .yu-button {
+  & > .yu-button {
     margin: 0;
     font-size: $large;
     line-height: $large;
@@ -41,20 +41,20 @@
   font-size: 0;
   vertical-align: top;
   margin: 0 $small-space $normal-space 0;
-  .yu-input {
+  & > .yu-input {
     display: inline-block;
     box-sizing: border-box;
     margin-right: 0;
-    input {
+    & > input {
       width: 80px;
       text-align: center;
     }
   }
-  div.right {
+  & > div.right {
     height: $normal-height;
     vertical-align: top;
     display: inline-block;
-    button {
+    & > button {
       height: 50%;
       background-color: #fff;
       border: 1px solid $border;
@@ -71,7 +71,7 @@
       width: 40px;
       margin: 0;
       line-height: $normal-height/2;
-      i {
+      & > i {
         margin-left: -2px;
         font-size: $normal;
       }
@@ -86,25 +86,25 @@
         cursor: not-allowed;
       }
     }
-    button:nth-child(1) {
+    & > button:nth-child(1) {
       border-top-right-radius: 4px;
     }
-    button:nth-child(2) {
+    & > button:nth-child(2) {
       border-bottom-right-radius: 4px;
     }
   }
-  div.button {
+  & > div.button {
     height: $normal-height;
     vertical-align: top;
     display: inline-block;
-    &.large{
+    &.large {
       height: $large-height;
     }
-    &.small{
+    &.small {
       height: $small-height;
       line-height: $small-height;
     }
-    button {
+    & > button {
       height: 50%;
       background-color: #fff;
       border: 1px solid $border;
@@ -120,7 +120,7 @@
       width: 40px;
       margin: 0;
       line-height: $normal-height/2;
-      i {
+      & > i {
         margin-left: -2px;
         font-size: $normal;
       }
@@ -136,25 +136,25 @@
       }
     }
   }
-  &.right{
-    button:first-child {
+  &.right {
+    & > .button > button:first-child {
       border-top-right-radius: 4px;
     }
-    button:last-child {
+    & > .button > button:last-child {
       border-bottom-right-radius: 4px;
     }
-    input{
+    & > .yu-input > input {
       border-radius: $radius 0 0 $radius;
     }
   }
-  &.left{
-    button:first-child {
+  &.left {
+    & > .button > button:first-child {
       border-top-left-radius: 4px;
     }
-    button:last-child {
+    & > .button > button:last-child {
       border-bottom-left-radius: 4px;
     }
-    input{
+    & > .yu-input > input {
       border-radius: 0 $radius $radius 0;
     }
   }

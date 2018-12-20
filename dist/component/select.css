@@ -225,14 +225,14 @@
   font-size: 0;
   display: inline-block;
   margin-right: 8px; }
-  .yu-button-group .yu-button {
+  .yu-button-group > .yu-button {
     margin-right: -1px;
     float: left;
     position: relative;
     border-radius: 0; }
-  .yu-button-group .yu-button:first-child {
+  .yu-button-group > .yu-button:first-child {
     border-radius: 4px 0 0 4px; }
-  .yu-button-group .yu-button:last-child {
+  .yu-button-group > .yu-button:last-child {
     border-radius: 0 4px 4px 0; }
 
 .yu-input {
@@ -240,7 +240,7 @@
   display: block;
   margin: 0 8px 14px 0;
   font-size: 0; }
-  .yu-input input {
+  .yu-input > input {
     width: 175px;
     padding: 4px 14px;
     outline: none;
@@ -252,59 +252,59 @@
     border: 1px solid #E4E7ED;
     border-radius: 4px;
     transition: all ease 0.4s; }
-    .yu-input input::placeholder {
+    .yu-input > input::placeholder {
       color: #C0C4CC;
       font-weight: lighter; }
-    .yu-input input:hover {
+    .yu-input > input:hover {
       border: 1px solid #C0C4CC; }
-    .yu-input input:focus {
+    .yu-input > input:focus {
       border: 1px solid #409EFF; }
-    .yu-input input.prefix {
+    .yu-input > input.prefix {
       padding-left: 32px; }
-    .yu-input input.suffix {
+    .yu-input > input.suffix {
       padding-right: 32px; }
-    .yu-input input.large {
+    .yu-input > input.large {
       height: 32px; }
-    .yu-input input.small {
+    .yu-input > input.small {
       height: 22px; }
-    .yu-input input.full {
+    .yu-input > input.full {
       width: 100%; }
   .yu-input.textarea {
     height: auto; }
-  .yu-input.disabled input {
+  .yu-input.disabled > input {
     color: #C0C4CC;
     background-color: #f5f5f9; }
-    .yu-input.disabled input:hover {
+    .yu-input.disabled > input:hover {
       border: 1px solid #E4E7ED;
       cursor: not-allowed; }
-    .yu-input.disabled input:focus {
+    .yu-input.disabled > input:focus {
       border: 1px solid #E4E7ED; }
-  .yu-input span.prefix {
+  .yu-input > span.prefix {
     position: relative;
     color: #C0C4CC; }
-    .yu-input span.prefix i {
+    .yu-input > span.prefix > i {
       position: absolute;
       left: 10px;
       top: -14px; }
-  .yu-input span.clearable {
+  .yu-input > span.clearable {
     position: relative; }
-    .yu-input span.clearable i {
+    .yu-input > span.clearable > i {
       position: absolute;
       left: -25px;
       top: -14px;
       color: #C0C4CC;
       transition: color .1s;
       cursor: pointer; }
-      .yu-input span.clearable i:hover {
+      .yu-input > span.clearable > i:hover {
         color: #909399; }
-  .yu-input span.suffix {
+  .yu-input > span.suffix {
     position: relative;
     color: #C0C4CC; }
-    .yu-input span.suffix i {
+    .yu-input > span.suffix > i {
       position: absolute;
       left: -25px;
       top: -14px; }
-  .yu-input textarea {
+  .yu-input > textarea {
     padding: 8px;
     border-color: #E4E7ED;
     border-radius: 4px;
@@ -312,20 +312,20 @@
     outline: none;
     box-sizing: border-box;
     transition: all ease .4s; }
-    .yu-input textarea:hover {
+    .yu-input > textarea:hover {
       border: 1px solid #C0C4CC; }
-    .yu-input textarea:focus {
+    .yu-input > textarea:focus {
       border: 1px solid #409EFF; }
-    .yu-input textarea::placeholder {
+    .yu-input > textarea::placeholder {
       color: #DCDFE6;
       font-weight: lighter; }
-  .yu-input input.append {
+  .yu-input > input.append {
     border-radius: 4px 0 0 4px; }
-  .yu-input input.prepend {
+  .yu-input > input.prepend {
     border-radius: 0 4px 4px 0; }
-  .yu-input input.number {
+  .yu-input > input.number {
     padding-right: 0; }
-  .yu-input .options {
+  .yu-input > .options {
     background-color: #fff;
     position: absolute;
     top: 35px;
@@ -336,33 +336,33 @@
     border-radius: 4px;
     color: #606266;
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1); }
-    .yu-input .options.overflow {
+    .yu-input > .options.overflow {
       overflow: auto;
       max-height: 150px; }
-      .yu-input .options.overflow::-webkit-scrollbar {
+      .yu-input > .options.overflow::-webkit-scrollbar {
         width: 4px; }
-      .yu-input .options.overflow::-webkit-scrollbar-thumb {
+      .yu-input > .options.overflow::-webkit-scrollbar-thumb {
         border-radius: 2px;
         background-color: #E4E7ED; }
-    .yu-input .options .option {
+    .yu-input > .options .option {
       font-size: 14px;
       padding: 12px 8px; }
-      .yu-input .options .option:hover {
+      .yu-input > .options .option:hover {
         background-color: #f5f5f9; }
-      .yu-input .options .option.active {
+      .yu-input > .options .option.active {
         background-color: #f5f5f9;
         font-weight: bold;
         color: #409EFF; }
-      .yu-input .options .option.hide {
+      .yu-input > .options .option.hide {
         display: none; }
-      .yu-input .options .option.disabled {
+      .yu-input > .options .option.disabled {
         color: #C0C4CC;
         cursor: not-allowed; }
-  .yu-input .yu-button.prepend {
+  .yu-input > .yu-button.prepend {
     margin: 0;
     border-radius: 4px 0 0 4px;
     vertical-align: top; }
-  .yu-input .yu-button.append {
+  .yu-input > .yu-button.append {
     margin: 0;
     border-radius: 0 4px 4px 0;
     vertical-align: top; }
@@ -375,29 +375,25 @@
 
 .yu-option {
   background-color: #fff;
-  position: absolute;
-  top: 30px;
-  z-index: 1000;
-  min-width: 175px;
+  width: 175px;
   border: 1px solid #E4E7ED;
-  margin-top: 8px;
   border-radius: 4px;
   color: #606266;
   box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
   padding-inline-start: 0; }
   .yu-option.overflow {
     overflow: auto;
-    max-height: 150px; }
+    max-height: 140px; }
     .yu-option.overflow::-webkit-scrollbar {
       width: 4px; }
     .yu-option.overflow::-webkit-scrollbar-thumb {
       border-radius: 2px;
       background-color: #E4E7ED; }
-  .yu-option li {
+  .yu-option > li {
     list-style: none; }
   .yu-option > .option {
     box-sizing: border-box;
-    height: 28px;
+    min-height: 28px;
     font-size: 14px;
     padding: 4px 8px; }
     .yu-option > .option:hover:not(.disabled) {
@@ -442,16 +438,19 @@
     display: inline-block;
     vertical-align: top;
     margin: 0; }
-    .yu-select.prepend input {
-      border-radius: 4px 0 0 4px; }
     .yu-select.prepend > .yu-input {
       margin: 0; }
+      .yu-select.prepend > .yu-input > input {
+        border-radius: 4px 0 0 4px; }
   .yu-select.append {
     display: inline-block;
     vertical-align: top; }
-    .yu-select.append input {
-      border-radius: 0 4px 4px 0; }
     .yu-select.append > .yu-input {
       margin: 0; }
-  .yu-select .selected {
-    margin-top: 12px; }
+      .yu-select.append > .yu-input > input {
+        border-radius: 0 4px 4px 0; }
+  .yu-select .yu-option {
+    margin-top: 8px;
+    position: absolute;
+    top: 30px;
+    z-index: 1000; }

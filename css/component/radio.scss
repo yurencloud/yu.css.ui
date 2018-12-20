@@ -6,13 +6,13 @@
   color: $text;
   cursor: pointer;
   margin-right: $small-space;
-  input {
-    display: none;
-  }
-  span{
+  & > span {
     @extend .unselectable;
   }
-  .radio {
+  & > .radio {
+    & > input {
+      display: none;
+    }
     transition: border .1s;
     margin-right: 6px;
     margin-bottom: -2px;
@@ -31,7 +31,7 @@
     display: block !important;
   }
   &.checked {
-    .radio {
+    & > .radio {
       width: 16px;
       height: 16px;
       border: 5px solid $primary;
@@ -43,13 +43,13 @@
 
   &.disabled {
     color: $lighter-text;
-    .radio:hover {
+    & > .radio:hover {
       border: 1px solid lighten($border, 1);
     }
   }
 
   &.checked.disabled {
-    .radio {
+    & > .radio {
       width: 16px;
       height: 16px;
       border: 5px solid lighten($border, 1);
@@ -66,7 +66,7 @@
 .yu-radio-group {
   margin-bottom: $normal-space;
   &.vertical {
-    .yu-radio {
+    & > .yu-radio {
       display: block;
       margin-bottom: $normal-space;
     }

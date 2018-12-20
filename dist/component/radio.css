@@ -1,4 +1,4 @@
-.unselectable, .yu-radio span {
+.unselectable, .yu-radio > span {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
@@ -10,9 +10,7 @@
   color: #606266;
   cursor: pointer;
   margin-right: 8px; }
-  .yu-radio input {
-    display: none; }
-  .yu-radio .radio {
+  .yu-radio > .radio {
     transition: border .1s;
     margin-right: 6px;
     margin-bottom: -2px;
@@ -23,31 +21,33 @@
     border: 1px solid #DCDFE6;
     border-radius: 50%;
     background-color: #fff; }
-    .yu-radio .radio:hover {
+    .yu-radio > .radio > input {
+      display: none; }
+    .yu-radio > .radio:hover {
       border: 1px solid #409EFF; }
   .yu-radio.vertical {
     display: block !important; }
-  .yu-radio.checked .radio {
+  .yu-radio.checked > .radio {
     width: 16px;
     height: 16px;
     border: 5px solid #409EFF; }
-    .yu-radio.checked .radio + span {
+    .yu-radio.checked > .radio + span {
       color: #409EFF; }
   .yu-radio.disabled {
     color: #C0C4CC; }
-    .yu-radio.disabled .radio:hover {
+    .yu-radio.disabled > .radio:hover {
       border: 1px solid #e7eaef; }
-  .yu-radio.checked.disabled .radio {
+  .yu-radio.checked.disabled > .radio {
     width: 16px;
     height: 16px;
     border: 5px solid #e7eaef; }
-    .yu-radio.checked.disabled .radio + span {
+    .yu-radio.checked.disabled > .radio + span {
       color: #C0C4CC; }
-    .yu-radio.checked.disabled .radio:hover {
+    .yu-radio.checked.disabled > .radio:hover {
       border: 5px solid #e7eaef; }
 
 .yu-radio-group {
   margin-bottom: 14px; }
-  .yu-radio-group.vertical .yu-radio {
+  .yu-radio-group.vertical > .yu-radio {
     display: block;
     margin-bottom: 14px; }

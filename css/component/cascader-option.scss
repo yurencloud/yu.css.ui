@@ -1,0 +1,30 @@
+@import "../common/varible";
+@import "input";
+@import "option";
+
+.yu-cascader-option {
+  border-radius: $radius;
+  box-shadow: $box-shadow;
+  border: 1px solid $border;
+  display: inline-block;
+  & > .yu-option {
+    @extend .overflow;
+    display: inline-block;
+    max-height: 200px;
+    border: none;
+    border-right: 1px solid $border;
+    border-radius: 0;
+    box-shadow: none;
+    &:first-child {
+      border-radius: $radius 0 0 $radius;
+    }
+    &:last-child {
+      border-radius: 0 $radius $radius 0;
+    }
+    & > .option > .icon-angle-right {
+      float: right;
+      color: $text;
+    }
+  }
+}
+

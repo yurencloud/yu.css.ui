@@ -1,8 +1,8 @@
 @import "../common/varible";
 @import "input";
-@import "option";
+@import "cascader-option";
 
-.yu-select {
+.yu-cascader {
   @include zoomInTop();
   position: relative;
   @include angleAnimation();
@@ -27,12 +27,6 @@
         border-radius: 0 $radius $radius 0;
       }
     }
-  }
-  .yu-option {
-    margin-top: $small-space;
-    position: absolute;
-    top: 30px;
-    z-index: 1000;
   }
 }
 
