@@ -1,0 +1,54 @@
+@import "../common/varible";
+@import "../common/function";
+
+.yu-switch {
+  font-size: 0;
+  color: $text;
+  & > input {
+    display: none;
+  }
+  display: inline-block;
+  margin: 0 $small-space $normal-space 0;
+  & > span {
+    font-size: $normal;
+    vertical-align: middle;
+  }
+  & > label{
+    @extend .unselectable;
+    font-size: $normal;
+    vertical-align: middle;
+    margin: 0 $normal-space;
+  }
+  & > .switch {
+    font-size: $normal;
+    display: inline-block;
+    width: $switch-width;
+    height: $switch-height;
+    background: $dark-border;
+    border-radius: $switch-height/2;
+    padding: 2px;
+    box-sizing: border-box;
+    cursor: pointer;
+    & > .circle {
+      box-sizing: border-box;
+      display: inline-block;
+      width: $switch-height - 4;
+      height: $switch-height - 4;
+      background: #fff;
+      border-radius: ($switch-height - 4)/2;
+      transition: all $transition-time ease;
+      transform: translateX(0px);
+    }
+    transition: background-color $transition-time ease;
+    &.on {
+      .circle {
+        transform: translateX($switch-width - $switch-height);
+      }
+      @include generalAllColorSwitch();
+    }
+  }
+  &.disabled {
+    color: lighten($text, 25);
+    cursor: not-allowed;
+  }
+}
