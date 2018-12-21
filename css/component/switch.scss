@@ -13,7 +13,7 @@
     font-size: $normal;
     vertical-align: middle;
   }
-  & > label{
+  & > label {
     @extend .unselectable;
     font-size: $normal;
     vertical-align: middle;
@@ -41,7 +41,7 @@
     }
     transition: background-color $transition-time ease;
     &.on {
-      .circle {
+      & > .circle {
         transform: translateX($switch-width - $switch-height);
       }
       @include generalAllColorSwitch();

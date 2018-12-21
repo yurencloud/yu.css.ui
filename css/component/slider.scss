@@ -1,0 +1,105 @@
+@import "../common/varible";
+
+.yu-slider {
+  margin: 0 $small-space $normal-space 0;
+  &.disabled {
+    &>.bottom-bar {
+      &>.top-bar {
+        background-color: lighten($info, 20);
+        &>.circle {
+          border-color: lighten($info, 20);
+          &.hover {
+            width: $slider-circle-height;
+            height: $slider-circle-height;
+            top: -6px;
+          }
+          &:hover {
+            width: $slider-circle-height;
+            height: $slider-circle-height;
+            top: -6px;
+          }
+        }
+      }
+    }
+  }
+  &>.bottom-bar {
+    position: relative;
+    width: 100%;
+    height: $slider-bar-height;
+    border-radius: $slider-bar-height/2;
+    background-color: $border;
+    &>.top-bar {
+      height: $slider-bar-height;
+      border-radius: $slider-bar-height/2;
+      background-color: $primary;
+      &>.circle {
+        &>.tooltip {
+          box-sizing: content-box;
+          position: absolute;
+          top: -36px;
+          height: 20px;
+          padding: 2px 7px;
+          line-height: 20px;
+          background: #373737;
+          border-radius: $radius;
+          color: #fff;
+          font-size: $normal;
+          margin-left: -8px;
+          text-align: center;
+          min-width: 20px;
+          display: none;
+          &>.tooltip-angle {
+            display: inline-block;
+            height: 8px;
+            width: 8px;
+            background-color: $tooltip-dark;
+            position: absolute;
+            bottom: -4px;
+            left: 14px;
+            transform: rotate(45deg);
+          }
+        }
+        transition: all $transition-time ease;
+        transform: translateX(-8px);
+        position: absolute;
+        top: -6px;
+        box-sizing: border-box;
+        line-height: $slider-circle-height;
+        vertical-align: middle;
+        display: inline-block;
+        width: $slider-circle-height;
+        height: $slider-circle-height;
+        background-color: #fff;
+        border: 2px solid $primary;
+        border-radius: $slider-circle-height;
+        &.hover {
+          width: $slider-circle-height;
+          height: $slider-circle-height;
+          border-radius: 100%;
+          top: -6px;
+          &>.tooltip {
+            display: inline-block;
+          }
+        }
+        &:hover {
+          width: $slider-circle-height+2;
+          height: $slider-circle-height+2;
+          top: -6px;
+          &>.tooltip {
+            display: inline-block;
+          }
+        }
+      }
+      &>.point {
+        position: absolute;
+        width: $slider-bar-height;
+        height: $slider-bar-height;
+        background-color: #fff;
+        border-radius: $slider-bar-height/2;
+      }
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
