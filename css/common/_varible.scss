@@ -69,12 +69,6 @@ $radius: 4px !default;
 
 $transition-time: .4s;
 
-$default-input-width: 175px;
-$switch-width: 40px;
-$switch-height: 20px;
-$slider-bar-height: 4px;
-$slider-circle-height: 14px;
-
 // 双击不想选中，可以继承此类
 .unselectable {
   -moz-user-select: none;
@@ -82,6 +76,13 @@ $slider-circle-height: 14px;
   -ms-user-select: none;
   user-select:none;
 }
+
+$input-width: 175px;
+$switch-width: 40px;
+$switch-height: 20px;
+$slider-bar-height: 4px;
+$slider-circle-height: 14px;
+$date-picker-width: 330px;
 
 
 

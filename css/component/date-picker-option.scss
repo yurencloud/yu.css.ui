@@ -3,15 +3,15 @@
 
 .yu-date-picker-option {
   @include zoomInTop();
-
+  display: inline-block;
   position: relative;
   .container {
-    width: 330px;
+    width: $date-picker-width;
     .head {
       text-align: center;
       a {
         display: inline-block;
-        padding: 8px;
+        padding: $small-space;
         &:hover {
           color: $primary;
           cursor: pointer;
@@ -19,7 +19,7 @@
       }
       div {
         display: inline-block;
-        padding: 8px;
+        padding: $small-space;
         font-size: $normal;
         span:hover {
           color: $primary;
@@ -34,11 +34,9 @@
       }
     }
     background-color: #fff;
-    min-width: 175px;
     border: 1px solid $border;
-    padding: 12px;
-    margin-top: 8px;
-    border-radius: 4px;
+    padding: $normal-space;
+    border-radius: $radius;
     color: $text;
     box-shadow: $box-shadow;
     table.date {
@@ -48,7 +46,7 @@
         tr {
           th {
             border-bottom: 1px solid $border;
-            font-size: 14px;
+            font-size: $normal;
             width: 42px;
             height: 40px;
             font-weight: normal;
@@ -59,11 +57,12 @@
       tbody {
         tr td {
           text-align: center;
-          font-size: 14px;
+          font-size: $normal;
           width: 42px;
           height: 40px;
           font-weight: normal;
           color: $text;
+          vertical-align: middle;
           &:hover:not(.otherMonth):not(.disabled) {
             color: $primary;
             cursor: pointer;
@@ -83,7 +82,7 @@
               width: 24px;
               height: 24px;
               background-color: $primary;
-              border-radius: 12px;
+              border-radius: 100%;
               color: #fff;
             }
           }
@@ -98,13 +97,15 @@
           width: 80px;
           height: 60px;
           &.active:not(.disabled) {
-            width: 80px;
-            height: 60px;
-            border-radius: 0;
-            background-color: #fff;
-            line-height: 60px;
-            font-weight: bold;
-            color: $primary;
+            div {
+              width: 80px;
+              height: 60px;
+              border-radius: 0;
+              background-color: #fff;
+              line-height: 60px;
+              font-weight: bold;
+              color: $primary;
+            }
           }
           &.disabled {
             color: $lighter-text;
