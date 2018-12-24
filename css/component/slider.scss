@@ -8,16 +8,6 @@
         background-color: lighten($info, 20);
         &>.circle {
           border-color: lighten($info, 20);
-          &.hover {
-            width: $slider-circle-height;
-            height: $slider-circle-height;
-            top: -6px;
-          }
-          &:hover {
-            width: $slider-circle-height;
-            height: $slider-circle-height;
-            top: -6px;
-          }
         }
       }
     }
@@ -44,7 +34,7 @@
           border-radius: $radius;
           color: #fff;
           font-size: $normal;
-          margin-left: -8px;
+          margin-left: -$slider-circle-height + 2;
           text-align: center;
           min-width: 20px;
           display: none;
@@ -55,14 +45,13 @@
             background-color: $tooltip-dark;
             position: absolute;
             bottom: -4px;
-            left: 14px;
+            left: $slider-circle-height;
             transform: rotate(45deg);
           }
         }
-        transition: all $transition-time ease;
         transform: translateX(-8px);
         position: absolute;
-        top: -6px;
+        top: -($slider-circle-height/2 - 1);
         box-sizing: border-box;
         line-height: $slider-circle-height;
         vertical-align: middle;
@@ -73,10 +62,8 @@
         border: 2px solid $primary;
         border-radius: $slider-circle-height;
         &.hover {
-          width: $slider-circle-height;
-          height: $slider-circle-height;
-          border-radius: 100%;
-          top: -6px;
+          width: $slider-circle-height+2;
+          height: $slider-circle-height+2;
           &>.tooltip {
             display: inline-block;
           }
@@ -84,7 +71,6 @@
         &:hover {
           width: $slider-circle-height+2;
           height: $slider-circle-height+2;
-          top: -6px;
           &>.tooltip {
             display: inline-block;
           }
