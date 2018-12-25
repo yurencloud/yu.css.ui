@@ -1,7 +1,7 @@
 @import "../common/varible";
 
 .yu-slider {
-  margin: 0 $small-space $normal-space 0;
+  margin: 0 $space-small $space 0;
   &.disabled {
     &>.bottom-bar {
       &>.top-bar {
@@ -15,12 +15,12 @@
   &>.bottom-bar {
     position: relative;
     width: 100%;
-    height: $slider-bar-height;
-    border-radius: $slider-bar-height/2;
+    height: $slider-bar-length;
+    border-radius: $slider-bar-length/2;
     background-color: $border;
     &>.top-bar {
-      height: $slider-bar-height;
-      border-radius: $slider-bar-height/2;
+      height: $slider-bar-length;
+      border-radius: $slider-bar-length/2;
       background-color: $primary;
       &>.circle {
         &>.tooltip {
@@ -34,7 +34,7 @@
           border-radius: $radius;
           color: #fff;
           font-size: $normal;
-          margin-left: -$slider-circle-height + 2;
+          margin-left: -$slider-circle-length + 2;
           text-align: center;
           min-width: 20px;
           display: none;
@@ -45,32 +45,32 @@
             background-color: $tooltip-dark;
             position: absolute;
             bottom: -4px;
-            left: $slider-circle-height;
+            left: $slider-circle-length;
             transform: rotate(45deg);
           }
         }
         transform: translateX(-8px);
         position: absolute;
-        top: -($slider-circle-height/2 - 1);
+        top: -($slider-circle-length/2 - 1);
         box-sizing: border-box;
-        line-height: $slider-circle-height;
+        line-height: $slider-circle-length;
         vertical-align: middle;
         display: inline-block;
-        width: $slider-circle-height;
-        height: $slider-circle-height;
+        width: $slider-circle-length;
+        height: $slider-circle-length;
         background-color: #fff;
         border: 2px solid $primary;
-        border-radius: $slider-circle-height;
+        border-radius: $slider-circle-length;
         &.hover {
-          width: $slider-circle-height+2;
-          height: $slider-circle-height+2;
+          width: $slider-circle-length+2;
+          height: $slider-circle-length+2;
           &>.tooltip {
             display: inline-block;
           }
         }
         &:hover {
-          width: $slider-circle-height+2;
-          height: $slider-circle-height+2;
+          width: $slider-circle-length+2;
+          height: $slider-circle-length+2;
           &>.tooltip {
             display: inline-block;
           }
@@ -78,10 +78,10 @@
       }
       &>.point {
         position: absolute;
-        width: $slider-bar-height;
-        height: $slider-bar-height;
+        width: $slider-bar-length;
+        height: $slider-bar-length;
         background-color: #fff;
-        border-radius: $slider-bar-height/2;
+        border-radius: $slider-bar-length/2;
       }
     }
     &:hover {

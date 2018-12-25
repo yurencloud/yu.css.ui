@@ -19,11 +19,11 @@ body{
   .web-title{
     font-size: $normal;
     border-left: 2px solid $primary;
-    padding-left: $normal-space;
+    padding-left: $space;
   }
   .web-dark-background{
     background-color: $text;
-    padding: $normal-space;
+    padding: $space;
   }
 }
 

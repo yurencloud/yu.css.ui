@@ -6,41 +6,41 @@
 .yu-input {
   position: relative;
   display: block;
-  margin: 0 $small-space $normal-space 0;
+  margin: 0 $space-small $space 0;
   font-size: 0;
   & > input {
-    width: $input-width;
-    padding: $tiny-space $normal-space;
+    width: $input-length;
+    padding: $space-tiny $space;
     outline: none;
     font-size: $normal;
     color: $text;
     font-family: $font-family;
     box-sizing: border-box;
-    height: $normal-height;
+    height: $height;
     &::placeholder {
-      color: $lighter-text;
+      color: $text-lighter;
       font-weight: lighter;
     }
     border: 1px solid $border;
     border-radius: $radius;
     &:hover {
-      border: 1px solid $lighter-text;
+      border: 1px solid $text-lighter;
     }
     &:focus {
       border: 1px solid $primary;
     }
     transition: all ease $transition-time;
     &.prefix {
-      padding-left: $big-space;
+      padding-left: $space-big;
     }
     &.suffix {
-      padding-right: $big-space;
+      padding-right: $space-big;
     }
     &.large {
-      height: $large-height;
+      height: $height-large;
     }
     &.small {
-      height: $small-height;
+      height: $height-small;
     }
     &.full {
       width: 100%;
@@ -51,7 +51,7 @@
   }
   &.disabled {
     & > input {
-      color: $lighter-text;
+      color: $text-lighter;
       background-color: $background;
       &:hover {
         border: 1px solid $border;
@@ -65,7 +65,7 @@
 
   & > span.prefix {
     position: relative;
-    color: $lighter-text;
+    color: $text-lighter;
     & > i {
       position: absolute;
       left: 10px;
@@ -79,18 +79,18 @@
       position: absolute;
       left: -25px;
       top: -14px;
-      color: $lighter-text;
+      color: $text-lighter;
       transition: color .1s;
       cursor: pointer;
       &:hover {
-        color: $light-text;
+        color: $text-light;
       }
     }
   }
 
   & > span.suffix {
     position: relative;
-    color: $lighter-text;
+    color: $text-lighter;
     & > i {
       position: absolute;
       left: -25px;
@@ -106,14 +106,14 @@
     outline: none;
     box-sizing: border-box;
     &:hover {
-      border: 1px solid $lighter-text;
+      border: 1px solid $text-lighter;
     }
     &:focus {
       border: 1px solid $primary;
     }
     transition: all ease .4s;
     &::placeholder {
-      color: $dark-border;
+      color: $border-dark;
       font-weight: lighter;
     }
   }
@@ -167,7 +167,7 @@
         display: none;
       }
       &.disabled {
-        color: $lighter-text;
+        color: $text-lighter;
         cursor: not-allowed;
       }
     }

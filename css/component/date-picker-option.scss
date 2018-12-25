@@ -5,99 +5,99 @@
   @include zoomInTop();
   display: inline-block;
   position: relative;
-  .container {
-    width: $date-picker-width;
-    .head {
-      text-align: center;
-      a {
-        display: inline-block;
-        padding: $small-space;
-        &:hover {
-          color: $primary;
-          cursor: pointer;
-        }
-      }
-      div {
-        display: inline-block;
-        padding: $small-space;
-        font-size: $normal;
-        span:hover {
-          color: $primary;
-          cursor: pointer;
-        }
-      }
-      .left {
-        float: left;
-      }
-      .right {
-        float: right;
+  width: $date-picker-width;
+  & > .head {
+    text-align: center;
+    & > a {
+      display: inline-block;
+      padding: $space-small;
+      &:hover {
+        color: $primary;
+        cursor: pointer;
       }
     }
-    background-color: #fff;
-    border: 1px solid $border;
-    padding: $normal-space;
-    border-radius: $radius;
-    color: $text;
-    box-shadow: $box-shadow;
-    table.date {
-      width: 100%;
-      margin: 0 auto;
-      thead {
-        tr {
-          th {
-            border-bottom: 1px solid $border;
-            font-size: $normal;
-            width: 42px;
-            height: 40px;
-            font-weight: normal;
-            color: $text;
-          }
-        }
+    & > div {
+      display: inline-block;
+      padding: $space-small;
+      font-size: $normal;
+      & > span:hover {
+        color: $primary;
+        cursor: pointer;
       }
-      tbody {
-        tr td {
-          text-align: center;
+    }
+    & > .left {
+      float: left;
+    }
+    & > .right {
+      float: right;
+    }
+  }
+  background-color: #fff;
+  border: 1px solid $border;
+  padding: $space;
+  border-radius: $radius;
+  color: $text;
+  box-shadow: $box-shadow;
+  & > table.date {
+    width: 100%;
+    margin: 0 auto;
+    & > thead {
+      & > tr {
+        & > th {
+          border-bottom: 1px solid $border;
           font-size: $normal;
-          width: 42px;
+          width: 40px;
           height: 40px;
           font-weight: normal;
           color: $text;
-          vertical-align: middle;
-          &:hover:not(.otherMonth):not(.disabled) {
-            color: $primary;
-            cursor: pointer;
-          }
-          &.otherMonth {
-            color: $lighter-text;
-          }
-          &.currentDay {
-            color: $primary;
-            font-weight: bold;
-          }
-          &.active:not(.disabled) {
-            div {
-              display: inline-block;
-              text-align: center;
-              line-height: 24px;
-              width: 24px;
-              height: 24px;
-              background-color: $primary;
-              border-radius: 100%;
-              color: #fff;
-            }
-          }
-          &.disabled {
-            color: $lighter-text;
-            cursor: not-allowed;
-          }
         }
       }
-      &.month, &.year {
-        tr td {
+    }
+    & > tbody {
+      & > tr td {
+        text-align: center;
+        font-size: $normal;
+        width: 40px;
+        height: 40px;
+        font-weight: normal;
+        color: $text;
+        vertical-align: middle;
+        &:hover:not(.otherMonth):not(.disabled) {
+          color: $primary;
+          cursor: pointer;
+        }
+        &.otherMonth {
+          color: $text-lighter;
+        }
+        &.currentDay {
+          color: $primary;
+          font-weight: bold;
+        }
+        &.active:not(.disabled) {
+          & > div {
+            display: inline-block;
+            text-align: center;
+            line-height: 24px;
+            width: 24px;
+            height: 24px;
+            background-color: $primary;
+            border-radius: 100%;
+            color: #fff;
+          }
+        }
+        &.disabled {
+          color: $text-lighter;
+          cursor: not-allowed;
+        }
+      }
+    }
+    &.month, &.year {
+      & > tbody {
+        & > tr td {
           width: 80px;
           height: 60px;
           &.active:not(.disabled) {
-            div {
+            & > div {
               width: 80px;
               height: 60px;
               border-radius: 0;
@@ -108,7 +108,7 @@
             }
           }
           &.disabled {
-            color: $lighter-text;
+            color: $text-lighter;
             cursor: not-allowed;
           }
         }

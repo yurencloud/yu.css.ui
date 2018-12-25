@@ -1,4 +1,7 @@
 // !default表示默认值，若有其他非默认值，则默认值会被覆盖
+// 所有的子元素都必须要有&>或&来限制，避免递归浪费css性能
+// 使用尽量少的class，尽量多的元素标签来表示元素
+// 使用中横线命名，名字若归属于某项事物的，则以 ： 事物-属性来命名，这样以便ide提示和搜索。
 
 // 背景颜色
 $primary: #409EFF !default;
@@ -8,28 +11,20 @@ $danger: #F56C6C !default;
 $info: #909399 !default;
 $background: #f5f5f9 !default;
 
-$dialog-background: rgba(0, 0, 0, 0.4) !default;
-
 // 文字颜色
-$dark-text: #303133 !default;
+$text-dark: #303133 !default;
 $text: #606266 !default;
-$light-text: #909399 !default;
-$lighter-text: #C0C4CC !default;
+$text-light: #909399 !default;
+$text-lighter: #C0C4CC !default;
 
 // 边框颜色
-$dark-border: #DCDFE6 !default;
+$border-dark: #DCDFE6 !default;
 $border: #E4E7ED !default;
-$light-border: #EBEEF5 !default;
-$lighter-border: #F2F6FC !default;
-
-// 等级星星颜色
-$rate-star: #f8c422 !default;
-
-// tooltip深色背景色
-$tooltip-dark: #373737 !default;
+$border-light: #EBEEF5 !default;
+$border-lighter: #F2F6FC !default;
 
 // 字体
-$font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif !default;
+$font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif !default;
 
 // 字体大小
 $huge: 20px !default;
@@ -39,17 +34,17 @@ $normal: 14px !default;
 $small: 12px !default;
 $tiny: 10px !default;
 
-// padding和margin通用变量
-$big-space: 32px !default;
-$large-space: 22px !default;
-$normal-space: 14px !default;
-$small-space: 8px !default;
-$tiny-space: 4px !default;
+// space表示空间距离，padding和margin通用变量
+$space-big: 32px !default;
+$space-large: 22px !default;
+$space: 14px !default;
+$space-small: 8px !default;
+$space-tiny: 4px !default;
 
-// ant-design 主要有 large 32 normal 28 small 22
-$large-height: 32px !default;
-$normal-height: 28px !default;
-$small-height: 22px !default;
+// 元素高度， ant-design 主要有 large 32 normal 28 small 22
+$height-large: 32px !default;
+$height: 28px !default;
+$height-small: 22px !default;
 
 $types: primary, success, warning, info, danger !default;
 $colors: (
@@ -60,29 +55,36 @@ $colors: (
         info: $info
 ) !default;
 
-$trBackground: #fafafa !default;
+$tr-background: #fafafa !default;
 
 $box-shadow: 0 2px 12px 0 rgba(0, 0, 0, .1) !default;
 
 // 默认border-radius圆角大小
 $radius: 4px !default;
 
-$transition-time: .4s;
+$transition-time: .4s !default;
 
 // 双击不想选中，可以继承此类
 .unselectable {
   -moz-user-select: none;
   -webkit-user-select: none;
   -ms-user-select: none;
-  user-select:none;
+  user-select: none;
 }
 
-$input-width: 175px;
-$switch-width: 40px;
-$switch-height: 20px;
-$slider-bar-height: 4px;
-$slider-circle-height: 14px;
-$date-picker-width: 330px;
+// 长宽一样，为length, 只分宽或高，用width和height
+$input-length: 175px !default;
+$switch-width: 40px !default;
+$switch-height: 20px !default;
+$slider-bar-length: 4px !default;
+$slider-circle-length: 14px !default;
+$date-picker-width: 330px !default;
+$data-picker-circle-length: 24px !default;
+// 等级星星颜色
+$rate-star: #f8c422 !default;
+// tooltip深色背景色
+$tooltip-dark: #373737 !default;
+$dialog-background: rgba(0, 0, 0, 0.4) !default;
 
 
 

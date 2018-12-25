@@ -5,19 +5,19 @@
   font-size: $normal;
   color: $text;
   cursor: pointer;
-  margin-right: $small-space;
+  margin-right: $space-small;
 
   & > span {
     @extend .unselectable;
   }
   & > .checkbox {
     transition: background-color $transition-time;
-    margin-right: $tiny-space;
+    margin-right: $space-tiny;
     margin-bottom: -2px;
     display: inline-block;
     width: 14px;
     height: 14px;
-    border: 1px solid $dark-border;
+    border: 1px solid $border-dark;
     border-radius: 2px;
     background-color: #fff;
     &:hover {
@@ -54,23 +54,23 @@
 
   &.checked.disabled {
     & > .checkbox {
-      border: 1px solid $lighter-text;
-      background-color: $lighter-text;
+      border: 1px solid $text-lighter;
+      background-color: $text-lighter;
       & + span {
-        color: $lighter-text;
+        color: $text-lighter;
       }
     }
   }
   &.disabled {
-    color: $lighter-text;
+    color: $text-lighter;
     & > .checkbox:hover {
-      border: 1px solid $dark-border;
+      border: 1px solid $border-dark;
     }
   }
 
   &.control {
     display: block;
-    margin-bottom: $small-space;
+    margin-bottom: $space-small;
     &.part {
       & > .checkbox {
         position: relative;
@@ -100,11 +100,11 @@
 }
 
 .yu-checkbox-group {
-  margin-bottom: $normal-space;
+  margin-bottom: $space;
   &.vertical {
     & > .yu-checkbox {
       display: block;
-      margin-bottom: $normal-space;
+      margin-bottom: $space;
     }
   }
 }

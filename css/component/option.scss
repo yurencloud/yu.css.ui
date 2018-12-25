@@ -3,7 +3,7 @@
 .yu-option {
   background-color: #fff;
 
-  width: $input-width;
+  width: $input-length;
   border: 1px solid $border;
   border-radius: $radius;
   color: $text;
@@ -22,12 +22,10 @@
   }
   & > li {
     list-style: none;
-  }
-  & > .option {
     box-sizing: border-box;
-    min-height: $normal-height;
+    min-height: $height;
     font-size: $normal;
-    padding: $tiny-space $small-space;
+    padding: $space-tiny $space-small;
 
     &:hover:not(.disabled) {
       background-color: $background;
@@ -41,7 +39,7 @@
       display: none;
     }
     &.disabled {
-      color: $lighter-text;
+      color: $text-lighter;
       cursor: not-allowed;
     }
   }
