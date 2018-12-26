@@ -1,0 +1,28 @@
+@import "../common/varible";
+
+.yu-rate {
+  height: $height-large;
+  font-size: 0;
+  line-height: $height-large;
+  i{
+    transition: all $transition-time ease;
+    display: inline-block;
+    width: $height;
+    height: $big;
+    box-sizing: border-box;
+    font-size: $big;
+    color: $text-lighter;
+  }
+  .icon-star{
+    color: $rate-star;
+    transform: scale(1.1);
+  }
+  &:hover{
+    cursor: pointer;
+  }
+  span{
+    font-size: $normal;
+    color: $text;
+    display: inline-block;
+  }
+}

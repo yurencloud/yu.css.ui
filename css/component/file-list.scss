@@ -6,7 +6,17 @@ ul.yu-file-list {
   font-size: $normal;
   color: $text;
   @extend .reset-ul;
-
+  &>li{
+    font-size: 0;
+    &>span{
+      vertical-align: middle;
+      font-size: $normal;
+    }
+    &>i{
+      vertical-align: middle;
+      font-size: $normal;
+    }
+  }
   &.simple {
     & > li {
       @include generalAllColorFileList();
@@ -23,7 +33,6 @@ ul.yu-file-list {
       padding: $space-tiny;
       & > i {
         font-size: $normal;
-        vertical-align: middle;
         &.icon-close {
           cursor: pointer;
           color: $text-light;
@@ -38,23 +47,25 @@ ul.yu-file-list {
 
   &.picture {
     & > li {
-      width: 100px;
-      height: 100px;
+      width: $file-list-picture-length;
+      height: $file-list-picture-length;
       padding: $space-small;
       box-sizing: border-box;
       border: 1px solid $border;
       border-radius: $radius;
       display: inline-block;
       margin: 0 $space-small $space 0;
+      $height: $file-list-picture-length - ($space-small*2) - 2;
       & > .wrap {
+        font-size: 0;
         position: relative;
         height: 100%;
-        line-height: 82px;
+        line-height: $height;
         text-align: center;
         & > img {
           vertical-align: middle;
-          max-width: 82px;
-          max-height: 82px;
+          max-width: $height;
+          max-height: $height;
         }
         & > .mask {
           position: absolute;
@@ -86,5 +97,79 @@ ul.yu-file-list {
     }
   }
 
+  &.title-picture {
+    & > li {
+      position: relative;
+      height: $file-list-title-picture-length;
+      padding: $space-tiny;
+      box-sizing: border-box;
+      border: 1px solid $border;
+      border-radius: $radius;
+      margin: 0 $space-small $space 0;
+      display: flex;
+      $height: $file-list-title-picture-length - ($space-tiny*2) - 2;
+      & > .wrap {
+        font-size: 0;
+        width: $height;
+        height: $height;
+        line-height: $height;
+        text-align: center;
+        display: inline-block;
+        align-items: center;
+        & > img {
+          vertical-align: middle;
+          max-width: $height;
+          max-height: $height;
+        }
+      }
+      &>span{
+        align-items: center;
+        vertical-align: middle;
+        line-height: $height;
+        word-break: break-all;
+        padding: 0 $space-small;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow : ellipsis;
+      }
+      i.icon-close{
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      &:hover {
+        & > i.icon-close {
+          opacity: 1;
+          &:hover {
+            color: darken($text-light, 10);
+          }
+        }
+      }
+      & > i {
+        font-size: $normal;
+        vertical-align: middle;
+        &.icon-close {
+          cursor: pointer;
+          color: $text-light;
+          transition: opacity $transition-time ease;
+          float: right;
+          opacity: 0;
+          padding: $space-tiny;
+        }
+      }
+    }
+  }
+
+  &.inline{
+    display: flex;
+    & > li {
+      width: $file-list-title-picture-inline-width;
+    }
+  }
+  &.block{
+    & > li {
+      width: 100%;
+    }
+  }
 }
 
