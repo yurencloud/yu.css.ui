@@ -72,6 +72,13 @@ $transition-time: .4s !default;
   user-select: none;
 }
 
+.reset-ul{
+  padding-inline-start: 0;
+  &>li{
+    list-style: none;
+  }
+}
+
 // 长宽一样，为length, 只分宽或高，用width和height
 $input-length: 175px !default;
 $switch-width: 40px !default;

@@ -1,0 +1,35 @@
+@import "../common/varible";
+@import "../common/function";
+
+// 预览作为upload的子组件
+ul.yu-file-list {
+  font-size: $normal;
+  color: $text;
+  @extend .reset-ul;
+  &>li{
+    @include generalAllColorFileList();
+    transition: background-color $transition-time ease;
+    &:hover{
+      background-color: $background;
+      &>i.icon-close{
+        opacity: 1;
+        &:hover{
+          color: darken($text-light, 10);
+        }
+      }
+    }
+    padding: $space-tiny;
+    &>i{
+      font-size: $normal;
+      vertical-align: middle;
+      &.icon-close{
+        cursor: pointer;
+        color: $text-light;
+        transition: opacity $transition-time ease;
+        float: right;
+        opacity: 0;
+        padding: $space-tiny;
+      }
+    }
+  }
+}
