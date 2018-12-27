@@ -1,29 +1,29 @@
 @import "../common/varible";
 
 .yu-loading {
-  font-size: 12px;
+  font-size: $small;
   color: $text;
-  margin-right: 8px;
+  margin-right: $space-small;
   text-align: center;
   &.inline {
     display: inline-block;
-    .loading-text {
+    &>p {
       display: inline-block;
       font-size: $normal;
     }
   }
   &.large {
-    height: 30px;
-    font-size: 20px;
+    height: $large * 2;
+    font-size: $large;
     i {
-      font-size: 24px;
+      font-size: $large + 6;
     }
   }
   &.big {
-    height: 40px;
-    font-size: 30px;
+    height: $big * 2;
+    font-size: $big;
     i {
-      font-size: 36px;
+      font-size: $big + 6;
     }
   }
   // loading动画
@@ -39,7 +39,9 @@
       }
     }
   }
-
+  i.icon-circle-loading.loading {
+    animation: loading 1s linear infinite;
+  }
   &.left {
     text-align: left;
   }

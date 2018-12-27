@@ -1,0 +1,61 @@
+@import "../common/varible";
+
+.yu-alert {
+  padding: $space-small;
+  border-radius: $radius;
+  width: 100%;
+  font-size: $normal;
+  margin-bottom: $space;
+  position: relative;
+  box-sizing: border-box;
+  background-color: lighten($info, 37);
+  & > i {
+    vertical-align: middle;
+    margin-right: $space-tiny;
+    font-size: $normal;
+  }
+  & > .close {
+    vertical-align: middle;
+    line-height: 19px;
+    float: right;
+    color: $text-light;
+    cursor: pointer;
+    margin: 0;
+    &:hover {
+      color: darken($text-light, 10);
+    }
+  }
+  // 因为颜色的深浅调节不同，所以没mixin
+  &.primary {
+    background-color: lighten($primary, 35);
+    color: $primary;
+  }
+  &.success {
+    background-color: lighten($success, 45);
+    color: $success;
+  }
+  &.warning {
+    background-color: lighten($warning, 40);
+    color: $warning;
+  }
+  &.danger {
+    background-color: lighten($danger, 27);
+    color: $danger;
+  }
+  &.info {
+    background-color: lighten($info, 37);
+  }
+  &.center {
+    text-align: center;
+  }
+  & > .title {
+    margin: 0;
+    font-size: $normal;
+    font-weight: bold;
+  }
+  & > .description {
+    margin: 0;
+    padding-top: $space-small;
+    font-size: $small;
+  }
+}
