@@ -45,7 +45,7 @@
     </div>
 
     <h4 class="web-title">步骤条,带描述</h4>
-    <div class="yu-steps">
+    <div class="yu-steps" id="target">
         <div class="yu-steps-item finished" style="width: 50%;margin-right: -72px;">
             <div class="line">
                 <i></i>
@@ -89,6 +89,9 @@
             </div>
         </div>
     </div>
+
+    <h4 class="web-title">动态</h4>
+    <button class="yu-button">下一步</button>
 
     <h4 class="web-title">小尺寸</h4>
     <div class="yu-steps">
@@ -178,7 +181,7 @@
 
     <h4 class="web-title">垂直（小型）</h4>
     <div class="yu-steps vertical">
-        <div class="yu-steps-item finished">
+        <div class="yu-steps-item finished small">
             <div class="line">
                 <i></i>
             </div>
@@ -192,7 +195,7 @@
                 <div class="description">描述内容</div>
             </div>
         </div>
-        <div class="yu-steps-item active">
+        <div class="yu-steps-item active small">
             <div class="line">
                 <i></i>
             </div>
@@ -206,7 +209,7 @@
                 <div class="description">描述内容</div>
             </div>
         </div>
-        <div class="yu-steps-item">
+        <div class="yu-steps-item small">
             <div class="line">
                 <i></i>
             </div>
@@ -224,4 +227,10 @@
 
 </div>
 </body>
+<script>
+    document.querySelector('.yu-button').addEventListener('click',function () {
+        document.getElementById('target').children[1].className = 'yu-steps-item finished';
+        document.getElementById('target').children[2].className = 'yu-steps-item active';
+    })
+</script>
 </html>
