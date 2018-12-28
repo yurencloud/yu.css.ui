@@ -1,0 +1,87 @@
+@import "../common/varible";
+
+.yu-steps-item {
+  position: relative;
+  font-size: 0;
+  color: $text-light;
+  display: inline-block;
+  & > .line {
+    position: absolute;
+    top: $steps-circle-length / 2;
+    width: 100%;
+    & > i {
+      background: $background;
+      display: block;
+      height: 1px;
+      border-radius: 1px;
+      &::after {
+        position: absolute;
+        content: "";
+        height: 1px;
+        border-radius: 1px;
+        top: 0;
+        width: 100%;
+        background: $primary;
+        display: block;
+      }
+    }
+    z-index: -1;
+  }
+  & > .head {
+    background: #fff;
+    display: inline-block;
+    font-size: $normal;
+    & > .inner {
+      box-sizing: content-box;
+      display: inline-block;
+      height: $steps-circle-length;
+      width: $steps-circle-length;
+      border-radius: $steps-circle-length;
+      border: 1px solid $border;
+      line-height: $steps-circle-length;
+      text-align: center;
+      color: $text-light;
+    }
+  }
+  & > .main {
+    padding: 0 $space;
+    font-size: $normal;
+    background: #fff;
+    display: inline-block;
+  }
+
+  &.active {
+    & > .head {
+      & > .inner {
+        background-color: $primary;
+        color: #fff;
+      }
+    }
+
+    & > .main {
+      color: $text-dark;
+    }
+  }
+
+  &.finished {
+    & > .head {
+      & > .inner {
+        border: 1px solid $primary;
+        color: $primary;
+      }
+    }
+  }
+}
+
+.yu-steps {
+  & > .yu-steps-item {
+    &:nth-child(n+2) > .head {
+      padding-left: $space;
+    }
+    &:last-child {
+      & > .line {
+        display: none;
+      }
+    }
+  }
+}
