@@ -48,6 +48,11 @@
     font-size: $normal;
     background: #fff;
     display: inline-block;
+    line-height: $steps-circle-length;
+    vertical-align: top;
+    & > .description {
+      font-size: $small;
+    }
   }
 
   &.active {
@@ -55,6 +60,7 @@
       & > .inner {
         background-color: $primary;
         color: #fff;
+        border-color: $primary;
       }
     }
 
@@ -66,14 +72,69 @@
   &.finished {
     & > .head {
       & > .inner {
-        border: 1px solid $primary;
+        border-color: $primary;
         color: $primary;
+      }
+    }
+  }
+
+  &.small {
+    & > .line {
+      top: $steps-small-circle-length / 2;
+    }
+    & > .head {
+      & > .inner {
+        height: $steps-small-circle-length;
+        width: $steps-small-circle-length;
+        border-radius: $steps-small-circle-length;
+        line-height: $steps-small-circle-length;
+        font-size: $small;
+        i {
+          font-size: $small;
+        }
+      }
+    }
+    & > .main {
+      padding: 0 $space;
+      font-size: $small;
+      background: #fff;
+      display: inline-block;
+      line-height: $steps-small-circle-length;
+      vertical-align: top;
+      & > .description {
+        font-size: $tiny;
       }
     }
   }
 }
 
 .yu-steps {
+  &.vertical {
+    & > .yu-steps-item {
+      display: block;
+      height: 60px;
+      & > .head {
+        padding-bottom: $space-tiny;
+        &:nth-child(n+2) {
+          padding-left: 0;
+        }
+      }
+
+      & > .line {
+        top: $steps-circle-length;
+        left: $steps-circle-length / 2;
+        height: 30px;
+        & > i {
+          width: 1px;
+          &::after {
+            width: 1px;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
   & > .yu-steps-item {
     &:nth-child(n+2) > .head {
       padding-left: $space;

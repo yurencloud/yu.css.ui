@@ -92,11 +92,12 @@ $rate-star: #f8c422 !default;
 // tooltip深色背景色
 $tooltip-dark: #373737 !default;
 $dialog-background: rgba(0, 0, 0, 0.4) !default;
-$file-list-picture-length: 100px;
-$file-list-title-picture-length: 60px;
-$file-list-title-picture-inline-width: 200px;
-$field-label-width: 80px;
-$steps-circle-length: 26px;
+$file-list-picture-length: 100px !default;
+$file-list-title-picture-length: 60px !default;
+$file-list-title-picture-inline-width: 200px !default;
+$field-label-width: 80px !default;
+$steps-circle-length: 26px !default;
+$steps-small-circle-length: 18px !default;
 
 
 
