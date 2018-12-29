@@ -1,0 +1,67 @@
+@import "../common/varible";
+
+.yu-progress {
+  @keyframes progress-active {
+    0% {
+      opacity: 0.1;
+      width: 0;
+    }
+    20% {
+      opacity: 0.5;
+      width: 0;
+    }
+    100% {
+      opacity: 0;
+      width: 100%;
+    }
+  }
+
+  .line-outer {
+    width: 100%;
+    border-radius: 5px;
+    height: 10px;
+    background-color: $background;
+    .line-inner {
+      width: 0;
+      height: 10px;
+      border-radius: 5px;
+      background-color: $primary;
+      position: relative;
+      &.active::before {
+        content: "";
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #fff;
+        border-radius: 10px;
+        animation: progress-active 2s ease infinite;
+      }
+    }
+  }
+
+  .circle-warp {
+    position: relative;
+    display: inline-block;
+    .demo2 {
+      transform-origin: center;
+      transform: rotate(-90deg);
+    }
+    .text-warp {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .progress-text {
+    display: inline-block;
+    text-align: right;
+    i {
+      font-size: $huge;
+      color: $success;
+    }
+  }
+}

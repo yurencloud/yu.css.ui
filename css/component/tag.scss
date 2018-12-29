@@ -1,0 +1,48 @@
+@import "../common/varible";
+@import "../common/animation";
+@import "../common/function";
+
+@include fade()
+.yu-tag {
+  margin: 0 $space-small $space 0;
+  padding: 0 $space-small;
+  background-color: $background-primary;
+  border: 1px solid lighten($primary, 20);
+  display: inline-block;
+  height: $height;
+  font-size: $normal;
+  line-height: $height;
+  color: $primary;
+  border-radius: $radius;
+  white-space: nowrap;
+  i.icon-close {
+    font-size: $normal;
+    margin-left: $space-tiny;
+    cursor: pointer;
+    color: lighten($primary, 10);
+    &:hover{
+      color: $primary;
+    }
+  }
+  @include generalAllColorTag();
+  &.small{
+    height: $height-small;
+    font-size: $small;
+    line-height: $height-small;
+    i.icon-close{
+      font-size: $small;
+    }
+  }
+  &.large{
+    height: $height-large;
+    font-size: $large;
+    line-height: $height-large;
+    i.icon-close{
+      font-size: $large;
+    }
+  }
+
+  &.border-none{
+    border: none;
+  }
+}

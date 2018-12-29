@@ -9,7 +9,13 @@ $success: #67C23A !default;
 $warning: #e6b322 !default;
 $danger: #F56C6C !default;
 $info: #909399 !default;
+
 $background: #f5f5f9 !default;
+$background-primary: lighten($primary, 35) !default;
+$background-success: lighten($success, 45) !default;
+$background-warning: lighten($warning, 40) !default;
+$background-danger: lighten($danger, 27) !default;
+$background-info: lighten($info, 37) !default;
 
 // 文字颜色
 $text-dark: #303133 !default;
@@ -53,6 +59,13 @@ $colors: (
         warning: $warning,
         danger: $danger,
         info: $info
+) !default;
+$background-colors: (
+        primary: $background-primary,
+        success: $background-success,
+        warning: $background-warning,
+        danger: $background-danger,
+        info: $background-info
 ) !default;
 
 $tr-background: #fafafa !default;
