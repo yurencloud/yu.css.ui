@@ -76,6 +76,71 @@
         <button class="yu-button primary">primary</button>
         <button class="yu-button primary plain">primary</button>
     </div>
+
+    <h4 class="web-title">测试代码</h4>
+    <button id="button" yu-id="button" class="yu-button">primary</button>
+    <div id="alert" class="yu-alert danger">primary</div>
+
+    <input type="text" id="buttonInput">
 </div>
 </body>
+<script>
+    // yuButton = new Yu.Button('button')
+    // 选择器只有id和class，均只取第一个元素。
+    var yuAlert = {
+        node: document.getElementById('alert'),
+        text: function (value) {
+            this.node.innerText = value;
+        },
+        setState: function (stateName, value) {
+            this[stateName].call(this, value);
+        },
+    }
+    var yuButton = {
+        node: document.getElementById('button'),
+        type: function (value) {
+            this.node.className = 'yu-button ' + value
+        },
+        text: function (value) {
+            this.node.innerText = value;
+        },
+        setState: function (stateName, value) {
+            this[stateName].call(this, value);
+        },
+    }
+
+    var props = {
+        content: function (value) {
+            yuAlert.setState('text', value);
+            yuButton.setState('text', value);
+        },
+        setProp: function (stateName, value) {
+            this[stateName].call(this, value);
+        },
+    }
+
+
+    // var yuButton = {
+    //     constructor: function() {
+    //         console.log(1);
+    //     },
+    //     node: document.getElementById('button'),
+    //     type: {
+    //         prev: '',
+    //         update: function (value) {
+    //             this.node.className = 'yu-button ' + value
+    //         }
+    //     },
+    //     setState: function (stateName, value) {
+    //         this[stateName].update.call(this, value);
+    //     },
+    // }
+
+
+    document.getElementById('buttonInput').addEventListener('blur', function (e) {
+        yuButton.setState('type', e.target.value)
+        props.setProp('content', e.target.value)
+    })
+
+</script>
 </html>

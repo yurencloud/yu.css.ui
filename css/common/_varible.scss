@@ -92,6 +92,18 @@ $transition-time: .4s !default;
   }
 }
 
+.overflow {
+  overflow: auto;
+  max-height: 140px;
+  &::-webkit-scrollbar {
+    width: 4px
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: $border;
+  }
+}
+
 // 长宽一样，为length, 只分宽或高，用width和height
 $input-length: 175px !default;
 $switch-width: 40px !default;

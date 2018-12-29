@@ -15,7 +15,7 @@
       width: 100%;
     }
   }
-
+  display: flex;
   .line-outer {
     width: 100%;
     border-radius: 5px;
@@ -42,13 +42,20 @@
     }
   }
 
-  .circle-warp {
+  .text {
+    font-size: $normal;
+    text-align: right;
+    margin-top: -6px;
+    width: 45px;
+    i {
+      font-size: $huge;
+      color: $success;
+    }
+  }
+
+  .circle-outer {
     position: relative;
     display: inline-block;
-    .demo2 {
-      transform-origin: center;
-      transform: rotate(-90deg);
-    }
     .text-warp {
       position: absolute;
       top: 50%;
@@ -56,12 +63,5 @@
       transform: translate(-50%, -50%);
     }
   }
-  .progress-text {
-    display: inline-block;
-    text-align: right;
-    i {
-      font-size: $huge;
-      color: $success;
-    }
-  }
+
 }
