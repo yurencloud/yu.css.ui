@@ -45,14 +45,24 @@
     @include generalAllColorPlainButton();
   }
   &.large {
-    padding: $space-small $space-large;;
+    padding: $space-tiny $space-large;;
     font-size: $large;
     height: $height-large;
+    &.circle{
+      padding: 0;
+      width: $height-large;
+      height: $height-large;
+    }
   }
   &.small {
     padding-top: 2px;
     padding-bottom: 2px;
     height: $height-small;
+    &.circle{
+      padding: 0;
+      width: $height-small;
+      height: $height-small;
+    }
   }
 }
 
