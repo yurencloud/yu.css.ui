@@ -1,0 +1,49 @@
+@import "../common/varible";
+@import "../common/function";
+@import "../common/animation";
+
+.yu-badge {
+  position: relative;
+  display: inline-block;
+  margin-right: $space-small;
+  &>.badge {
+    position: absolute;
+    right: -$badge-height/8;
+    top: -$badge-height/2;
+    z-index: 1;
+    height: $badge-height;
+    line-height: $badge-height;
+    border-radius: $badge-height/2;
+    min-width: $badge-height;
+    padding: 0 6px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: $danger;
+    display: inline-block;
+    color: #fff;
+    font-size: $small;
+    &.hide{
+      display: none;
+    }
+    @include generalAllColorBadge();
+  }
+
+  @include zoomInCenter();
+  &>.dot {
+    position: absolute;
+    right: $badge-dot-height/2;
+    top: -$badge-dot-height/2;
+    z-index: 1;
+    background-color: $danger;
+    width: $badge-dot-height;
+    height: $badge-dot-height;
+    border-radius: $badge-dot-height/2;
+    &.hide{
+      display: none;
+    }
+    @include generalAllColorBadgeDot();
+
+  }
+
+
+}

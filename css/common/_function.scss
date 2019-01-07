@@ -117,6 +117,24 @@
   }
 }
 
+@mixin generalAllColorBadge() {
+  @each $type in $types {
+    $background-color: map-get($colors, $type);
+    &.#{$type} {
+      background-color: $background-color;
+    }
+  }
+}
+
+@mixin generalAllColorBadgeDot() {
+  @each $type in $types {
+    $background-color: map-get($colors, $type);
+    &.#{$type} {
+      background-color: $background-color;
+    }
+  }
+}
+
 
 
 
