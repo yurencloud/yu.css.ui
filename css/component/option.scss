@@ -9,6 +9,7 @@
   color: $text;
   box-shadow: $box-shadow;
   padding-inline-start: 0;
+  padding: 0;
   &.overflow {
     overflow: auto;
     max-height: 140px;

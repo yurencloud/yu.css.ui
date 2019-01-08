@@ -87,6 +87,7 @@ $transition-time: .4s !default;
 
 .reset-ul{
   padding-inline-start: 0;
+  padding: 0;
   &>li{
     list-style: none;
   }
