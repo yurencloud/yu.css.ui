@@ -1,0 +1,41 @@
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.reset-ul {
+  padding-inline-start: 0; }
+  .reset-ul > li {
+    list-style: none; }
+
+.overflow {
+  overflow: auto;
+  max-height: 140px; }
+  .overflow::-webkit-scrollbar {
+    width: 4px; }
+  .overflow::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #E4E7ED; }
+
+.yu-rate {
+  height: 32px;
+  font-size: 0;
+  line-height: 32px; }
+  .yu-rate i {
+    transition: all 0.4s ease;
+    display: inline-block;
+    width: 28px;
+    height: 18px;
+    box-sizing: border-box;
+    font-size: 18px;
+    color: #C0C4CC; }
+  .yu-rate .icon-star {
+    color: #f8c422;
+    transform: scale(1.1); }
+  .yu-rate:hover {
+    cursor: pointer; }
+  .yu-rate span {
+    font-size: 14px;
+    color: #606266;
+    display: inline-block; }

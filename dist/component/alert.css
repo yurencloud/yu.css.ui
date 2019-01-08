@@ -1,0 +1,93 @@
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.reset-ul {
+  padding-inline-start: 0; }
+  .reset-ul > li {
+    list-style: none; }
+
+.overflow {
+  overflow: auto;
+  max-height: 140px; }
+  .overflow::-webkit-scrollbar {
+    width: 4px; }
+  .overflow::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #E4E7ED; }
+
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.reset-ul {
+  padding-inline-start: 0; }
+  .reset-ul > li {
+    list-style: none; }
+
+.overflow {
+  overflow: auto;
+  max-height: 140px; }
+  .overflow::-webkit-scrollbar {
+    width: 4px; }
+  .overflow::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #E4E7ED; }
+
+.yu-alert {
+  padding: 8px;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 14px;
+  margin-bottom: 14px;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #f2f3f3;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif; }
+  .yu-alert > i {
+    vertical-align: middle;
+    margin-right: 4px;
+    font-size: 14px; }
+  .yu-alert > .close {
+    vertical-align: middle;
+    line-height: 19px;
+    float: right;
+    color: #909399;
+    cursor: pointer;
+    margin: 0; }
+    .yu-alert > .close:hover {
+      color: #767980; }
+  .yu-alert.primary {
+    background-color: #f3f9ff;
+    color: #409EFF;
+    border-color: #a6d2ff; }
+  .yu-alert.success {
+    background-color: #eef8e9;
+    color: #67C23A;
+    border-color: #a3db87; }
+  .yu-alert.warning {
+    background-color: #fbf2d9;
+    color: #e6b322;
+    border-color: #f0d37e; }
+  .yu-alert.info {
+    background-color: #f2f3f3;
+    color: #909399;
+    border-color: #c5c7ca; }
+  .yu-alert.danger {
+    background-color: #feeded;
+    color: #F56C6C;
+    border-color: #fbcccc; }
+  .yu-alert.center {
+    text-align: center; }
+  .yu-alert > .title {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold; }
+  .yu-alert > .description {
+    margin: 0;
+    padding-top: 8px;
+    font-size: 12px; }
