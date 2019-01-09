@@ -27,6 +27,7 @@ body{
     width: 200px;
     padding: 0 $space;
     line-height: 30px;
+    border-right: 2px solid #fff;
     &:hover{
       background-color: $background;
       border-right: 2px solid $primary;
