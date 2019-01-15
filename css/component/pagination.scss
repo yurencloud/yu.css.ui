@@ -1,0 +1,91 @@
+@import "../common/varible";
+
+.yu-pagination {
+  font-size: $normal;
+  &>ul {
+    @extend .reset-ul;
+    display: inline-block;
+    user-select: none;
+    &>li {
+      font-size: $normal;
+      padding: 0 12px;
+      display: inline-block;
+      height: $height;
+      line-height: $height;
+      cursor: pointer;
+      color: $text;
+      transition: all $transition-time;
+      &:hover:not(.disabled) {
+        color: $primary;
+      }
+      &.disabled {
+        cursor: not-allowed;
+        background-color: #fff;
+        color: $text-lighter;
+      }
+      &.more {
+        span {
+          display: inline;
+        }
+        i {
+          display: none;
+        }
+        &:hover {
+          i {
+            display: inline-block;
+          }
+          span {
+            display: none;
+          }
+        }
+      }
+      &.current {
+        cursor: default;
+        background-color: $primary;
+        border-radius: $radius;
+        color: #fff;
+      }
+    }
+  }
+
+  &.border {
+    &>ul {
+      &>li {
+        background-color: #fff;
+        margin-right: $space-small;
+        border-radius: $radius;
+        border: 1px solid $border;
+        &:hover:not(.disabled) {
+          color: $primary;
+          border-color: $primary;
+        }
+        &.current {
+          background-color: $primary;
+          border-color: $primary;
+          color: white;
+        }
+      }
+    }
+  }
+
+  &>span{
+    margin-right: $space-small;
+  }
+  &>.yu-select.page-size{
+    display: inline-block;
+    input{
+      width: $pagination-page-size-width;
+    }
+    .yu-option{
+      width: $pagination-page-size-width;
+    }
+  }
+
+  &>.yu-input.goto{
+    display: inline-block;
+    input{
+      width: $pagination-goto-width;
+    }
+  }
+}
+
