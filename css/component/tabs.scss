@@ -1,0 +1,192 @@
+@import "../common/varible";
+
+.yu-tabs {
+  color: $text;
+  display: flex;
+  flex-direction: column;
+  ul {
+    @extend .reset-ul;
+    font-size: 0;
+    width: 100%;
+    border-bottom: 1px solid $border;
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    .line {
+      display: block;
+      height: $tabs-line-height;
+      width: 84px;
+      background-color: $primary;
+      position: absolute;
+      transition: all $transition-time ease;
+      bottom: 0;
+      margin: 0;
+    }
+    li {
+      font-size: $normal;
+      border-bottom: $tabs-line-height solid #fff;
+      transition: background-color $transition-time, color $transition-time;
+      display: inline-block;
+      height: $tabs-height;
+      line-height: $tabs-height;
+      padding: 0 $space;
+      text-align: center;
+      cursor: pointer;
+      &.active{
+        color: $primary;
+        border-color: $primary;
+        border-bottom: none;
+        i.icon-close{
+          font-size: $normal;
+          color: lighten($primary, 10);
+          &:hover{
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+
+  &.card {
+    ul {
+      height: $tabs-height;
+      border-left: none;
+      border-right: none;
+      li {
+        background-color: #fff;
+        border-right: 1px solid $border;
+        border-top: 1px solid $border;
+        border-bottom: 1px solid $border;
+        &:first-child {
+          border-left: 1px solid $border;
+          border-top-left-radius: $radius;
+        }
+        &:last-child {
+          border-top-right-radius: $radius;
+        }
+      }
+
+      li.active {
+        border-bottom: 1px solid #fff;
+        color: $primary;
+      }
+      .line {
+        display: none;
+      }
+    }
+  }
+
+  &.border-card {
+    ul {
+      height: $tabs-height;
+      background-color: lighten($info, 35);
+      border: 1px solid $border;
+      li {
+        display: inline-block;
+        box-sizing: border-box;
+        border-bottom: none;
+      }
+      .line {
+        display: none;
+      }
+      li.active {
+        background-color: #fff;
+        border-bottom: $tabs-line-height solid #fff;
+        border-left: 1px solid $border;
+        border-right: 1px solid $border;
+        color: $primary;
+        &:first-child {
+          border-left: none;
+        }
+      }
+    }
+  }
+}
+
+.yu-tabs.default.bottom {
+  display: flex;
+  flex-direction: column-reverse;
+  ul {
+    margin: 0;
+    position: relative;
+    border-top: 1px solid $border;
+    border-bottom: none;
+    .line {
+      display: block;
+      height: $tabs-line-height;
+      width: 84px;
+      background-color: $primary;
+      position: absolute;
+      transition: all $transition-time ease;
+      left: 0;
+      top:0;
+      margin: 0;
+    }
+    li {
+      border-top: $tabs-line-height solid #fff;
+    }
+    li.active {
+      border-bottom: none;
+    }
+  }
+}
+
+.yu-tabs.default.left {
+  display: flex;
+  ul {
+    max-width: 150px;
+    border: none;
+    text-align: center;
+    position: relative;
+    .line {
+      display: block;
+      height: $tabs-height;
+      width: $tabs-line-height;
+      background-color: $primary;
+      position: absolute;
+      transition: all $transition-time ease;
+      left: 0;
+      top: 0;
+      margin: 0;
+    }
+    li {
+      display: block;
+      border-bottom: none;
+      border-right: $tabs-line-height solid $border-light;
+    }
+    li.active {
+      color: $primary;
+    }
+  }
+}
+
+.yu-tabs.default.right {
+  display: flex;
+  flex-direction: row-reverse;
+  ul {
+    max-width: 150px;
+    border: none;
+    text-align: center;
+    position: relative;
+    .line {
+      display: block;
+      height: $tabs-height;
+      width: $tabs-line-height;
+      background-color: $primary;
+      position: absolute;
+      transition: all $transition-time ease;
+      left: 0;
+      top: 0;
+      margin: 0;
+    }
+    li {
+      display: block;
+      border-bottom: none;
+      border-left: $tabs-line-height solid $border-light;
+    }
+    li.active {
+      color: $primary;
+    }
+  }
+}
+

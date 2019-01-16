@@ -1,0 +1,75 @@
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.reset-ul {
+  padding-inline-start: 0;
+  padding: 0; }
+  .reset-ul > li {
+    list-style: none; }
+
+.overflow {
+  overflow: auto;
+  max-height: 140px; }
+  .overflow::-webkit-scrollbar {
+    width: 4px; }
+  .overflow::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #E4E7ED; }
+
+.yu-table {
+  border-collapse: collapse; }
+  .yu-table thead tr th {
+    color: #606266;
+    box-sizing: border-box;
+    padding: 14px 0;
+    border-bottom: 1px solid #E4E7ED; }
+    .yu-table thead tr th .cell {
+      padding: 0 8px;
+      text-align: left; }
+  .yu-table tfoot tr {
+    background-color: #f5f5f9; }
+    .yu-table tfoot tr td {
+      color: #606266;
+      box-sizing: border-box;
+      padding: 14px 0;
+      border-bottom: 1px solid #E4E7ED; }
+      .yu-table tfoot tr td .cell {
+        padding: 0 8px;
+        text-align: left; }
+  .yu-table tbody.stripe tr:nth-child(2n) {
+    background-color: #fafafa; }
+    .yu-table tbody.stripe tr:nth-child(2n):hover {
+      background-color: #f5f5f9; }
+  .yu-table tbody tr {
+    transition: background-color .4s; }
+    .yu-table tbody tr td {
+      color: #606266;
+      box-sizing: border-box;
+      padding: 14px 0;
+      border-bottom: 1px solid #E4E7ED; }
+      .yu-table tbody tr td .cell {
+        padding: 0 8px; }
+      .yu-table tbody tr td a {
+        color: #409EFF;
+        cursor: pointer; }
+        .yu-table tbody tr td a:hover {
+          color: #73b8ff; }
+    .yu-table tbody tr.primary {
+      background-color: #f3f9ff; }
+    .yu-table tbody tr.success {
+      background-color: #f4fbf1; }
+    .yu-table tbody tr.danger {
+      background-color: #feeded; }
+    .yu-table tbody tr.warning {
+      background-color: #fcf5e2; }
+    .yu-table tbody tr.info {
+      background-color: #f5f5f6; }
+    .yu-table tbody tr:hover {
+      background-color: #f5f5f9; }
+  .yu-table.celled {
+    border: 1px solid #E4E7ED; }
+    .yu-table.celled td, .yu-table.celled th {
+      border-right: 1px solid #E4E7ED; }

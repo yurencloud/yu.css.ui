@@ -1,11 +1,44 @@
 @import "../common/varible";
 
-.yu-collapse{
+.yu-collapse {
   color: $text;
-  &>div{
-    font-size: 0;
-  }
-  .yu-collapse-item:last-child{
+  font-size: 0;
+  & > .yu-collapse-item:last-child {
     border-bottom: 1px solid $border;
+  }
+}
+
+.yu-collapse-item {
+  width: 100%;
+  & > .wrap {
+    font-size: $normal;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: -1px;
+    display: inline-block;
+    & > .header {
+      border-top: 1px solid $border;
+      height: $collapse-header-height;
+      cursor: pointer;
+      line-height: $collapse-header-height;
+      & > i.icon-angle-right {
+        color: $text-light;
+        float: right;
+        cursor: pointer;
+        transition: all $transition-time ease;
+      }
+    }
+    & > .content {
+      width: 100%;
+      height: 0;
+      overflow: hidden;
+      transition: height $transition-time ease;
+    }
+    &.active > .header {
+      i.icon-angle-right {
+        transform: rotate(90deg);
+      }
+    }
   }
 }

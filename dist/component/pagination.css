@@ -1,0 +1,78 @@
+.unselectable {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+
+.reset-ul, .yu-pagination > ul {
+  padding-inline-start: 0;
+  padding: 0; }
+  .reset-ul > li, .yu-pagination > ul > li {
+    list-style: none; }
+
+.overflow {
+  overflow: auto;
+  max-height: 140px; }
+  .overflow::-webkit-scrollbar {
+    width: 4px; }
+  .overflow::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: #E4E7ED; }
+
+.yu-pagination {
+  font-size: 14px; }
+  .yu-pagination > ul {
+    display: inline-block;
+    user-select: none; }
+    .yu-pagination > ul > li {
+      font-size: 14px;
+      padding: 0 12px;
+      display: inline-block;
+      height: 28px;
+      line-height: 28px;
+      cursor: pointer;
+      color: #606266;
+      transition: all 0.4s; }
+      .yu-pagination > ul > li:hover:not(.disabled) {
+        color: #409EFF; }
+      .yu-pagination > ul > li.disabled {
+        cursor: not-allowed;
+        background-color: #fff;
+        color: #C0C4CC; }
+      .yu-pagination > ul > li.more span {
+        display: inline; }
+      .yu-pagination > ul > li.more i {
+        display: none; }
+      .yu-pagination > ul > li.more:hover i {
+        display: inline-block; }
+      .yu-pagination > ul > li.more:hover span {
+        display: none; }
+      .yu-pagination > ul > li.current {
+        cursor: default;
+        background-color: #409EFF;
+        border-radius: 4px;
+        color: #fff; }
+  .yu-pagination.border > ul > li {
+    background-color: #fff;
+    margin-right: 8px;
+    border-radius: 4px;
+    border: 1px solid #E4E7ED; }
+    .yu-pagination.border > ul > li:hover:not(.disabled) {
+      color: #409EFF;
+      border-color: #409EFF; }
+    .yu-pagination.border > ul > li.current {
+      background-color: #409EFF;
+      border-color: #409EFF;
+      color: white; }
+  .yu-pagination > span {
+    margin-right: 8px; }
+  .yu-pagination > .yu-select.page-size {
+    display: inline-block; }
+    .yu-pagination > .yu-select.page-size input {
+      width: 100px; }
+    .yu-pagination > .yu-select.page-size .yu-option {
+      width: 100px; }
+  .yu-pagination > .yu-input.goto {
+    display: inline-block; }
+    .yu-pagination > .yu-input.goto input {
+      width: 50px; }

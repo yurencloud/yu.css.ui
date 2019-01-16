@@ -1,0 +1,20 @@
+@import "../common/varible";
+
+.yu-breadcrumb{
+  font-size: 0;
+  color: $text;
+}
+
+.yu-breadcrumb-item{
+  font-size: $normal;
+  cursor: pointer;
+  &.current{
+    font-weight: bold;
+    color: $text-dark;
+  }
+  &>i{
+    color: $text-light;
+    padding: 0 $space-tiny;
+  }
+}
+
