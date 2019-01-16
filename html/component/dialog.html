@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yu.css.ui</title>
+    <link rel="stylesheet" href="../../dist/main.css">
+</head>
+<body>
+<div class="web-container">
+    <h4 class="web-title">普通用法</h4>
+    <div class="yu-button target">点击</div>
+    <div class="yu-dialog" style="display: none">
+        <div class="wrapper">
+            <div class="header">标题<i class="iconfont icon-close"></i></div>
+            <div class="content">内容</div>
+            <div class="other">其他</div>
+            <div class="button">
+                <button class="yu-button">取消</button>
+                <yu-button class="yu-button primary">确认</yu-button>
+            </div>
+        </div>
+    </div>
+    <h4 class="web-title">不同尺寸</h4>
+    <div class="yu-button target">小</div>
+    <div class="yu-dialog" style="display: none">
+        <div class="wrapper small">
+            <div class="header">标题<i class="iconfont icon-close"></i></div>
+            <div class="content">内容</div>
+        </div>
+    </div>
+    <div class="yu-button target">中</div>
+    <div class="yu-dialog" style="display: none">
+        <div class="wrapper">
+            <div class="header">标题<i class="iconfont icon-close"></i></div>
+            <div class="content">内容</div>
+        </div>
+    </div>
+    <div class="yu-button target">大</div>
+    <div class="yu-dialog" style="display: none">
+        <div class="wrapper large">
+            <div class="header">标题<i class="iconfont icon-close"></i></div>
+            <div class="content">内容</div>
+        </div>
+    </div>
+    <div class="yu-button target">全屏</div>
+    <div class="yu-dialog" style="display: none">
+        <div class="wrapper full">
+            <div class="header">标题<i class="iconfont icon-close"></i></div>
+            <div class="content">内容</div>
+        </div>
+    </div>
+
+    <h4 class="web-title">居中</h4>
+    <div class="yu-button target">点击</div>
+    <div class="yu-dialog" style="display: none">
+        <div class="wrapper center">
+            <div class="header">标题<i class="iconfont icon-close"></i></div>
+            <div class="content">内容</div>
+            <div class="other">其他</div>
+            <div class="button">
+                <button class="yu-button">取消</button>
+                <yu-button class="yu-button primary">确认</yu-button>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    var buttons = document.querySelectorAll('.yu-button.target');
+    var closes = document.querySelectorAll('.icon-close');
+    for(var f = 0; f < closes.length; f++){
+        buttons[f].addEventListener('click', function (e) {
+            e.target.nextElementSibling.style.display = 'block';
+        })
+    }
+
+    for(var i = 0; i < closes.length; i++){
+        closes[i].addEventListener('click', function (e) {
+            e.target.parentNode.parentNode.parentNode.style.display = 'none';
+        })
+    }
+
+</script>
+</html>

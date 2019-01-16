@@ -135,6 +135,18 @@
   }
 }
 
+@mixin generalAllColorTableTr() {
+  @each $type in $types {
+    $background-color: map-get($background-colors, $type);
+    &.#{$type} {
+      background-color: $background-color;
+      &:hover{
+        background-color: #fff;
+      }
+    }
+  }
+}
+
 
 
 

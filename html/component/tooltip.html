@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yu.css.ui</title>
+    <link rel="stylesheet" href="../../dist/main.css">
+</head>
+<style>
+    .yu-button{
+        height: 100px;
+        width: 100px;
+        margin: 0;
+    }
+</style>
+<body>
+<div class="web-container">
+    <h4 class="web-title">普通用法</h4>
+    <div class="yu-tooltip top-left">
+        <button class="yu-button" data-tooltip="hello world">左上</button>
+    </div>
+
+    <h4 class="web-title">12个方位</h4>
+    <div class="yu-tooltip top-left">
+        <button class="yu-button" data-tooltip="hello world">上左</button>
+    </div>
+    <div class="yu-tooltip top-center">
+        <button class="yu-button" data-tooltip="hello world">上中</button>
+    </div>
+    <div class="yu-tooltip top-right">
+        <button class="yu-button" data-tooltip="hello world">上右</button>
+    </div>
+
+    <div class="yu-tooltip right-top">
+        <button class="yu-button" data-tooltip="hello world">右上</button>
+    </div>
+    <div class="yu-tooltip right-center">
+        <button class="yu-button" data-tooltip="hello world">右中</button>
+    </div>
+    <div class="yu-tooltip right-bottom">
+        <button class="yu-button" data-tooltip="hello world">右下</button>
+    </div>
+
+    <div class="yu-tooltip bottom-left">
+        <button class="yu-button" data-tooltip="hello world">下左</button>
+    </div>
+    <div class="yu-tooltip bottom-center">
+        <button class="yu-button" data-tooltip="hello world">下中</button>
+    </div>
+    <div class="yu-tooltip bottom-right">
+        <button class="yu-button" data-tooltip="hello world">下右</button>
+    </div>
+
+    <div class="yu-tooltip left-top">
+        <button class="yu-button" data-tooltip="hello world">左上</button>
+    </div>
+    <div class="yu-tooltip left-center">
+        <button class="yu-button" data-tooltip="hello world">左中</button>
+    </div>
+    <div class="yu-tooltip left-bottom">
+        <button class="yu-button" data-tooltip="hello world">左下</button>
+    </div>
+
+    <h4 class="web-title">白色 浅色 light</h4>
+    <div class="yu-tooltip top-left light">
+        <button class="yu-button" data-tooltip="hello world">左上</button>
+    </div>
+
+    <h4 class="web-title">禁用hover显示，转用js控制显示</h4>
+    <div class="yu-tooltip top-left active-control">
+        <button class="yu-button" data-tooltip="hello world">点击</button>
+    </div>
+
+
+</div>
+</body>
+<script type="text/javascript">
+    document.querySelector('.active-control').addEventListener('click', function (e) {
+        e.currentTarget.classList.toggle('active', !e.currentTarget.classList.contains('active'))
+    })
+</script>
+</html>

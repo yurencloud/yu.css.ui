@@ -40,8 +40,8 @@
           display: none;
           &>.tooltip-angle {
             display: inline-block;
-            height: 8px;
-            width: 8px;
+            height: $tooltip-angle-length;
+            width: $tooltip-angle-length;
             background-color: $tooltip-dark;
             position: absolute;
             bottom: -4px;

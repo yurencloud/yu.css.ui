@@ -1,16 +1,18 @@
 @import "../common/varible";
+@import "../common/function";
 
 .yu-table {
   border-collapse: collapse;
   thead {
     tr {
       th {
+        font-size: $normal;
         color: $text;
         box-sizing: border-box;
-        padding: 14px 0;
+        padding: $space 0;
         border-bottom: 1px solid $border;
         .cell {
-          padding: 0 8px;
+          padding: 0 $space-small;
           text-align: left;
         }
       }
@@ -20,12 +22,13 @@
   tfoot {
     tr {
       td {
+        font-size: $normal;
         color: $text;
         box-sizing: border-box;
-        padding: 14px 0;
+        padding: $space 0;
         border-bottom: 1px solid $border;
         .cell {
-          padding: 0 8px;
+          padding: 0 $space-small;
           text-align: left;
         }
       }
@@ -46,12 +49,13 @@
 
     tr {
       td {
+        font-size: $normal;
         color: $text;
         box-sizing: border-box;
-        padding: 14px 0;
+        padding: $space 0;
         border-bottom: 1px solid $border;
         .cell {
-          padding: 0 8px;
+          padding: 0 $space-small;
         }
         a {
           color: $primary;
@@ -62,21 +66,7 @@
         }
       }
       transition: background-color .4s;
-      &.primary {
-        background-color: lighten($primary, 35);
-      }
-      &.success {
-        background-color: lighten($success, 47);
-      }
-      &.danger {
-        background-color: lighten($danger, 27);
-      }
-      &.warning {
-        background-color: lighten($warning, 42);
-      }
-      &.info {
-        background-color: lighten($info, 38);
-      }
+      @include generalAllColorTableTr();
       &:hover {
         background-color: $background;
       }
@@ -90,3 +80,22 @@
     border: 1px solid $border;
   }
 }
+
+.yu-fixed-table {
+  .fixed-box {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    border-bottom: 1px solid $border;
+    border-top: 1px solid $border;
+  }
+  .yu-table {
+    tbody {
+      tr:last-child {
+        td {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+

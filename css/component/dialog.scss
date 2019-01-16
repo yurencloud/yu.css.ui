@@ -1,0 +1,81 @@
+@import "../common/varible";
+
+.yu-dialog {
+  font-size: $normal;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: $dialog-background;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  .wrapper {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    top: 50%;
+    left: 50%;
+    border-radius: $radius/2;
+    &.small {
+      width: 15%;
+      top: 50%;
+      left: 50%;
+    }
+    &.large {
+      width: 50%;
+      top: 50%;
+      left: 50%;
+    }
+    &.full {
+      width: 100%;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      margin: 0;
+      box-sizing: border-box;
+      transform: translate(-50%, 0);
+    }
+
+    &.center {
+      text-align: center;
+      .button {
+        float: none;
+      }
+    }
+    padding: $space-large;
+    background-color: #fff;
+    opacity: 1;
+    .header {
+      margin-bottom: $space;
+      font-size: $large;
+      color: $text-dark;
+      i {
+        float: right;
+        cursor: pointer;
+        transition: color $transition-time ease;
+        &:hover {
+          color: $primary;
+        }
+      }
+    }
+    .content {
+      color: $text;
+      margin: $space 0;
+    }
+    .other {
+      color: $text;
+      margin: $space 0;
+    }
+    .button {
+      float: right;
+      .yu-button {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+body.lock {
+  height: 100%;
+  overflow: hidden;
+}
