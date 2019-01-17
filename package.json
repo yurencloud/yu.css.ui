@@ -1,7 +1,7 @@
 {
   "name": "yu.css.ui",
-  "version": "1.0.2",
-  "description": "new yurencloud project",
+  "version": "1.1.0",
+  "description": "纯CSS通用UI模块和组件",
   "main": "src/index.scss",
   "scripts": {
     "start": "live-server . --port=9000 --watch=.",
