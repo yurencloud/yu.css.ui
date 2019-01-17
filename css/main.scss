@@ -8,11 +8,11 @@ body{
   color: $text;
   font-size: $normal;
 }
-
 .web-index{
   margin: 20px;
   padding-inline-start: 0;
   padding: 0;
+  width: 200px;
   li{
     list-style: none;
     a{

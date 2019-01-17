@@ -1,0 +1,41 @@
+@import "../common/varible";
+@import "../common/function";
+@import "../common/animation";
+
+@include fadeIn();
+.yu-message {
+  font-family: $font-family;
+  padding: $space-small $space;
+  width: $message-width;
+  border-radius: $radius;
+  font-size: $normal;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-$message-width/2);
+  top: $space-large;
+  z-index: 1000;
+  box-sizing: border-box;
+
+  i.iconfont:not(.icon-close) {
+    font-size: $big;
+    margin-right: 5px;
+    vertical-align: top;
+  }
+  .content {
+    vertical-align: top;
+    display: inline-block;
+  }
+  .icon-close {
+    float: right;
+    cursor: pointer;
+  }
+  background-color: lighten($info, 35);
+  color: $info;
+  border: 1px solid lighten($info, 30);
+
+  @include generalAllColorMessage();
+
+  &.center {
+    text-align: center;
+  }
+}

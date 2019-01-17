@@ -64,11 +64,12 @@
 
 @mixin generalAllColorMessage() {
   @each $type in $types {
+    $background-color: map-get($background-colors, $type);
     $color: map-get($colors, $type);
     &.#{$type} {
-      background-color: lighten($color, 35);
+      background-color: $background-color;
       color: $color;
-      border: 1px solid lighten($color, 20);
+      border:1px solid lighten($color, 30);
     }
   }
 }

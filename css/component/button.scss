@@ -5,7 +5,7 @@
   height: $height;
   font-family: $font-family;
   font-size: $normal;
-  padding: $space-tiny $space;
+  padding: 0 $space;
   margin: 0 $space-small $space 0;
   display: inline-block;
   color: $text;
@@ -16,6 +16,7 @@
   cursor: pointer;
   transition: border $transition-time, color $transition-time;
   outline: none;
+  line-height: $height;
   &:not(.disabled):hover {
     border: 1px solid $primary;
     color: $primary;
@@ -45,20 +46,20 @@
     @include generalAllColorPlainButton();
   }
   &.large {
-    padding: $space-tiny $space-large;;
+    padding: 0 $space-large;;
     font-size: $large;
     height: $height-large;
-    &.circle{
+    line-height: $height-large;
+    &.circle {
       padding: 0;
       width: $height-large;
       height: $height-large;
     }
   }
   &.small {
-    padding-top: 2px;
-    padding-bottom: 2px;
     height: $height-small;
-    &.circle{
+    line-height: $height-small;
+    &.circle {
       padding: 0;
       width: $height-small;
       height: $height-small;

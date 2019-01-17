@@ -107,32 +107,48 @@ $transition-time: .4s !default;
 
 // 长宽一样，为length, 只分宽或高，用width和height
 $input-length: 175px !default;
+
 $switch-width: 40px !default;
 $switch-height: 20px !default;
+
 $slider-bar-length: 4px !default;
 $slider-circle-length: 14px !default;
+
 $date-picker-width: 330px !default;
 $data-picker-circle-length: 24px !default;
 // 等级星星颜色
 $rate-star: #f8c422 !default;
-// tooltip深色背景色
-$tooltip-dark: #373737 !default;
+
 $dialog-background: rgba(0, 0, 0, 0.4) !default;
+
 $file-list-picture-length: 100px !default;
 $file-list-title-picture-length: 60px !default;
 $file-list-title-picture-inline-width: 200px !default;
+
 $field-label-width: 80px !default;
+
 $steps-circle-length: 26px !default;
 $steps-small-circle-length: 18px !default;
 $steps-vertical-height: 60px !default;
+
 $badge-height: 20px !default;
 $badge-dot-height: 8px !default;
+
 $pagination-page-size-width: 100px !default;
 $pagination-goto-width: 50px !default;
+
 $collapse-header-height: 40px !default;
+
 $tabs-line-height: 2px!default;
 $tabs-height: 40px!default;
+
+$tooltip-dark: #373737 !default;
 $tooltip-height: 40px!default;
 $tooltip-angle-length: 8px!default;
 
+$notification-width: 300px!default;
+$notification-icon-font-size: 30px!default;
+
+
+$message-width: 300px!default;
 

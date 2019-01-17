@@ -6,85 +6,99 @@
 .yu-notification {
   display: inline-block;
   font-family: $font-family;
-  .notification {
-    position: fixed;
-    z-index: 9999;
-    width: 330px;
+  position: fixed;
+  z-index: 1000;
+  & > .notice {
+    width: $notification-width;
+    display: block;
     background-color: #fff;
     box-sizing: border-box;
-    right: -400px;
-    padding: 10px 20px;
+    padding: $space;
     box-shadow: $box-shadow;
-    margin-top: 20px;
-    margin-right: 20px;
-    transition: all 0.3s linear;
-    .notification-content {
+    margin-bottom: $space;
+    transition: all $transition-time ease;
+    border-radius: $radius;
+    & > .content {
       display: inline-block;
-    }
-    .notification-title {
-      font-size: $large;
-      font-weight: 800;
-      margin-bottom: 10px;
-      i {
-        position: absolute;
-        cursor: pointer;
-        right: 20px;
-        top: 10px;
+      vertical-align: top;
+      position: relative;
+      & > .message {
+        font-size: $large;
+        margin-bottom: $space-small;
+      }
+
+      & > .description {
+        margin-bottom: $space-small;
+        font-size: $normal;
+        color: $text;
       }
     }
-    .notification-content {
-      margin-bottom: 10px;
-      font-size: $normal;
-      color: $text;
+
+    & > i.icon-close {
+      position: absolute;
+      right: $space;
+      top: $space;
     }
-    .notification-icon {
+    & > i:not(.icon-close) {
+      vertical-align: top;
       display: inline-block;
-      padding-right: 10px;
-      position: relative;
-      top: -25px;
-      left: 0;
-      i {
-        font-size: 24px;
+      font-size: $notification-icon-font-size;
+      color: $info;
+      margin-right: $space-small;
+      &.icon-check-circle {
+        color: $success;
+      }
+      &.icon-warning-circle {
+        color: $warning;
+      }
+      &.icon-close-circle {
+        color: $danger;
+      }
+      &.icon-information {
         color: $info;
       }
     }
   }
-  .notification-btn {
-    display: inline-block;
-  }
-  .notification.top-right {
-    top: 0;
-  }
-  .notification.active {
+
+  &.top-right {
+    top: $space-large;
     right: 0;
+    & > .notice {
+      transform: translateX($notification-width);
+      &.active {
+        transform: translateX(-$space-large);
+      }
+    }
   }
-  .notification.top-left {
-    left: -400px;
-    margin-left: 20px;
-    margin-right: 0;
-    top: 0;
-  }
-  .notification.top-left.active {
+  &.top-left {
+    top: $space-large;
     left: 0;
+    & > .notice {
+      transform: translateX(-$notification-width);
+      &.active {
+        transform: translateX($space-large);
+      }
+    }
   }
-  .notification.bottom-right {
-    bottom: 0;
-    margin-bottom: 20px;
-    margin-top: 0;
-    right: -400px;
-  }
-  .notification.bottom-right.active {
+  &.bottom-right {
+    bottom: $space-large;
     right: 0;
+    & > .notice {
+      transform: translateX($notification-width);
+      &.active {
+        transform: translateX(-$space-large);
+      }
+    }
   }
-  .notification.bottom-left {
-    bottom: 0;
-    margin-bottom: 20px;
-    margin-top: 0;
-    left: -400px;
-    margin-right: 0;
-    margin-left: 20px;
-  }
-  .notification.bottom-left.active {
+  &.bottom-left {
+    bottom: $space-large;
     left: 0;
+    & > .notice {
+      transform: translateX(-$notification-width);
+      &.active {
+        transform: translateX($space-large);
+      }
+    }
   }
 }
+

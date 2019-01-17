@@ -23,8 +23,7 @@
 @import "component/alert";
 @import "component/steps";
 @import "component/notification";
-// message 跳过
-// message-box 跳过
+// message-box 就是dialog的具体应用
 @import "component/tag";
 @import "component/progress";
 @import "component/badge";
@@ -35,4 +34,5 @@
 @import "component/table";
 @import "component/dialog";
 @import "component/tooltip";
+@import "component/message";
 
