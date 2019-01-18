@@ -3,6 +3,8 @@
 // 使用尽量少的class，尽量多的元素标签来表示元素
 // 使用中横线命名，名字若归属于某项事物的，则以 ： 事物-属性来命名，这样以便ide提示和搜索。
 
+// 字体图标路径
+$iconfont-path: '/dist/common/iconfont' !default;
 // 背景颜色
 $primary: #409EFF !default;
 $success: #67C23A !default;
