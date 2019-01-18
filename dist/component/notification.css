@@ -1,23 +1,3 @@
-.unselectable {
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  -ms-user-select: none;
-  user-select: none; }
-
-.reset-ul {
-  padding-inline-start: 0; }
-  .reset-ul > li {
-    list-style: none; }
-
-.overflow {
-  overflow: auto;
-  max-height: 140px; }
-  .overflow::-webkit-scrollbar {
-    width: 4px; }
-  .overflow::-webkit-scrollbar-thumb {
-    border-radius: 2px;
-    background-color: #E4E7ED; }
-
 .fade-enter, .fade-leave-active, .fade-linear-enter, .fade-linear-leave, .fade-linear-leave-active, .fade-linear-enter, .fade-linear-leave, .fade-linear-leave-active {
   opacity: 0; }
 
@@ -27,69 +7,73 @@
 
 .yu-notification {
   display: inline-block;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif; }
-  .yu-notification .notification {
-    position: fixed;
-    z-index: 9999;
-    width: 330px;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+  position: fixed;
+  z-index: 1000; }
+  .yu-notification > .notice {
+    width: 300px;
+    display: block;
     background-color: #fff;
     box-sizing: border-box;
-    right: -400px;
-    padding: 10px 20px;
+    padding: 14px;
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
-    margin-right: 20px;
-    transition: all 0.3s linear; }
-    .yu-notification .notification .notification-content {
-      display: inline-block; }
-    .yu-notification .notification .notification-title {
-      font-size: 16px;
-      font-weight: 800;
-      margin-bottom: 10px; }
-      .yu-notification .notification .notification-title i {
-        position: absolute;
-        cursor: pointer;
-        right: 20px;
-        top: 10px; }
-    .yu-notification .notification .notification-content {
-      margin-bottom: 10px;
-      font-size: 14px;
-      color: #606266; }
-    .yu-notification .notification .notification-icon {
+    margin-bottom: 14px;
+    transition: all 0.4s ease;
+    border-radius: 4px; }
+    .yu-notification > .notice > .content {
       display: inline-block;
-      padding-right: 10px;
-      position: relative;
-      top: -25px;
-      left: 0; }
-      .yu-notification .notification .notification-icon i {
-        font-size: 24px;
+      vertical-align: top;
+      position: relative; }
+      .yu-notification > .notice > .content > .message {
+        font-size: 16px;
+        margin-bottom: 8px; }
+      .yu-notification > .notice > .content > .description {
+        margin-bottom: 8px;
+        font-size: 14px;
+        color: #606266; }
+    .yu-notification > .notice > i.icon-close {
+      position: absolute;
+      right: 14px;
+      top: 14px; }
+    .yu-notification > .notice > i:not(.icon-close) {
+      vertical-align: top;
+      display: inline-block;
+      font-size: 30px;
+      color: #909399;
+      margin-right: 8px; }
+      .yu-notification > .notice > i:not(.icon-close).icon-check-circle {
+        color: #67C23A; }
+      .yu-notification > .notice > i:not(.icon-close).icon-warning-circle {
+        color: #e6b322; }
+      .yu-notification > .notice > i:not(.icon-close).icon-close-circle {
+        color: #F56C6C; }
+      .yu-notification > .notice > i:not(.icon-close).icon-information {
         color: #909399; }
-  .yu-notification .notification-btn {
-    display: inline-block; }
-  .yu-notification .notification.top-right {
-    top: 0; }
-  .yu-notification .notification.active {
+  .yu-notification.top-right {
+    top: 22px;
     right: 0; }
-  .yu-notification .notification.top-left {
-    left: -400px;
-    margin-left: 20px;
-    margin-right: 0;
-    top: 0; }
-  .yu-notification .notification.top-left.active {
+    .yu-notification.top-right > .notice {
+      transform: translateX(300px); }
+      .yu-notification.top-right > .notice.active {
+        transform: translateX(-22px); }
+  .yu-notification.top-left {
+    top: 22px;
     left: 0; }
-  .yu-notification .notification.bottom-right {
-    bottom: 0;
-    margin-bottom: 20px;
-    margin-top: 0;
-    right: -400px; }
-  .yu-notification .notification.bottom-right.active {
+    .yu-notification.top-left > .notice {
+      transform: translateX(-300px); }
+      .yu-notification.top-left > .notice.active {
+        transform: translateX(22px); }
+  .yu-notification.bottom-right {
+    bottom: 22px;
     right: 0; }
-  .yu-notification .notification.bottom-left {
-    bottom: 0;
-    margin-bottom: 20px;
-    margin-top: 0;
-    left: -400px;
-    margin-right: 0;
-    margin-left: 20px; }
-  .yu-notification .notification.bottom-left.active {
+    .yu-notification.bottom-right > .notice {
+      transform: translateX(300px); }
+      .yu-notification.bottom-right > .notice.active {
+        transform: translateX(-22px); }
+  .yu-notification.bottom-left {
+    bottom: 22px;
     left: 0; }
+    .yu-notification.bottom-left > .notice {
+      transform: translateX(-300px); }
+      .yu-notification.bottom-left > .notice.active {
+        transform: translateX(22px); }
