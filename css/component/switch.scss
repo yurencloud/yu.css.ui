@@ -14,7 +14,7 @@
     vertical-align: middle;
   }
   & > label {
-    @extend .unselectable;
+    @include unselectable();
     font-size: $normal;
     vertical-align: middle;
     margin: 0 $space;

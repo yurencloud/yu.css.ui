@@ -129,49 +129,6 @@
     padding-right: 0;
   }
 
-  & > .options {
-    background-color: #fff;
-    position: absolute;
-    top: 35px;
-    z-index: 1000;
-    min-width: 175px;
-    border: 1px solid $border;
-    margin-top: 8px;
-    border-radius: 4px;
-    color: $text;
-    box-shadow: $box-shadow;
-    &.overflow {
-      overflow: auto;
-      max-height: 150px;
-      &::-webkit-scrollbar {
-        width: 4px
-      }
-      &::-webkit-scrollbar-thumb {
-        border-radius: 2px;
-        background-color: $border;
-      }
-    }
-    .option {
-      font-size: $normal;
-      padding: 12px 8px;
-      &:hover {
-        background-color: $background;
-      }
-      &.active {
-        background-color: $background;
-        font-weight: bold;
-        color: $primary;
-      }
-      &.hide {
-        display: none;
-      }
-      &.disabled {
-        color: $text-lighter;
-        cursor: not-allowed;
-      }
-    }
-  }
-
   & > .yu-button.prepend {
     margin: 0;
     border-radius: $radius 0 0 $radius;

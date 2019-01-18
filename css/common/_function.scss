@@ -148,6 +148,34 @@
   }
 }
 
+// 双击不想选中，可以继承此类
+@mixin unselectable() {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@mixin reset-ul() {
+  padding-inline-start: 0;
+  padding: 0;
+  &>li{
+    list-style: none;
+  }
+}
+
+@mixin overflow() {
+  overflow: auto;
+  max-height: 140px;
+  &::-webkit-scrollbar {
+    width: 4px
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: $border;
+  }
+}
+
 
 
 

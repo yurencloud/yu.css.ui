@@ -1,11 +1,12 @@
 @import "../common/varible";
+@import "../common/function";
 
 .yu-tabs {
   color: $text;
   display: flex;
   flex-direction: column;
   ul {
-    @extend .reset-ul;
+    @include reset-ul();
     font-size: 0;
     width: 100%;
     border-bottom: 1px solid $border;

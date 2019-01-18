@@ -1,9 +1,10 @@
 @import "../common/varible";
+@import "../common/function";
 
 .yu-pagination {
   font-size: $normal;
   &>ul {
-    @extend .reset-ul;
+    @include reset-ul();
     display: inline-block;
     user-select: none;
     &>li {

@@ -1,4 +1,5 @@
 @import "../common/varible";
+@import "../common/function";
 
 .yu-checkbox {
   font-family: $font-family;
@@ -8,7 +9,7 @@
   margin-right: $space-small;
 
   & > span {
-    @extend .unselectable;
+    @include unselectable();
   }
   & > .checkbox {
     transition: background-color $transition-time;

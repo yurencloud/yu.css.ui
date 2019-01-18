@@ -5,7 +5,7 @@
 ul.yu-file-list {
   font-size: $normal;
   color: $text;
-  @extend .reset-ul;
+  @include reset-ul();
   &>li{
     font-size: 0;
     &>span{

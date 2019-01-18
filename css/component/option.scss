@@ -1,4 +1,5 @@
 @import "../common/varible";
+@import "../common/function";
 
 .yu-option {
   background-color: #fff;
@@ -8,21 +9,11 @@
   border-radius: $radius;
   color: $text;
   box-shadow: $box-shadow;
-  padding-inline-start: 0;
-  padding: 0;
+  @include reset-ul();
   &.overflow {
-    overflow: auto;
-    max-height: 140px;
-    &::-webkit-scrollbar {
-      width: 4px
-    }
-    &::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: $border;
-    }
+    @include overflow();
   }
   & > li {
-    list-style: none;
     box-sizing: border-box;
     min-height: $height;
     font-size: $normal;
