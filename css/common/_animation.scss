@@ -19,7 +19,7 @@
     &:hover {
       cursor: pointer;
     }
-    &:focus {
+    &:focus:not(.disabled) {
       border: 1px solid $primary;
       & + span.suffix > i.icon-angle-down {
         transform: rotate(-180deg);
