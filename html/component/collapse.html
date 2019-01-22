@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>yu.css.ui</title>
-    <link rel="stylesheet" href="../../dist/main.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../../build/component/collapse.css">
 </head>
 <body>
 <div class="web-container">
@@ -51,7 +52,7 @@
 </body>
 <script type="text/javascript">
     var on = false
-    document.querySelector('.yu-collapse-item').addEventListener('click',function (e) {
+    document.querySelector('.yu-collapse-item').addEventListener('click', function (e) {
         e.currentTarget.querySelector('.content').style.height = on ? '0' : '50px';
         e.currentTarget.querySelector('.content').parentNode.classList.toggle('active', !on);
         on = !on;

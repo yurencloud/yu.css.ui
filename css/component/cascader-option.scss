@@ -1,11 +1,13 @@
 @import "../common/varible";
 @import "../common/function";
+@import "option";
 
 .yu-cascader-option {
   border-radius: $radius;
   box-shadow: $box-shadow;
   border: 1px solid $border;
   display: inline-block;
+  font-size: 0;
   & > .yu-option {
     @include overflow();
     display: inline-block;

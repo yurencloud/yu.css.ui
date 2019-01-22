@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>yu.css.ui</title>
-    <link rel="stylesheet" href="../../dist/main.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../../build/component/steps.css">
 </head>
 <body>
 <div class="web-container">
@@ -228,7 +229,7 @@
 </div>
 </body>
 <script type="text/javascript">
-    document.querySelector('.yu-button').addEventListener('click',function () {
+    document.querySelector('.yu-button').addEventListener('click', function () {
         document.getElementById('target').children[1].className = 'yu-steps-item finished';
         document.getElementById('target').children[2].className = 'yu-steps-item active';
     })

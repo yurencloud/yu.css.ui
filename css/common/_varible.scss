@@ -2,6 +2,7 @@
 // 所有的子元素都必须要有&>或&来限制，避免递归浪费css性能
 // 使用尽量少的class，尽量多的元素标签来表示元素
 // 使用中横线命名，名字若归属于某项事物的，则以 ： 事物-属性来命名，这样以便ide提示和搜索。
+// 不重复引入组件，比如select是由input和option组件，再加一些修正样式组成，但input,option不需要在select中引入，以免index.scss重复引入input和option。所以如果要单独使用select，则需要引入input, option组件
 
 // 字体图标路径
 $iconfont-path: '/dist/common/iconfont' !default;

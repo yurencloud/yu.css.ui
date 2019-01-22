@@ -3,6 +3,7 @@ html/
 index.html
 dist/main.css
 css/main.scss
+build/
 
 # Created by .ignore support plugin (hsz.mobi)
 ### JetBrains template

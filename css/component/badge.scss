@@ -6,9 +6,10 @@
   position: relative;
   display: inline-block;
   margin-right: $space-small;
+  font-size: 0;
   &>.badge {
     position: absolute;
-    right: -$badge-height/8;
+    right: -$badge-height/2;
     top: -$badge-height/2;
     z-index: 1;
     height: $badge-height;
@@ -31,7 +32,7 @@
   @include zoomInCenter();
   &>.dot {
     position: absolute;
-    right: $badge-dot-height/2;
+    right: -$badge-dot-height/2;
     top: -$badge-dot-height/2;
     z-index: 1;
     background-color: $danger;

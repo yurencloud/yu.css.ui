@@ -5,7 +5,8 @@
   "main": "src/index.scss",
   "scripts": {
     "start": "live-server . --port=9000 --watch=.",
-    "watch": "node-sass  -w -r css -o dist"
+    "watch": "node-sass  -w -r css -o dist",
+    "build": "gulp"
   },
   "keywords": [
     "yurencloud",
@@ -20,5 +21,9 @@
     "url": "http://www.yurencloud.com"
   },
   "license": "MIT",
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-cssnano": "^2.1.3"
+  }
 }

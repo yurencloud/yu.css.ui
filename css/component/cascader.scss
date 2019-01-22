@@ -1,9 +1,11 @@
 @import "../common/varible";
 @import "../common/animation";
+@import "input";
 @import "cascader-option";
 
 .yu-cascader {
   @include zoomInTop();
+  font-size: 0;
   position: relative;
   @include angleAnimation();
   // 用于和button或input组合

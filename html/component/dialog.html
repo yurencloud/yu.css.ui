@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>yu.css.ui</title>
-    <link rel="stylesheet" href="../../dist/main.css">
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../../build/component/dialog.css">
 </head>
 <body>
 <div class="web-container">
@@ -68,13 +69,13 @@
 <script type="text/javascript">
     var buttons = document.querySelectorAll('.yu-button.target');
     var closes = document.querySelectorAll('.icon-close');
-    for(var f = 0; f < closes.length; f++){
+    for (var f = 0; f < closes.length; f++) {
         buttons[f].addEventListener('click', function (e) {
             e.target.nextElementSibling.style.display = 'block';
         })
     }
 
-    for(var i = 0; i < closes.length; i++){
+    for (var i = 0; i < closes.length; i++) {
         closes[i].addEventListener('click', function (e) {
             e.target.parentNode.parentNode.parentNode.style.display = 'none';
         })
