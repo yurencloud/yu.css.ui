@@ -1,4 +1,5 @@
 @import "../common/varible";
+@import "../common/function";
 
 .yu-collapse {
   color: $text;
@@ -22,10 +23,11 @@
       height: $collapse-header-height;
       cursor: pointer;
       line-height: $collapse-header-height;
-      & > i.icon-angle-right {
-        color: $text-light;
+      &:not(.hide-icon):after {
+        @include contentIcon();
+        content: $icon-angle-right;
         float: right;
-        cursor: pointer;
+        color: $text-lighter;
         transition: all $transition-time ease;
       }
     }
@@ -35,10 +37,8 @@
       overflow: hidden;
       transition: height $transition-time ease;
     }
-    &.active > .header {
-      i.icon-angle-right {
-        transform: rotate(90deg);
-      }
+    &.active > .header:after {
+      transform: rotate(90deg);
     }
   }
 }

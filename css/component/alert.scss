@@ -15,16 +15,16 @@
     vertical-align: middle;
     margin-right: $space-tiny;
     font-size: $normal;
-  }
-  & > .close {
-    vertical-align: middle;
-    line-height: 19px;
-    float: right;
-    color: $text-light;
-    cursor: pointer;
-    margin: 0;
-    &:hover {
-      color: darken($text-light, 10);
+    &.icon-close{
+      vertical-align: middle;
+      line-height: 19px;
+      float: right;
+      color: $text-light;
+      cursor: pointer;
+      margin: 0;
+      &:hover {
+        color: darken($text-light, 10);
+      }
     }
   }
   @include generalAllColorAlert();

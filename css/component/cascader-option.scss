@@ -10,8 +10,10 @@
   font-size: 0;
   & > .yu-option {
     @include overflow();
+    height: $cascader-option-height;
+    vertical-align: top;
     display: inline-block;
-    max-height: 200px;
+    max-height: $cascader-option-height;
     border: none;
     border-right: 1px solid $border;
     border-radius: 0;
@@ -22,9 +24,14 @@
     &:last-child {
       border-radius: 0 $radius $radius 0;
     }
-    & > .option > .icon-angle-right {
-      float: right;
-      color: $text;
+    // 级联本身就是默认多选的，所以默认有图标，如果是最后一项，则没图标
+    & > li:not(.last) {
+      &:after{
+        @include contentIcon();
+        content: $icon-angle-right;
+        float: right;
+        color: $text-lighter;
+      }
     }
   }
 }

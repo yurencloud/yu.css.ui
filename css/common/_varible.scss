@@ -4,6 +4,7 @@
 // 使用中横线命名，名字若归属于某项事物的，则以 ： 事物-属性来命名，这样以便ide提示和搜索。
 // 不重复引入组件，比如select是由input和option组件，再加一些修正样式组成，但input,option不需要在select中引入，以免index.scss重复引入input和option。所以如果要单独使用select，则需要引入input, option组件
 // 不可单独拿出来使用的组件，无需单独一个文件，比如button-group。而option是可以单独拿出来使用的，则需要单独的文件。
+// 没有特殊用处，无需事件，不允许用户修改的装饰性图标，使用after或before来引入图标
 
 // 字体图标路径,绝对路径
 $iconfont-path: '/dist/iconfont' !default;
@@ -86,6 +87,7 @@ $input-length: 175px !default;
 
 $switch-width: 40px !default;
 $switch-height: 20px !default;
+$cascader-option-height: 200px !default;
 
 $slider-bar-length: 4px !default;
 $slider-circle-length: 14px !default;
@@ -124,7 +126,12 @@ $tooltip-angle-length: 8px!default;
 
 $notification-width: 300px!default;
 $notification-icon-font-size: 30px!default;
+$dialog-small-width: 15%!default;
+$dialog-large-width: 50%!default;
 
 
 $message-width: 300px!default;
+
+// iconfont 对应的 content 的内容
+$icon-angle-right: "\e608" !default;
 

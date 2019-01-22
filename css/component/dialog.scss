@@ -18,12 +18,12 @@
     left: 50%;
     border-radius: $radius/2;
     &.small {
-      width: 15%;
+      width: $dialog-small-width;
       top: 50%;
       left: 50%;
     }
     &.large {
-      width: 50%;
+      width: $dialog-large-width;
       top: 50%;
       left: 50%;
     }
