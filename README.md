@@ -100,7 +100,7 @@ $primary: #67C23A;
 
 ## 二、使用CDN引入
 
-目前可以通过 unpkg.com/yu.css.ui 获取到最新版本的资源，在页面上引入 css 文件即可开始使用。
+目前可以通过 [unpkg.com/yu.css.ui](https://unpkg.com/yu.css.ui/dist/index.css) 获取到最新版本的资源，在页面上引入 css 文件即可开始使用。
 
 
 <link rel="stylesheet" href="https://unpkg.com/yu.css.ui/dist/index.css">
