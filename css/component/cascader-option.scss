@@ -8,6 +8,7 @@
   border: 1px solid $border;
   display: inline-block;
   font-size: 0;
+
   & > .yu-option {
     @include overflow();
     height: $cascader-option-height;

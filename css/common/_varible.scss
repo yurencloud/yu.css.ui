@@ -5,6 +5,7 @@
 // 不重复引入组件，比如select是由input和option组件，再加一些修正样式组成，但input,option不需要在select中引入，以免index.scss重复引入input和option。所以如果要单独使用select，则需要引入input, option组件
 // 不可单独拿出来使用的组件，无需单独一个文件，比如button-group。而option是可以单独拿出来使用的，则需要单独的文件。
 // 没有特殊用处，无需事件，不允许用户修改的装饰性图标，使用after或before来引入图标
+// 只写通用动画，专门用于vue或专门用于react中的动画，他们自己写。
 
 // 字体图标路径,绝对路径
 $iconfont-path: '/dist/iconfont' !default;

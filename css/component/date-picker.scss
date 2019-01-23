@@ -4,5 +4,10 @@
 @import "date-picker-option";
 
 .yu-date-picker {
+  @include SelectOptionTransition();
 
+  &>.yu-date-picker-option{
+    position: absolute;
+    z-index: 1000;
+  }
 }

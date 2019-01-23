@@ -16,7 +16,7 @@
                 <i class="iconfont icon-angle-down"></i>
             </span>
         </div>
-        <ul class="yu-option">
+        <ul class="yu-option transition">
             <li>猫</li>
             <li>猫</li>
             <li>猫</li>
@@ -48,7 +48,7 @@
                 <i class="iconfont icon-angle-down"></i>
             </span>
         </div>
-        <ul class="yu-option">
+        <ul class="yu-option transition">
             <li>
                 <h2>hello</h2>
             </li>
@@ -59,4 +59,15 @@
     </div>
 </div>
 </body>
+<script>
+    var selectActive = false;
+    var yuOption = document.querySelector('.yu-option')
+    function doTransition() {
+        yuOption.classList.toggle('transition-enter', !selectActive)
+        yuOption.classList.toggle('transition-leave', selectActive)
+        selectActive = !selectActive;
+    }
+    document.querySelector('input').addEventListener('focus', doTransition);
+    document.querySelector('input').addEventListener('blur', doTransition);
+</script>
 </html>

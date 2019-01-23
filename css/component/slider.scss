@@ -38,13 +38,14 @@
           text-align: center;
           min-width: 20px;
           display: none;
-          &>.tooltip-angle {
+          &:after{
+            content: '';
             display: inline-block;
             height: $tooltip-angle-length;
             width: $tooltip-angle-length;
             background-color: $tooltip-dark;
             position: absolute;
-            bottom: -4px;
+            bottom: -$tooltip-angle-length/2;
             left: $slider-circle-length;
             transform: rotate(45deg);
           }
@@ -87,5 +88,8 @@
     &:hover {
       cursor: pointer;
     }
+  }
+  input{
+    display: none;
   }
 }

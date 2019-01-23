@@ -4,9 +4,10 @@
 @import "option";
 
 .yu-select {
-  @include zoomInTop();
-  position: relative;
   @include angleAnimation();
+  @include SelectOptionTransition();
+
+  position: relative;
   // 用于和button或input组合
   &.prepend {
     display: inline-block;

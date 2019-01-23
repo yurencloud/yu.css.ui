@@ -2,9 +2,7 @@
 @import "../common/animation";
 
 .yu-date-picker-option {
-  @include zoomInTop();
   display: inline-block;
-  position: relative;
   width: $date-picker-width;
   & > .head {
     text-align: center;
@@ -62,14 +60,14 @@
         font-weight: normal;
         color: $text;
         vertical-align: middle;
-        &:hover:not(.otherMonth):not(.disabled) {
+        &:hover:not(.other-month):not(.disabled) {
           color: $primary;
           cursor: pointer;
         }
-        &.otherMonth {
+        &.other-month {
           color: $text-lighter;
         }
-        &.currentDay {
+        &.current-day {
           color: $primary;
           font-weight: bold;
         }

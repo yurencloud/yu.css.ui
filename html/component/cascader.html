@@ -17,7 +17,7 @@
                 <i class="iconfont icon-angle-down"></i>
             </span>
         </div>
-        <div class="yu-cascader-option">
+        <div class="yu-cascader-option transition">
             <ul class="yu-option">
                 <li>猫 </li>
                 <li class="active">猫</li>
@@ -38,6 +38,7 @@
             </ul>
         </div>
     </div>
+    <div style="height: 200px"></div>
     <h4 class="web-title">多项级联选项</h4>
     <div class="yu-cascader">
         <div class="yu-input">
@@ -85,7 +86,7 @@
             </ul>
         </div>
     </div>
-
+    <div style="height: 200px"></div>
 
     <h4 class="web-title">级联选项(溢出)</h4>
     <div class="yu-cascader">
@@ -122,6 +123,7 @@
             </ul>
         </div>
     </div>
+    <div style="height: 200px"></div>
 
     <h4 class="web-title">禁用</h4>
     <div class="yu-cascader">
@@ -137,4 +139,18 @@
 
 </div>
 </body>
+<script>
+    var selectActive = false;
+    var cascader = document.querySelector('.yu-cascader-option.transition')
+    document.querySelector('input').addEventListener('focus', function (e) {
+        cascader.classList.toggle('transition-enter', !selectActive)
+        cascader.classList.toggle('transition-leave', selectActive)
+        selectActive = !selectActive;
+    })
+    document.querySelector('input').addEventListener('blur', function (e) {
+        cascader.classList.toggle('transition-enter', !selectActive)
+        cascader.classList.toggle('transition-leave', selectActive)
+        selectActive = !selectActive;
+    })
+</script>
 </html>

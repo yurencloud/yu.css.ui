@@ -19,7 +19,7 @@
                 <i class="iconfont icon-close-circle"></i>
             </span>
         </div>
-        <div class="yu-date-picker-option">
+        <div class="yu-date-picker-option transition">
             <div class="head">
                 <a class="left"><i class="iconfont icon-angle-double-left"></i></a>
                 <div>
@@ -75,6 +75,8 @@
             </table>
         </div>
     </div>
+    <div style="height: 300px;"></div>
+
     <h4 class="web-title">月份选择器</h4>
     <div class="yu-date-picker">
         <div class="yu-input">
@@ -142,6 +144,8 @@
             </table>
         </div>
     </div>
+    <div style="height: 300px;"></div>
+
     <h4 class="web-title">日期选择器</h4>
     <div class="yu-date-picker">
         <div class="yu-input">
@@ -190,13 +194,13 @@
                     <td>
                         <div>4</div>
                     </td>
-                    <td class="currentDay">
+                    <td class="current-day">
                         <div>5</div>
                     </td>
-                    <td class="otherMonth">
+                    <td class="other-month">
                         <div>6</div>
                     </td>
-                    <td class="otherMonth">
+                    <td class="other-month">
                         <div>7</div>
                     </td>
                 </tr>
@@ -281,8 +285,18 @@
             </table>
         </div>
     </div>
+    <div style="height: 500px;"></div>
 </div>
 </body>
 <script type="text/javascript">
+    var selectActive = false;
+    var yuOption = document.querySelector('.yu-date-picker-option')
+    function doTransition() {
+        yuOption.classList.toggle('transition-enter', !selectActive)
+        yuOption.classList.toggle('transition-leave', selectActive)
+        selectActive = !selectActive;
+    }
+    document.querySelector('input').addEventListener('focus', doTransition);
+    document.querySelector('input').addEventListener('blur', doTransition);
 </script>
 </html>

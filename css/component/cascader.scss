@@ -4,10 +4,15 @@
 @import "cascader-option";
 
 .yu-cascader {
-  @include zoomInTop();
+  @include angleAnimation();
+  @include SelectOptionTransition();
+  .yu-cascader-option{
+    position: absolute;
+    z-index: 1000;
+  }
+
   font-size: 0;
   position: relative;
-  @include angleAnimation();
   // 用于和button或input组合
   &.prepend {
     display: inline-block;
