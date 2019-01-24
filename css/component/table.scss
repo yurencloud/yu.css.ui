@@ -37,16 +37,6 @@
   }
 
   tbody {
-    // 条纹
-    &.stripe {
-      tr:nth-child(2n) {
-        background-color: $tr-background;
-        &:hover {
-          background-color: $background;
-        }
-      }
-    }
-
     tr {
       td {
         font-size: $normal;
@@ -79,20 +69,13 @@
     }
     border: 1px solid $border;
   }
-}
 
-.yu-fixed-table {
-  .fixed-box {
-    overflow-y: scroll;
-    overflow-x: hidden;
-    border-bottom: 1px solid $border;
-    border-top: 1px solid $border;
-  }
-  .yu-table {
+  &.stripe {
     tbody {
-      tr:last-child {
-        td {
-          border-bottom: none;
+      tr:nth-child(2n) {
+        background-color: $tr-background;
+        &:hover {
+          background-color: $background;
         }
       }
     }

@@ -74,6 +74,9 @@
   &>span{
     margin-right: $space-small;
   }
+  &>label{
+    margin-right: $space-small;
+  }
   &>.yu-select.page-size{
     display: inline-block;
     input{

@@ -5,6 +5,7 @@
   font-size: 0;
   color: $text-light;
   display: inline-block;
+  z-index: 100;
   & > .line {
     position: absolute;
     top: $steps-circle-length / 2;
@@ -51,8 +52,16 @@
     display: inline-block;
     line-height: $steps-circle-length;
     vertical-align: top;
+    & > .title {
+      font-size: $normal;
+      font-weight: normal;
+      margin: 0;
+      padding: 0;
+      border: none;
+    }
     & > .description {
       font-size: $small;
+      margin: 0;
     }
   }
 

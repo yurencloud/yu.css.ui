@@ -4,7 +4,7 @@
   height: $height-large;
   font-size: 0;
   line-height: $height-large;
-  i{
+  &>i{
     transition: all $transition-time ease;
     display: inline-block;
     width: $height;
@@ -13,16 +13,19 @@
     font-size: $big;
     color: $text-lighter;
   }
-  .icon-star{
+  &>.icon-star{
     color: $rate-star;
     transform: scale(1.1);
   }
   &:hover{
     cursor: pointer;
   }
-  span{
+  &>span{
     font-size: $normal;
     color: $text;
     display: inline-block;
+  }
+  &>input{
+    display: none;
   }
 }
