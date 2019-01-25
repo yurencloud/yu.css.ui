@@ -2,8 +2,10 @@
 @import "../common/function";
 @import "../common/animation";
 
-@include fadeIn();
+
 .yu-message {
+  @include messageFadeInTransition();
+
   font-family: $font-family;
   padding: $space-small $space;
   width: $message-width;
@@ -12,7 +14,7 @@
   position: fixed;
   left: 50%;
   transform: translateX(-$message-width/2);
-  top: $space-large;
+  top: 0;
   z-index: 1000;
   box-sizing: border-box;
 
@@ -26,6 +28,7 @@
     display: inline-block;
   }
   .icon-close {
+    margin-top: 2px;
     float: right;
     cursor: pointer;
   }

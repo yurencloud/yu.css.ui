@@ -1,6 +1,8 @@
 @import "../common/varible";
+@import "../common/function";
 
 .yu-loading {
+  @include generalAllColorLoading();
   font-size: $small;
   color: $text;
   margin-right: $space-small;

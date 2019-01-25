@@ -1,8 +1,6 @@
 @import "../common/varible";
 @import "../common/animation";
 
-@include fade();
-
 .yu-notification {
   display: inline-block;
   font-family: $font-family;

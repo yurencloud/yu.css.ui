@@ -5,7 +5,13 @@
     <title>yu.css.ui</title>
     <link rel="stylesheet" href="../main.css">
     <link rel="stylesheet" href="../../build/component/badge.css">
+    <link rel="stylesheet" href="../../build/component/button.css">
 </head>
+<style>
+    .yu-button {
+        margin: 0;
+    }
+</style>
 <body>
 <div class="web-container">
     <h4 class="web-title">标记</h4>
@@ -56,11 +62,10 @@
     <button class="yu-button sub">减</button>
 
     <div class="yu-badge">
-        <div class="dot zoom-in-center-enter">1</div>
+        <div class="dot transition"></div>
         <button class="yu-button">button</button>
     </div>
-    <button class="yu-button on">开</button>
-    <button class="yu-button off">关</button>
+    <button class="yu-button toggle">点击</button>
 </div>
 </body>
 <script type="text/javascript">
@@ -70,19 +75,17 @@
     document.querySelector('.sub').addEventListener('click', function (e) {
         e.target.previousElementSibling.firstElementChild.innerHTML--
     })
-    var on = false
-    document.querySelector('.on').addEventListener('click', function (e) {
-        var node = e.target.previousElementSibling.firstElementChild
-        node.classList.remove('zoom-in-center-enter')
-        node.classList.toggle('zoom-in-center-enter-active', on)
-        node.classList.toggle('zoom-in-center-leave-active', !on)
-        on = !on
-    })
-    document.querySelector('.off').addEventListener('click', function (e) {
-        var node = e.target.previousElementSibling.previousElementSibling.firstElementChild
-        node.classList.remove('zoom-in-center-enter')
-        node.classList.toggle('zoom-in-top-enter-active', true)
-        node.classList.toggle('zoom-in-top-leave-active', false)
-    })
+
+
+    var selectActive = false;
+    var target = document.querySelector('.dot.transition')
+
+    function doTransition() {
+        target.classList.toggle('transition-enter', !selectActive)
+        target.classList.toggle('transition-leave', selectActive)
+        selectActive = !selectActive;
+    }
+
+    document.querySelector('.yu-button.toggle').onclick = doTransition;
 </script>
 </html>

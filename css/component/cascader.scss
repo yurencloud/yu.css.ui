@@ -5,7 +5,7 @@
 
 .yu-cascader {
   @include angleAnimation();
-  @include SelectOptionTransition();
+  @include zoomInTopTransition();
   .yu-cascader-option{
     position: absolute;
     z-index: 1000;

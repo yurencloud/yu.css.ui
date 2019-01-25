@@ -4,7 +4,7 @@
 @import "date-picker-option";
 
 .yu-date-picker {
-  @include SelectOptionTransition();
+  @include zoomInTopTransition();
 
   &>.yu-date-picker-option{
     position: absolute;
