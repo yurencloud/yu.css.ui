@@ -2,6 +2,7 @@
 @import "../common/animation";
 
 .yu-date-picker-option {
+  font-family: $font-family;
   display: inline-block;
   width: $date-picker-width;
   & > .head {

@@ -4,6 +4,7 @@
 @import "option";
 
 .yu-select {
+  font-family: $font-family;
   @include angleAnimation();
   @include zoomInTopTransition();
 

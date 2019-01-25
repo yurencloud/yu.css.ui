@@ -4,6 +4,7 @@
 @import "date-picker-option";
 
 .yu-date-picker {
+  font-family: $font-family;
   @include zoomInTopTransition();
 
   &>.yu-date-picker-option{

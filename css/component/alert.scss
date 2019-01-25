@@ -2,6 +2,7 @@
 @import "../common/function";
 
 .yu-alert {
+  font-family: $font-family;
   padding: $space-small;
   border-radius: $radius;
   width: 100%;
@@ -10,7 +11,6 @@
   position: relative;
   box-sizing: border-box;
   background-color: lighten($info, 37);
-  font-family: $font-family;
   & > i {
     vertical-align: middle;
     margin-right: $space-tiny;

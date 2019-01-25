@@ -2,6 +2,7 @@
 @import "../common/function";
 
 .yu-collapse {
+  font-family: $font-family;
   color: $text;
   font-size: 0;
   & > .yu-collapse-item:last-child {

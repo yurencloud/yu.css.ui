@@ -2,6 +2,7 @@
 @import "../common/function";
 
 .yu-loading {
+  font-family: $font-family;
   @include generalAllColorLoading();
   font-size: $small;
   color: $text;

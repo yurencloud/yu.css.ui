@@ -4,6 +4,7 @@
 
 @include fade()
 .yu-tag {
+  font-family: $font-family;
   margin: 0 $space-small $space 0;
   padding: 0 $space-small;
   background-color: $background-primary;

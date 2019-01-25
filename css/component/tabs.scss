@@ -2,6 +2,7 @@
 @import "../common/function";
 
 .yu-tabs {
+  font-family: $font-family;
   color: $text;
   display: flex;
   flex-direction: column;

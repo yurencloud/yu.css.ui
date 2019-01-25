@@ -1,6 +1,7 @@
 @import "../common/varible";
 
 .yu-slider {
+  font-family: $font-family;
   margin: 0 $space-small $space 0;
   &.disabled {
     &>.bottom-bar {

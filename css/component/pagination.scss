@@ -4,6 +4,7 @@
 @import "input";
 
 .yu-pagination {
+  font-family: $font-family;
   font-size: $normal;
   &>ul {
     @include reset-ul();

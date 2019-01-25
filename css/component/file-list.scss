@@ -3,6 +3,7 @@
 
 // 预览作为upload的子组件
 ul.yu-file-list {
+  font-family: $font-family;
   font-size: $normal;
   color: $text;
   @include reset-ul();

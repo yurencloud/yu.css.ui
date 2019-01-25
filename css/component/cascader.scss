@@ -6,6 +6,7 @@
 .yu-cascader {
   @include angleAnimation();
   @include zoomInTopTransition();
+  font-family: $font-family;
   .yu-cascader-option{
     position: absolute;
     z-index: 1000;

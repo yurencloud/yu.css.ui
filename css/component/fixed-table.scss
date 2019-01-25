@@ -3,6 +3,7 @@
 @import "table";
 
 .yu-fixed-table {
+  font-family: $font-family;
   .fixed-box {
     overflow-y: scroll;
     overflow-x: hidden;

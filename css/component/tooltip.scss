@@ -1,6 +1,7 @@
 @import "../common/varible";
 
 .yu-tooltip {
+  font-family: $font-family;
   position: relative;
   display: inline-block;
   $half-tooltip-angle-length: $tooltip-angle-length/2;
