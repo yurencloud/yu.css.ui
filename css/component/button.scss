@@ -24,6 +24,7 @@
   }
   &:not(.disabled):focus {
     color: $primary;
+    border: 1px solid $primary;
   }
   &.disabled {
     color: $text-lighter;

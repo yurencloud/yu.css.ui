@@ -3,14 +3,16 @@
 
 .yu-radio {
   font-family: $font-family;
-  font-size: $normal;
+  font-size: 0;
   color: $text;
   cursor: pointer;
   margin-right: $space-small;
   & > span {
+    font-size: $normal;
     @include unselectable();
   }
   & > .radio {
+    font-size: $normal;
     & > input {
       display: none;
     }
