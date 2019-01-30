@@ -13,7 +13,7 @@
 
 @mixin angleAnimation() {
   input {
-    & + span.suffix > i {
+    & + span.suffix > i.icon-angle-down {
       transition: all ease .4s;
     }
     &:hover {

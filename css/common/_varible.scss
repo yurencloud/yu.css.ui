@@ -86,9 +86,11 @@ $transition-time: .4s !default;
 // 长宽一样，为length, 只分宽或高，用width和height
 $input-length: 175px !default;
 
+$counter-input-width: 80px !default;
+
 $switch-width: 40px !default;
 $switch-height: 20px !default;
-$cascader-option-height: 200px !default;
+$cascader-option-height: 210px !default;
 
 $slider-bar-length: 4px !default;
 $slider-circle-length: 14px !default;

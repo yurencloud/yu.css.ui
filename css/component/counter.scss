@@ -13,21 +13,16 @@
     box-sizing: border-box;
     margin: 0;
     & > input {
-      width: 80px;
+      width: $counter-input-width;
       border-radius: 0;
       text-align: center;
     }
-  }
-  & > .yu-button.counter {
-    vertical-align: top;
-    background: $background;
-    margin-right: 0;
-    width: 50px;
   }
   & > .yu-button {
     margin: 0;
     font-size: $large;
     line-height: $large;
+    background: $background;
     &:first-child {
       border-radius: $radius 0 0 $radius;
     }
@@ -47,7 +42,7 @@
     box-sizing: border-box;
     margin-right: 0;
     & > input {
-      width: 80px;
+      width: $counter-input-width;
       text-align: center;
     }
   }
@@ -57,19 +52,16 @@
     display: inline-block;
     & > button {
       height: 50%;
-      background-color: #fff;
       border: 1px solid $border;
       color: $text;
-
       padding: 0 $space;
       text-align: center;
       font-family: $font-family;
-      transition: all .3s ease;
+      transition: all $transition-time ease;
       outline: none;
       display: block;
       vertical-align: top;
       background: $background;
-      width: 40px;
       margin: 0;
       line-height: $height/2;
       & > i {
@@ -83,15 +75,14 @@
       }
       &.disabled {
         color: $text-lighter;
-        background: $background;
         cursor: not-allowed;
       }
     }
-    & > button:nth-child(1) {
-      border-top-right-radius: 4px;
+    & > button:first-child {
+      border-top-right-radius: $radius;
     }
-    & > button:nth-child(2) {
-      border-bottom-right-radius: 4px;
+    & > button:last-child {
+      border-bottom-right-radius: $radius;
     }
   }
   & > div.button {
@@ -103,9 +94,13 @@
     }
     &.small {
       height: $height-small;
-      line-height: $height-small;
+      &>button>i:before{
+        display: block;
+        margin-top: -$large;
+      }
     }
     & > button {
+      cursor: pointer;
       height: 50%;
       background-color: #fff;
       border: 1px solid $border;
@@ -113,12 +108,11 @@
       padding: 0 $space;
       text-align: center;
       font-family: $font-family;
-      transition: all .3s ease;
+      transition: all $transition-time ease;
       outline: none;
       display: block;
       vertical-align: top;
       background: $background;
-      width: 40px;
       margin: 0;
       line-height: $height/2;
       & > i {
@@ -139,10 +133,10 @@
   }
   &.right {
     & > .button > button:first-child {
-      border-top-right-radius: 4px;
+      border-top-right-radius: $radius;
     }
     & > .button > button:last-child {
-      border-bottom-right-radius: 4px;
+      border-bottom-right-radius: $radius;
     }
     & > .yu-input > input {
       border-radius: $radius 0 0 $radius;
@@ -150,10 +144,10 @@
   }
   &.left {
     & > .button > button:first-child {
-      border-top-left-radius: 4px;
+      border-top-left-radius: $radius;
     }
     & > .button > button:last-child {
-      border-bottom-left-radius: 4px;
+      border-bottom-left-radius: $radius;
     }
     & > .yu-input > input {
       border-radius: 0 $radius $radius 0;

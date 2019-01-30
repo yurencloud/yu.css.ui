@@ -20,22 +20,22 @@
 
     <h4 class="web-title">可清空</h4>
     <div class="yu-input">
-        <input type="text" placeholder="用户名">
-        <span class="clearable">
+        <input type="text" class="suffix" placeholder="用户名">
+        <span class="suffix clearable">
           <i class="iconfont icon-close-circle"></i>
         </span>
     </div>
 
     <h4 class="web-title">图标</h4>
     <div class="yu-input">
-        <span class="prefix icon">
+        <span class="prefix">
           <i class="iconfont icon-user"></i>
         </span>
         <input type="text" class="prefix" placeholder="用户名">
     </div>
     <div class="yu-input">
         <input type="text" class="suffix" placeholder="用户名">
-        <span class="suffix icon">
+        <span class="suffix">
           <i class="iconfont icon-user"></i>
         </span>
     </div>
@@ -72,8 +72,27 @@
     </div>
 
     <h4 class="web-title">下拉列表，提示</h4>
-    <div>待完成，等完成了options再做这个</div>
-
+    <div class="yu-input" >
+        <input type="text" placeholder="用户名" id="target">
+        <ul class="yu-option transition">
+            <li>猫</li>
+            <li>猫</li>
+            <li>猫</li>
+            <li>猫</li>
+        </ul>
+    </div>
+    <div style="height: 200px"></div>
 </div>
 </body>
+<script>
+    var selectActive = false;
+    var yuOption = document.querySelector('.yu-option')
+    function doTransition() {
+        yuOption.classList.toggle('transition-enter', !selectActive)
+        yuOption.classList.toggle('transition-leave', selectActive)
+        selectActive = !selectActive;
+    }
+    document.getElementById('target').addEventListener('focus', doTransition);
+    document.getElementById('target').addEventListener('blur', doTransition);
+</script>
 </html>

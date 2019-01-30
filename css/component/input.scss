@@ -1,8 +1,11 @@
 @import "../common/varible";
 @import "../common/animation";
 @import "../common/function";
+@import "option";
 
 .yu-input {
+  @include zoomInTopTransition();
+
   font-family: $font-family;
   position: relative;
   display: block;
@@ -73,21 +76,6 @@
     }
   }
 
-  & > span.clearable {
-    position: relative;
-    & > i {
-      position: absolute;
-      left: -25px;
-      top: -14px;
-      color: $text-lighter;
-      transition: color .1s;
-      cursor: pointer;
-      &:hover {
-        color: $text-light;
-      }
-    }
-  }
-
   & > span.suffix {
     position: relative;
     color: $text-lighter;
@@ -95,6 +83,15 @@
       position: absolute;
       left: -25px;
       top: -14px;
+    }
+    &.clearable {
+      & > i {
+        transition: color .1s;
+        cursor: pointer;
+        &:hover {
+          color: $text-light;
+        }
+      }
     }
   }
 
@@ -139,5 +136,13 @@
     margin: 0;
     border-radius: 0 $radius $radius 0;
     vertical-align: top;
+  }
+
+  &>.yu-option {
+    margin-top: $space-small;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1000;
   }
 }

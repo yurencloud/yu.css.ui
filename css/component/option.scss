@@ -4,20 +4,20 @@
 .yu-option {
   font-family: $font-family;
   background-color: #fff;
-  width: $input-length;
+  min-width: $input-length;
   border: 1px solid $border;
   border-radius: $radius;
   color: $text;
   box-shadow: $box-shadow;
+  display: inline-block;
   @include reset-ul();
   &.overflow {
     @include overflow();
   }
   & > li {
     box-sizing: border-box;
-    min-height: $height;
     font-size: $normal;
-    padding: $space-tiny $space-small;
+    padding: $space-small $space;
 
     &:hover:not(.disabled) {
       background-color: $background;
