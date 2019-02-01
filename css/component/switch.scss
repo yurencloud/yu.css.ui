@@ -18,7 +18,7 @@
     @include unselectable();
     font-size: $normal;
     vertical-align: middle;
-    margin: 0 $space;
+    margin-right: $space-small;
   }
   & > .switch {
     font-size: $normal;
@@ -30,6 +30,7 @@
     padding: 2px;
     box-sizing: border-box;
     cursor: pointer;
+    margin-right: $space-small;
     & > .circle {
       box-sizing: border-box;
       display: inline-block;
@@ -51,5 +52,10 @@
   &.disabled {
     color: lighten($text, 25);
     cursor: not-allowed;
+    .switch{
+      &.on {
+        @include generalAllColorDisabledSwitch();
+      }
+    }
   }
 }
