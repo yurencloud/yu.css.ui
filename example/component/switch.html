@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yu.css.ui</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../../css/component/switch.css">
+</head>
+<body>
+<div class="web-container">
+    <h4 class="web-title">开关</h4>
+    <div class="yu-switch">
+        <input type="checkbox">
+        <span class="switch"><span class="circle"></span></span>
+        <label>开关</label>
+    </div>
+
+    <div class="yu-switch">
+        <input type="checkbox">
+        <span class="switch on primary"><span class="circle"></span></span>
+        <label>开关</label>
+    </div>
+
+    <h4 class="web-title">颜色类型</h4>
+    <div class="yu-switch">
+        <input type="checkbox">
+        <span class="switch on primary"><span class="circle"></span></span>
+        <label>开关</label>
+    </div>
+
+    <div class="yu-switch">
+        <input type="checkbox">
+        <span class="switch on danger"><span class="circle"></span></span>
+        <label>开关</label>
+    </div>
+
+    <div class="yu-switch">
+        <input type="checkbox">
+        <span class="switch on info"><span class="circle"></span></span>
+        <label>开关</label>
+    </div>
+
+    <div class="yu-switch">
+        <input type="checkbox">
+        <span class="switch on warning"><span class="circle"></span></span>
+        <label>开关</label>
+    </div>
+
+    <h4 class="web-title">禁用</h4>
+    <div class="yu-switch disabled">
+        <input type="checkbox">
+        <label>开关</label>
+        <span class="switch"><span class="circle"></span></span>
+    </div>
+
+    <div class="yu-switch disabled">
+        <input type="checkbox">
+        <span class="switch on primary"><span class="circle"></span></span>
+        <label>开关</label>
+    </div>
+
+    <div class="yu-switch disabled">
+        <input type="checkbox">
+        <span class="switch on danger"><span class="circle"></span></span>
+        <label>开关</label>
+    </div>
+
+    <div class="yu-switch disabled">
+        <input type="checkbox">
+        <span class="switch on info"><span class="circle"></span></span>
+        <label>开关</label>
+    </div>
+
+    <div class="yu-switch disabled">
+        <input type="checkbox">
+        <span class="switch on warning"><span class="circle"></span></span>
+        <label>开关</label>
+    </div>
+
+    <h4 class="web-title">左右文本</h4>
+    <div class="yu-switch">
+        <input type="checkbox">
+        <label>开关</label>
+        <span class="switch"><span class="circle"></span></span>
+    </div>
+
+    <div class="yu-switch">
+        <input type="checkbox">
+        <span class="switch on primary"><span class="circle"></span></span>
+        <label>开关</label>
+    </div>
+
+    <h4 class="web-title">动态效果</h4>
+    <div class="yu-switch">
+        <input type="checkbox">
+        <span class="switch on primary" id="yu-switch"><span class="circle"></span></span>
+        <label>开关</label>
+    </div>
+</div>
+</body>
+<script type="text/javascript">
+    var on = false
+    document.getElementById('yu-switch').addEventListener('click', function (e) {
+        e.preventDefault();
+        on = !on
+        e.currentTarget.className = (on ? 'switch on primary' : 'switch')
+    })
+</script>
+</html>

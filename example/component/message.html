@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yu.css.ui</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../../css/component/message.css">
+    <link rel="stylesheet" href="../../css/component/button.css">
+</head>
+<body>
+<div class="web-container">
+    <h4 class="web-title">普通用法</h4>
+    <button class="yu-button toggle">点击</button>
+
+    <div class="yu-message transition">
+        <div class="content">内容</div>
+        <i class="iconfont icon-close"></i>
+    </div>
+
+    <!--<h4 class="web-title">自定义图标</h4>-->
+    <!--<div class="yu-message">-->
+        <!--<i class="iconfont icon-check-circle"></i>-->
+        <!--<div class="content">内容</div>-->
+        <!--<i class="iconfont icon-close"></i>-->
+    <!--</div>-->
+
+    <!--<h4 class="web-title">自定义HTML</h4>-->
+    <!--<div class="yu-message">-->
+        <!--<i class="iconfont icon-check-circle"></i>-->
+        <!--<div class="content">-->
+            <!--<h3 style="margin: 0">HELLO</h3>-->
+        <!--</div>-->
+        <!--<i class="iconfont icon-close"></i>-->
+    <!--</div>-->
+    <!--<h4 class="web-title">居中</h4>-->
+    <!--<div class="yu-message center">-->
+        <!--<i class="iconfont icon-check-circle"></i>-->
+        <!--<div class="content">-->
+            <!--内容-->
+        <!--</div>-->
+        <!--<i class="iconfont icon-close"></i>-->
+    <!--</div>-->
+    <!--<h4 class="web-title">不同类型消息</h4>-->
+    <!--<div class="yu-message">-->
+        <!--<i class="iconfont icon-check-circle"></i>-->
+        <!--<div class="content">-->
+            <!--内容-->
+        <!--</div>-->
+        <!--<i class="iconfont icon-close"></i>-->
+    <!--</div>-->
+</div>
+</body>
+<script type="text/javascript">
+    var selectActive = false;
+    var target = document.querySelector('.yu-message.transition')
+
+    function doTransition() {
+        target.classList.toggle('transition-enter', !selectActive)
+        target.classList.toggle('transition-leave', selectActive)
+        selectActive = !selectActive;
+    }
+
+    document.querySelector('.yu-button.toggle').onclick = doTransition;
+</script>
+</html>

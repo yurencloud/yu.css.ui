@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yu.css.ui</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../../css/component/badge.css">
+    <link rel="stylesheet" href="../../css/component/button.css">
+</head>
+<style>
+    .yu-button {
+        margin: 0;
+    }
+</style>
+<body>
+<div class="web-container">
+    <h4 class="web-title">标记</h4>
+    <div class="yu-badge">
+        <div class="badge">1</div>
+        <button class="yu-button">button</button>
+    </div>
+
+    <div class="yu-badge">
+        <div class="badge">999+</div>
+        <button class="yu-button">button</button>
+    </div>
+
+    <h4 class="web-title">标记 小红点</h4>
+    <div class="yu-badge">
+        <div class="dot"></div>
+        <button class="yu-button">button</button>
+    </div>
+    <div class="yu-badge">
+        <div class="badge">1</div>
+        <button class="yu-button">button</button>
+    </div>
+
+    <h4 class="web-title">标记隐藏</h4>
+    <div class="yu-badge">
+        <div class="badge hide">1</div>
+        <button class="yu-button">button</button>
+    </div>
+    <div class="yu-badge">
+        <div class="dot hide">1</div>
+        <button class="yu-button">button</button>
+    </div>
+    <h4 class="web-title">不同颜色</h4>
+    <div class="yu-badge">
+        <div class="badge primary">1</div>
+        <button class="yu-button">button</button>
+    </div>
+    <div class="yu-badge">
+        <div class="dot success">1</div>
+        <button class="yu-button">button</button>
+    </div>
+    <h4 class="web-title">动画</h4>
+    <div class="yu-badge">
+        <div class="badge">1</div>
+        <button class="yu-button">button</button>
+    </div>
+    <button class="yu-button add">加</button>
+    <button class="yu-button sub">减</button>
+
+    <div class="yu-badge">
+        <div class="dot transition"></div>
+        <button class="yu-button">button</button>
+    </div>
+    <button class="yu-button toggle">点击</button>
+</div>
+</body>
+<script type="text/javascript">
+    document.querySelector('.add').addEventListener('click', function (e) {
+        e.target.previousElementSibling.firstElementChild.innerHTML++
+    })
+    document.querySelector('.sub').addEventListener('click', function (e) {
+        e.target.previousElementSibling.firstElementChild.innerHTML--
+    })
+
+
+    var selectActive = false;
+    var target = document.querySelector('.dot.transition')
+
+    function doTransition() {
+        target.classList.toggle('transition-enter', !selectActive)
+        target.classList.toggle('transition-leave', selectActive)
+        selectActive = !selectActive;
+    }
+
+    document.querySelector('.yu-button.toggle').onclick = doTransition;
+</script>
+</html>

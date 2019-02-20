@@ -4,7 +4,7 @@
   "description": "纯CSS通用UI模块和组件",
   "main": "src/index.scss",
   "scripts": {
-    "start": "live-server . --port=9000 --watch=.",
+    "start": "webpack-dev-server --hot --inline",
     "watch": "node-sass  -w -r css -o build",
     "build": "gulp",
     "build-css-map": "cd html && node createCssToJsMap.js >> cssMap.js"
@@ -24,7 +24,14 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "css-loader": "^2.1.0",
     "gulp": "^4.0.0",
-    "gulp-cssnano": "^2.1.3"
+    "gulp-cssnano": "^2.1.3",
+    "mini-css-extract-plugin": "^0.5.0",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "webpack": "^4.29.5",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14"
   }
 }

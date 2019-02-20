@@ -1,0 +1,14 @@
+.yu-breadcrumb {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+  font-size: 0;
+  color: #606266; }
+
+.yu-breadcrumb-item {
+  font-size: 14px;
+  cursor: pointer; }
+  .yu-breadcrumb-item.current {
+    font-weight: bold;
+    color: #303133; }
+  .yu-breadcrumb-item > i {
+    color: #909399;
+    padding: 0 4px; }
