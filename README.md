@@ -28,6 +28,17 @@ yu.css.ui 只写CSS样式和HTML示例，不包含任何JavaScript脚本，在ja
 - 一个组件只有一个顶级命名空间，即yu-xxx
 - 每个组件css都可以独立拆分直接使用，不需要额外引入重置样式或者变量
 
+
+
+> v2.0.0版本修改了目录结构
+>
+> - src 是项目scss源码
+> - css 是scss未压缩编译结果，用于开发测试
+> - dist 是css压缩结果，用于生产
+> - example 是项目示例代码
+
+
+
 ## 一、npm 引入 推荐
 
 ```shell
@@ -38,6 +49,10 @@ npm install --save yu.css.ui
 方式一: 在js中
 
 ```javascript
+//commonjs
+require('yu.css.ui/dist/index.css')
+
+// es6
 import 'yu.css.ui/dist/index.css'
 ```
 方式二: 在scss中
@@ -45,7 +60,7 @@ import 'yu.css.ui/dist/index.css'
 引入编译后的css文件
 
 ```scss
-@import '~yu.css.ui/dist/index'
+@import '~yu.css.ui/dist/index.css'
 ```
 
 
@@ -56,7 +71,7 @@ import 'yu.css.ui/dist/index.css'
 /* 改变主题色 */
 $primary: #67C23A;
 
-@import '~yu.css.ui/css/index'
+@import '~yu.css.ui/src/index'
 
 ```
 
@@ -69,11 +84,11 @@ $primary: #67C23A;
 方式一: 在js中
 
 ```javascript
-  import 'yu.css.ui/dist/iconfont.css'
+  import 'yu.css.ui/dist/iconfont/iconfont.css'
 
-  import 'yu.css.ui/dist/button.css'
+  import 'yu.css.ui/dist/component/button.css'
 
-  import 'yu.css.ui/dist/radio.css'
+  import 'yu.css.ui/dist/component/radio.css'
 
   // ...
 
@@ -85,11 +100,11 @@ $primary: #67C23A;
 方式二: 在scss中
 
 ```scss
-  @import '~yu.css.ui/dist/iconfont'
+  @import '~yu.css.ui/dist/iconfont/iconfont.css'
 
-  @import '~yu.css.ui/dist/button'
+  @import '~yu.css.ui/dist/component/button.css'
 
-  @import '~yu.css.ui/dist/radio'
+  @import '~yu.css.ui/dist/component/radio.css'
 
   // ...
 
@@ -105,15 +120,9 @@ $primary: #67C23A;
 
 <link rel="stylesheet" href="https://unpkg.com/yu.css.ui/dist/index.css">
 
-## 三、下载项目并本地引入
 
-项目地址 点击
 
-v1.1.6 直接下载地址 点击
-
-引入方式基本同上面的npm，需要注意的依然是字体图标iconfont的引用路径
-
-## 四、不引入，直接复制使用
+## 三、不引入，直接复制使用
 
 每个组件下面都会有CSS和HTML，点击复制即可使用
 
