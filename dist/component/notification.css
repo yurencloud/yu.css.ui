@@ -1,1 +1,72 @@
-.yu-notification{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Helvetica,PingFang SC,Hiragino Sans GB,Microsoft YaHei,SimSun,sans-serif;display:inline-block;position:fixed;z-index:1}.yu-notification>.notice{width:300px;display:block;background-color:#fff;box-sizing:border-box;padding:14px;box-shadow:0 2px 12px 0 rgba(0,0,0,.1);margin-bottom:14px;transition:all .4s ease;border-radius:4px}.yu-notification>.notice>.content{display:inline-block;vertical-align:top;position:relative}.yu-notification>.notice>.content>.message{font-size:16px;margin-bottom:8px}.yu-notification>.notice>.content>.description{margin-bottom:8px;font-size:14px;color:#606266}.yu-notification>.notice>i.icon-close{position:absolute;right:14px;top:14px}.yu-notification>.notice>i:not(.icon-close){vertical-align:top;display:inline-block;font-size:30px;color:#909399;margin-right:8px}.yu-notification>.notice>i:not(.icon-close).icon-check-circle{color:#67c23a}.yu-notification>.notice>i:not(.icon-close).icon-warning-circle{color:#e6b322}.yu-notification>.notice>i:not(.icon-close).icon-close-circle{color:#f56c6c}.yu-notification>.notice>i:not(.icon-close).icon-information{color:#909399}.yu-notification.top-right{top:22px;right:0}.yu-notification.top-right>.notice{transform:translateX(300px)}.yu-notification.top-right>.notice.active{transform:translateX(-22px)}.yu-notification.top-left{top:22px;left:0}.yu-notification.top-left>.notice{transform:translateX(-300px)}.yu-notification.top-left>.notice.active{transform:translateX(22px)}.yu-notification.bottom-right{bottom:22px;right:0}.yu-notification.bottom-right>.notice{transform:translateX(300px)}.yu-notification.bottom-right>.notice.active{transform:translateX(-22px)}.yu-notification.bottom-left{bottom:22px;left:0}.yu-notification.bottom-left>.notice{transform:translateX(-300px)}.yu-notification.bottom-left>.notice.active{transform:translateX(22px)}
+.yu-notification {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+  display: inline-block;
+  position: fixed;
+  z-index: 1000; }
+  .yu-notification > .notice {
+    width: 300px;
+    display: block;
+    background-color: #fff;
+    box-sizing: border-box;
+    padding: 14px;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 14px;
+    transition: all 0.4s ease;
+    border-radius: 4px; }
+    .yu-notification > .notice > .content {
+      display: inline-block;
+      vertical-align: top;
+      position: relative; }
+      .yu-notification > .notice > .content > .message {
+        font-size: 16px;
+        margin-bottom: 8px; }
+      .yu-notification > .notice > .content > .description {
+        margin-bottom: 8px;
+        font-size: 14px;
+        color: #606266; }
+    .yu-notification > .notice > i.icon-close {
+      position: absolute;
+      right: 14px;
+      top: 14px; }
+    .yu-notification > .notice > i:not(.icon-close) {
+      vertical-align: top;
+      display: inline-block;
+      font-size: 30px;
+      color: #909399;
+      margin-right: 8px; }
+      .yu-notification > .notice > i:not(.icon-close).icon-check-circle {
+        color: #67C23A; }
+      .yu-notification > .notice > i:not(.icon-close).icon-warning-circle {
+        color: #e6b322; }
+      .yu-notification > .notice > i:not(.icon-close).icon-close-circle {
+        color: #F56C6C; }
+      .yu-notification > .notice > i:not(.icon-close).icon-information {
+        color: #909399; }
+  .yu-notification.top-right {
+    top: 22px;
+    right: 0; }
+    .yu-notification.top-right > .notice {
+      transform: translateX(300px); }
+      .yu-notification.top-right > .notice.active {
+        transform: translateX(-22px); }
+  .yu-notification.top-left {
+    top: 22px;
+    left: 0; }
+    .yu-notification.top-left > .notice {
+      transform: translateX(-300px); }
+      .yu-notification.top-left > .notice.active {
+        transform: translateX(22px); }
+  .yu-notification.bottom-right {
+    bottom: 22px;
+    right: 0; }
+    .yu-notification.bottom-right > .notice {
+      transform: translateX(300px); }
+      .yu-notification.bottom-right > .notice.active {
+        transform: translateX(-22px); }
+  .yu-notification.bottom-left {
+    bottom: 22px;
+    left: 0; }
+    .yu-notification.bottom-left > .notice {
+      transform: translateX(-300px); }
+      .yu-notification.bottom-left > .notice.active {
+        transform: translateX(22px); }

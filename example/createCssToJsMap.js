@@ -2,9 +2,6 @@ var fs = require('fs');
 var path = require('path');//解析需要遍历的文件夹
 var filePath = path.resolve('../dist/component/');
 
-// node createCssToJsMap.js >> cssMap.js
-
-
 fs.readdir(filePath, function (err, files) {
     if (err) {
         console.warn(err)
@@ -38,5 +35,6 @@ fs.readdir(filePath, function (err, files) {
             })
         });
     }
-});
+})
+
 

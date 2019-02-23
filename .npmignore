@@ -1,9 +1,5 @@
 # npm包发布时，不需要发布开发所用文件
-html/
-index.html
-dist/main.css
-css/main.scss
-build/
+example/
 
 # Created by .ignore support plugin (hsz.mobi)
 ### JetBrains template
