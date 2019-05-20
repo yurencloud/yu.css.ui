@@ -1,0 +1,47 @@
+@import "../common/varible";
+
+.yu-list{
+  &.horizontal{
+    display: flex;
+    &>.item{
+      align-items: center;
+      margin-right: $space;
+    }
+  }
+  &.divided{
+    .item{
+      align-items: center;
+      padding-bottom: $space-small;
+      border-bottom: 1px solid $border;
+    }
+  }
+  &>.item{
+    margin: $space-small 0;
+    display: flex;
+    align-items: normal;
+
+    &>i{
+      margin-right: $space-small;
+    }
+    &>img{
+      width: 30px;
+      height: 30px;
+      border-radius: 15px;
+      margin-right: $space-small;
+    }
+    &>.content{
+      &>.header{
+        font-weight: bold;
+        font-size: $normal;
+      }
+      &>.description{
+        font-size: $normal;
+        color: $text-light;
+      }
+    }
+  }
+
+  &>.item.list{
+
+  }
+}

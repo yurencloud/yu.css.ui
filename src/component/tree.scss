@@ -1,0 +1,23 @@
+@import "../common/varible";
+@import "checkbox";
+.yu-tree{
+  line-height: 26px;
+  .yu-checkbox{
+    display: block;
+  }
+  .leaf{
+    display: inline-block;
+    &>i{
+      vertical-align: top;
+      margin: 0 4px;
+      display: inline-block;
+    }
+    label{
+      display: block;
+      padding: 0 4px;
+      &.active{
+        background-color: lighten($primary, 32);
+      }
+    }
+  }
+}

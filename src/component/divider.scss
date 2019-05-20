@@ -1,0 +1,65 @@
+@import "../common/varible";
+
+.yu-divider{
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid $border;
+  margin: $space 0;
+  display: inline-block;
+  color: $text-dark;
+  &.horizontal{
+    border-bottom: none;
+    height: auto;
+    text-align: center;
+    width: 100%;
+    display: table;
+    &:before{
+      position: relative;
+      top: 50%;
+      width: 50%;
+      transform: translateY(50%);
+      border-top: 1px solid $border;
+      content: "";
+      display: table-cell;
+    }
+    &:after{
+      position: relative;
+      top: 50%;
+      width: 50%;
+      transform: translateY(50%);
+      border-top: 1px solid $border;
+      content: "";
+      display: table-cell;
+    }
+    &>span{
+      word-break: keep-all;
+      display: table-cell;
+      padding: 0 $space;
+    }
+    &.left{
+      &:before{
+        width: 5%;
+      }
+      &:after{
+        width: 95%;
+      }
+    }
+    &.right{
+      &:before{
+        width: 95%;
+      }
+      &:after{
+        width: 5%;
+      }
+    }
+  }
+
+  &.vertical{
+    width: 1px;
+    height: $normal;
+    display: inline-block;
+    vertical-align: middle;
+    border-right: 1px solid $border;
+    margin: 0 $space-tiny;
+  }
+}
