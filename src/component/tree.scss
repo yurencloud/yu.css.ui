@@ -5,11 +5,13 @@
   .yu-checkbox{
     display: block;
   }
+  .head{
+    display: flex;
+  }
   .leaf{
-    display: inline-block;
+    margin-left: 18px;
     &>i{
       vertical-align: top;
-      margin: 0 4px;
       display: inline-block;
     }
     label{

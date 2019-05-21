@@ -4449,11 +4449,12 @@ body.lock {
   line-height: 26px; }
   .yu-tree .yu-checkbox {
     display: block; }
+  .yu-tree .head {
+    display: flex; }
   .yu-tree .leaf {
-    display: inline-block; }
+    margin-left: 18px; }
     .yu-tree .leaf > i {
       vertical-align: top;
-      margin: 0 4px;
       display: inline-block; }
     .yu-tree .leaf label {
       display: block;
