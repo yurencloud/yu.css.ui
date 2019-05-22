@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yu.css.ui</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="/css/component/carousel.css">
+    <link rel="stylesheet" href="/css/component/button.css">
+</head>
+<style>
+    .container .item:nth-child(1){
+        background-color: #409EFF;
+    }
+    .container .item:nth-child(2){
+        background-color: #e6b322;
+    }
+    .container .item:nth-child(3){
+        background-color: #67C23A;
+    }
+</style>
+<body>
+<div class="web-container">
+    <h4 class="web-title">正常使用</h4>
+    <div class="yu-carousel horizontal">
+        <div class="container">
+            <div class="item" style="left:0;"></div>
+            <div class="item" style="left:100%;"></div>
+            <div class="item" style="left:200%;"></div>
+        </div>
+        <ul class="navigation line">
+           <li class="active"></li>
+           <li></li>
+           <li></li>
+           <li></li>
+        </ul>
+        <div class="left-button">
+            <i class="iconfont icon-angle-left"></i>
+        </div>
+        <div class="right-button">
+            <i class="iconfont icon-angle-right"></i>
+        </div>
+    </div>
+
+    <button class="yu-button prev" style="margin-top:20px;">下一页</button>
+    <button class="yu-button next">上一页</button>
+
+    <h4 class="web-title">圆形导航</h4>
+    <div class="yu-carousel horizontal">
+        <div class="container">
+            <div class="item" style="left:0;"></div>
+            <div class="item" style="left:100%;"></div>
+            <div class="item" style="left:200%;"></div>
+        </div>
+        <ul class="navigation circle">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="left-button">
+            <i class="iconfont icon-angle-left"></i>
+        </div>
+        <div class="right-button">
+            <i class="iconfont icon-angle-right"></i>
+        </div>
+    </div>
+
+    <h4 class="web-title">垂直</h4>
+    <div class="yu-carousel vertical">
+        <div class="container">
+            <div class="item" style="top:0;"></div>
+            <div class="item" style="top:100%;"></div>
+            <div class="item" style="top:200%;"></div>
+        </div>
+        <ul class="navigation line">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+    <h4 class="web-title">垂直</h4>
+    <div class="yu-carousel vertical">
+        <div class="container">
+            <div class="item" style="top:0;"></div>
+            <div class="item" style="top:100%;"></div>
+            <div class="item" style="top:200%;"></div>
+        </div>
+        <ul class="navigation circle">
+            <li class="active"></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+</div>
+</body>
+<script>
+    function persentCalculator(num1, num2){
+        return (parseInt(num1) + parseInt(num2)) + '%'
+    }
+    var activeLi = 0;
+    document.querySelector('.prev').addEventListener('click', function () {
+        Array.from(document.querySelectorAll('.container>.item')).forEach((item)=>{
+            item.style.left = persentCalculator(item.style.left, -100);
+        })
+        activeLi++;
+        Array.from(document.querySelectorAll('.navigation>li')).forEach((item, index)=>{
+            item.className = ''
+            if(activeLi === index){
+                item.className = 'active'
+            }
+        })
+    })
+    document.querySelector('.next').addEventListener('click', function () {
+        Array.from(document.querySelectorAll('.container>.item')).forEach((item)=>{
+            item.style.left = persentCalculator(item.style.left, 100);
+        })
+        activeLi--;
+        Array.from(document.querySelectorAll('.navigation>li')).forEach((item, index)=>{
+            item.className = ''
+            if(activeLi === index){
+                item.className = 'active'
+            }
+        })
+    })
+</script>
+</html>

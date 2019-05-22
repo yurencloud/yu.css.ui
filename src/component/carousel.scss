@@ -1,0 +1,137 @@
+@import "../common/varible";
+@import "../common/function";
+
+.yu-carousel {
+  position: relative;
+
+  .container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    height: 200px;
+
+    .item {
+      position: absolute;
+      height: 200px;
+      width: 100%;
+      background: $primary;
+      transition: all $transition-time*2 ease;
+    }
+  }
+
+  .navigation {
+    @include reset-ul();
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &.line {
+      li {
+        width: 20px;
+        height: 4px;
+        border-radius: 2px;
+        background-color: $border;
+        margin: 0 $space-tiny;
+        transition: all $transition-time linear;
+
+        &.active {
+          width: 30px;
+          background-color: #fff;
+        }
+      }
+    }
+
+    &.circle {
+      li {
+        width: 6px;
+        height: 6px;
+        border-radius: 6px;
+        background-color: $border;
+        margin: 0 $space-tiny;
+        transition: all $transition-time linear;
+
+        &.active {
+          width: 8px;
+          height: 8px;
+          border-radius: 8px;
+          background-color: #fff;
+        }
+      }
+    }
+
+  }
+
+  .left-button, .right-button {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: $border;
+    color: $primary;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .left-button {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+  }
+
+  .right-button {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+  }
+
+  &.vertical {
+    .navigation {
+      display: block;
+      width: 10px;
+      margin: 0;
+      @include reset-ul();
+      position: absolute;
+      left: 100%;
+      top: 50%;
+      transform: translate(-30px, -50%);
+
+      &.line {
+        li {
+          display: block;
+          width: 4px;
+          height: 20px;
+          border-radius: 2px;
+          background-color: $border;
+          margin: $space-tiny 0;
+          transition: all $transition-time linear;
+
+          &.active {
+            height: 30px;
+            background-color: #fff;
+          }
+        }
+      }
+
+      &.circle {
+        li {
+          width: 6px;
+          height: 6px;
+          border-radius: 6px;
+          background-color: $border;
+          margin: $space-tiny 0;
+          transition: all $transition-time linear;
+
+          &.active {
+            width: 8px;
+            height: 8px;
+            border-radius: 8px;
+            background-color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

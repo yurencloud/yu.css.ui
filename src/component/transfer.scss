@@ -1,0 +1,49 @@
+@import "../common/varible";
+@import "../common/function";
+@import "checkbox";
+@import "button";
+.yu-transfer{
+  display: flex;
+  align-items: center;
+  font-size: 0;
+
+  ul{
+    min-width: $transfer-width;
+    @include reset-ul();
+    padding: $space-small;
+    height: $transfer-height;
+    margin: 0;
+    overflow-y: scroll;
+    li{
+      margin: $space-small 0;
+      span:last-child{
+        vertical-align: middle;
+        display: inline-block;
+        width: $transfer-width;
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+      }
+    }
+  }
+  .yu-button{
+    display: block;
+    margin: $space-small;
+  }
+  .option{
+    border: 1px solid $border;
+    border-radius: $radius;
+  }
+  .head{
+    padding: $space-small;
+    border-bottom: 1px solid $border;
+    span.tag{
+      float: right;
+      font-size: $normal;
+    }
+    .yu-checkbox{
+      margin: 0;
+      display: inline-block;
+    }
+  }
+}

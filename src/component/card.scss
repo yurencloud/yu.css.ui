@@ -1,0 +1,48 @@
+@import "../common/varible";
+
+.yu-card {
+  border: 1px solid $border;
+  border-radius: $radius;
+  &.card{
+    width: 300px;
+    display: inline-block;
+    margin-right: $space;
+  }
+  &.hoverable{
+    transition: box-shadow $transition-time ease;
+    &:hover{
+      box-shadow: $box-shadow;
+    }
+  }
+  .image{
+    width: 100%;
+  }
+  .header{
+    font-size: $large;
+    font-weight: bold;
+    padding: $space;
+    border-bottom: 1px solid $border;
+    color: $text-dark;
+    .float.right{
+      float: right;
+    }
+  }
+  .content{
+    padding: $space;
+    .header{
+      padding: 0;
+      padding-bottom: $space;
+      border: none;
+    }
+  }
+  .footer{
+    padding: $space;
+    border-top: 1px solid $border;
+  }
+  .description{
+    font-weight: normal;
+    font-size: $normal;
+    color: $text-light;
+    padding-top: $space-small;
+  }
+}

@@ -1,25 +1,40 @@
 @import "../common/varible";
+@import "../common/function";
 @import "checkbox";
 .yu-tree{
+  font-size: 0;
+  @include reset-ul();
+  .child-tree{
+    @include reset-ul();
+    display: block;
+    margin-left: 16px;
+    &.last{
+      margin-left: 32px;
+    }
+  }
   line-height: 26px;
   .yu-checkbox{
     display: block;
   }
-  .head{
-    display: flex;
-  }
   .leaf{
-    margin-left: 18px;
+    &.active{
+      display: inline-block;
+      background-color: lighten($primary, 32);
+    }
     &>i{
+      display: inline-block;
       vertical-align: top;
+    }
+    &>.yu-checkbox{
       display: inline-block;
     }
     label{
+      font-size: $normal;
       display: block;
       padding: 0 4px;
-      &.active{
-        background-color: lighten($primary, 32);
-      }
+    }
+    span{
+      font-size: $normal;
     }
   }
 }

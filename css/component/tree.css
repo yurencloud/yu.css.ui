@@ -82,18 +82,34 @@
     margin-bottom: 14px; }
 
 .yu-tree {
+  font-size: 0;
+  padding-inline-start: 0;
+  padding: 0;
   line-height: 26px; }
+  .yu-tree > li {
+    list-style: none; }
+  .yu-tree .child-tree {
+    padding-inline-start: 0;
+    padding: 0;
+    display: block;
+    margin-left: 16px; }
+    .yu-tree .child-tree > li {
+      list-style: none; }
+    .yu-tree .child-tree.last {
+      margin-left: 32px; }
   .yu-tree .yu-checkbox {
     display: block; }
-  .yu-tree .head {
-    display: flex; }
-  .yu-tree .leaf {
-    margin-left: 18px; }
-    .yu-tree .leaf > i {
-      vertical-align: top;
-      display: inline-block; }
-    .yu-tree .leaf label {
-      display: block;
-      padding: 0 4px; }
-      .yu-tree .leaf label.active {
-        background-color: #e3f1ff; }
+  .yu-tree .leaf.active {
+    display: inline-block;
+    background-color: #e3f1ff; }
+  .yu-tree .leaf > i {
+    display: inline-block;
+    vertical-align: top; }
+  .yu-tree .leaf > .yu-checkbox {
+    display: inline-block; }
+  .yu-tree .leaf label {
+    font-size: 14px;
+    display: block;
+    padding: 0 4px; }
+  .yu-tree .leaf span {
+    font-size: 14px; }
