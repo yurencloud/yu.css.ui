@@ -5124,3 +5124,7 @@ div.yu-button {
       position: absolute;
       top: 100%;
       left: 0; }
+
+.yu-row {
+  width: 100%;
+  display: flex; }
