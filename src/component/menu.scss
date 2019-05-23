@@ -1,0 +1,157 @@
+@import "../common/varible";
+@import "../common/animation";
+
+.yu-menu {
+  width: 200px;
+  font-size: 0;
+  .sub-menu {
+    transition: height $transition-time ease;
+
+    i {
+      padding: 0 $space-small;
+    }
+
+    line-height: 40px;
+
+    .menu-title {
+      font-size: $normal;
+      cursor: pointer;
+      transition: color $transition-time ease;
+      height: 40px;
+
+      i.icon-angle-down {
+        float: right;
+        transition: all $transition-time ease;
+      }
+
+      i.icon-angle-right {
+        float: right;
+      }
+
+      &.active {
+        i.icon-angle-down {
+          transform: rotate(-180deg);
+        }
+      }
+    }
+
+    .menu-item {
+      font-size: $normal;
+      cursor: pointer;
+      transition: color $transition-time ease;
+      height: 40px;
+    }
+  }
+
+  &.dark {
+    color: #ccc;
+    background-color: #001528;
+
+    .sub-menu {
+      .menu-title {
+        &:hover {
+          color: #fff;
+        }
+      }
+
+      .menu-item {
+        &:hover {
+          color: #fff;
+        }
+
+        &.active {
+          background-color: $primary;
+          color: #fff;
+        }
+      }
+    }
+  }
+
+  &.light {
+    border-right: 1px solid $border;
+
+    .sub-menu {
+      background-color: #fff;
+
+      .menu-title {
+        &:hover {
+          color: $primary;
+        }
+      }
+
+      .menu-item {
+        &:hover {
+          color: $primary;
+        }
+
+        &.active {
+          background-color: lighten($primary, 33);
+          color: $primary;
+          border-right: 3px solid $primary;
+        }
+      }
+    }
+  }
+  &.popup {
+    @include zoomInTopTransition();
+
+    & > .sub-menu {
+      position: relative;
+      .menu-title + .sub-menu {
+        box-shadow: $box-shadow;
+        margin-left: $space-small;
+        position: absolute;
+        top: 0;
+        left: 100%;
+      }
+    }
+
+    & > .sub-menu .sub-menu {
+      min-width: 120px;
+      & + .menu-item{
+        margin-top: 40px;
+      }
+      .menu-item {
+        word-break: keep-all;
+        width: auto;
+        border-right: none;
+        padding-right: $space;
+      }
+
+      position: absolute;
+      z-index: 1000;
+      border-radius: $radius;
+    }
+  }
+
+  &.horizontal {
+    width: 100%;
+    display: flex;
+    border-right: none;
+    border-bottom: 1px solid $border;
+
+    &>.sub-menu {
+      &>.menu-title {
+        padding: 0 $space;
+        transition: color $transition-time ease;
+        &.active {
+          border-bottom: 2px solid $primary;
+          color: $primary
+        }
+      }
+    }
+
+    &.popup {
+      & > .sub-menu>.menu-title + .sub-menu{
+          margin-left: 0;
+          margin-top: $space-small;
+      }
+      & > .sub-menu > .sub-menu {
+        margin-left: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+      }
+    }
+  }
+}

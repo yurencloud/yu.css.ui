@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yu.css.ui</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="/css/component/menu.css">
+</head>
+<body>
+<div class="web-container">
+    <h4 class="web-title">菜单简单用法</h4>
+    <div style="border: 1px solid #eee;">
+        <div class="yu-menu light vertical">
+            <div class="sub-menu">
+                <div class="menu-title"><i class="iconfont icon-home-o"></i>商家管理 <i class="iconfont icon-angle-down"></i></div>
+                <div class="sub-menu" style="height: 0;overflow: hidden">
+                    <div class="menu-item active" style="padding-left: 30px">菜单一</div>
+                    <div class="menu-item" style="padding-left: 30px">菜单二</div>
+                    <div class="menu-item" style="padding-left: 30px">菜单三</div>
+                </div>
+            </div>
+            <div class="sub-menu">
+                <div class="menu-title"><i class="iconfont icon-cog-o"></i>商家管理<i class="iconfont icon-angle-down"></i></div>
+                <div class="sub-menu" style="height: 0;overflow: hidden">
+                    <div class="menu-item" style="padding-left: 30px">菜单一</div>
+                    <div class="sub-menu">
+                        <div class="menu-title" style="padding-left: 30px">商家管理<i class="iconfont icon-angle-down"></i></div>
+                        <div class="sub-menu" style="height: 0;overflow: hidden">
+                            <div class="menu-item" style="padding-left: 60px">菜单一</div>
+                            <div class="menu-item" style="padding-left: 60px">菜单二</div>
+                            <div class="menu-item" style="padding-left: 60px">菜单三</div>
+                        </div>
+                    </div>
+                    <div class="menu-item" style="padding-left: 30px">菜单三</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h4 class="web-title">深色</h4>
+    <div style="border: 1px solid #eee;">
+        <div class="yu-menu dark vertical">
+            <div class="sub-menu">
+                <div class="menu-title"><i class="iconfont icon-home-o"></i>商家管理 <i class="iconfont icon-angle-down"></i></div>
+                <div class="sub-menu" style="height: 120px;overflow: hidden">
+                    <div class="menu-item active" style="padding-left: 30px">菜单一</div>
+                    <div class="menu-item" style="padding-left: 30px">菜单二</div>
+                    <div class="menu-item" style="padding-left: 30px">菜单三</div>
+                </div>
+            </div>
+            <div class="sub-menu">
+                <div class="menu-title"><i class="iconfont icon-cog-o"></i>商家管理<i class="iconfont icon-angle-down"></i></div>
+                <div class="sub-menu" style="height: 0;overflow: hidden">
+                    <div class="menu-item" style="padding-left: 30px">菜单一</div>
+                    <div class="sub-menu">
+                        <div class="menu-title" style="padding-left: 30px">商家管理<i class="iconfont icon-angle-down"></i></div>
+                        <div class="sub-menu" style="height: 0;overflow: hidden">
+                            <div class="menu-item" style="padding-left: 60px">菜单一</div>
+                            <div class="menu-item" style="padding-left: 60px">菜单二</div>
+                            <div class="menu-item" style="padding-left: 60px">菜单三</div>
+                        </div>
+                    </div>
+                    <div class="menu-item" style="padding-left: 30px">菜单三</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h4 class="web-title">水平的</h4>
+    <div>
+        <div class="yu-menu light horizontal popup">
+            <div class="sub-menu">
+                <div class="menu-title active"><i class="iconfont icon-home-o"></i>商家管理</div>
+                <div class="sub-menu transition">
+                    <div class="menu-item active" style="padding-left: 30px">菜单一</div>
+                    <div class="menu-item" style="padding-left: 30px">菜单二</div>
+                    <div class="menu-item" style="padding-left: 30px">菜单三</div>
+                </div>
+            </div>
+            <div class="sub-menu">
+                <div class="menu-title"><i class="iconfont icon-cog-o"></i>商家管理</div>
+                <div class="sub-menu transition">
+                    <div class="menu-item" style="padding-left: 14px">菜单</div>
+                    <div class="sub-menu">
+                        <div class="menu-title" style="padding-left: 14px">商家管理<i class="iconfont icon-angle-right"></i></div>
+                        <div class="sub-menu transition">
+                            <div class="menu-item" style="padding-left: 34px">菜单一</div>
+                            <div class="menu-item" style="padding-left: 34px">菜单二</div>
+                            <div class="menu-item" style="padding-left: 34px">菜单三</div>
+                        </div>
+                    </div>
+                    <div class="menu-item" style="padding-left: 14px">菜单三</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="height: 200px"></div>
+
+    <h4 class="web-title">子菜单弹出式</h4>
+    <div style="border: 1px solid #eee;">
+        <div class="yu-menu light popup">
+            <div class="sub-menu">
+                <div class="menu-title"><i class="iconfont icon-home-o"></i>商家管理 <i class="iconfont icon-angle-right"></i></div>
+                <div class="sub-menu transition">
+                    <div class="menu-item" style="padding-left: 14px">菜单一</div>
+                    <div class="menu-item" style="padding-left: 14px">菜单二</div>
+                    <div class="sub-menu">
+                        <div class="menu-title" style="padding-left: 14px">商家管理<i class="iconfont icon-angle-right"></i></div>
+                        <div class="sub-menu transition">
+                            <div class="menu-item" style="padding-left: 14px">菜单一</div>
+                            <div class="menu-item" style="padding-left: 14px">菜单二</div>
+                            <div class="menu-item" style="padding-left: 14px">菜单三</div>
+                        </div>
+                    </div>
+                    <div class="menu-item" style="padding-left: 14px">菜单三</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+<script type="text/javascript">
+    var on = false
+    Array.from(document.querySelectorAll('.popup .menu-title')).forEach((item)=>{
+        item.addEventListener('mouseover', function (e) {
+            e.currentTarget.classList.toggle('active', !on);
+            e.currentTarget.nextElementSibling.classList.toggle('transition-enter', !on)
+            on = !on;
+        })
+    })
+    Array.from(document.querySelectorAll('.vertical .menu-title')).forEach((item)=>{
+        item.addEventListener('mouseover', function (e) {
+            e.currentTarget.classList.toggle('active', !on);
+            e.currentTarget.nextElementSibling.style.height = on ? '0' : '120px';
+            on = !on;
+        })
+    })
+</script>
+</html>
