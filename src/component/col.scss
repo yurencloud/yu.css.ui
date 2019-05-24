@@ -1,3 +1,85 @@
 @import "../common/varible";
-.yu-col{
+
+.yu-col {
+  position: relative;
+  box-sizing: border-box;
+  // col-1 ~ col-24
+  @for $i from 1 through 24 {
+    &.col-#{$i} {
+      width: percentage($i/24);
+    }
+    &.offset-#{$i} {
+      margin-left: percentage($i/24);
+    }
+    &.push-#{$i} {
+      left: percentage($i/24);
+    }
+    &.pull-#{$i} {
+      right: percentage($i/24);
+    }
+  }
+}
+
+// xs
+@media screen and (max-width: 576px) {
+  .yu-col {
+    @for $i from 1 through 24 {
+      &.col-xs-#{$i} {
+        width: percentage($i/24);
+      }
+    }
+  }
+}
+
+// sm
+@media screen and (min-width: 576px) {
+  @for $i from 1 through 24 {
+    &.col-sm-#{$i} {
+      width: percentage($i/24);
+    }
+  }
+}
+
+// md
+@media screen and (min-width: 768px) {
+  .yu-col {
+    @for $i from 1 through 24 {
+      &.col-md-#{$i} {
+        width: percentage($i/24);
+      }
+    }
+  }
+}
+
+// lg
+@media screen and (min-width: 992px) {
+  .yu-col {
+    @for $i from 1 through 24 {
+      &.col-lg-#{$i} {
+        width: percentage($i/24);
+      }
+    }
+  }
+}
+
+// xl
+@media screen and (min-width: 1200px) {
+  .yu-col {
+    @for $i from 1 through 24 {
+      &.col-xl-#{$i} {
+        width: percentage($i/24);
+      }
+    }
+  }
+}
+
+// xxl
+@media screen and (min-width: 1600px) {
+  .yu-col {
+    @for $i from 1 through 24 {
+      &.col-xxl-#{$i} {
+        width: percentage($i/24);
+      }
+    }
+  }
 }

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yu.css.ui</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="/css/component/layout.css">
+    <link rel="stylesheet" href="/css/component/menu.css">
+    <link rel="stylesheet" href="/css/component/card.css">
+</head>
+<body>
+<style>
+    .yu-header, .yu-content, .yu-sidebar, .yu-footer, .center{
+        background-color: #f5f5f9;
+    }
+    .yu-header span{
+        display: inline-block;
+        padding-right: 14px;
+    }
+    .person-center{
+        float:right;
+    }
+    a{
+        color: #409EFF;
+    }
+</style>
+<div class="web-container">
+    <h4 class="web-title">布局</h4>
+
+    <h4 class="web-title">头部 header</h4>
+    <div class="yu-header">文本</div>
+
+    <h4 class="web-title">对齐方式</h4>
+    <div class="yu-header align-left" style="margin-bottom: 14px">文本</div>
+    <div class="yu-header align-center" style="margin-bottom: 14px">文本</div>
+    <div class="yu-header align-right" style="margin-bottom: 14px">文本</div>
+
+    <h4 class="web-title">头部大小</h4>
+    <div class="yu-header">正常</div>
+    <h4 class="web-title">小头</h4>
+    <div class="yu-header small">小头</div>
+    <h4 class="web-title">极小头</h4>
+    <div class="yu-header tiny">极小头</div>
+
+    <h4 class="web-title">内部元素浮动方式</h4>
+    <div class="yu-header">
+        <span>菜单一</span>
+        <span>菜单一</span>
+        <span>菜单一</span>
+        <span>菜单一</span>
+        <span>菜单一</span>
+        <span class="float-right">个人中心</span>
+    </div>
+
+    <h4 class="web-title">内部元素浮动方式</h4>
+    <div class="yu-header align-right">
+        <span>菜单一</span>
+        <span>菜单一</span>
+        <span>菜单一</span>
+        <span>菜单一</span>
+        <span>菜单一</span>
+        <span class="float-left">个人中心</span>
+    </div>
+
+    <h4 class="web-title">局部或卡片内头部容器</h4>
+    <div class="yu-card card">
+        <div class="yu-header">标题
+        <a class="float-right">操作</a>
+        </div>
+        <div class="content">
+            <div class="header">
+                商业表格
+                <span class="float right">操作</span>
+                <div class="description">描述文件</div>
+            </div>
+        </div>
+        <div class="footer">
+            2019-03-02 23:11:00
+        </div>
+    </div>
+    <div class="yu-card card">
+        <div class="yu-header align-center">居中标题
+        </div>
+        <div class="content">
+            <div class="header">
+                商业表格
+                <span class="float right">操作</span>
+                <div class="description">描述文件</div>
+            </div>
+        </div>
+        <div class="footer">
+            2019-03-02 23:11:00
+        </div>
+    </div>
+
+    <h4 class="web-title">内容容器 container</h4>
+    <div style="width: 100%;height: 300px">
+        <div class="yu-content">123</div>
+    </div>
+
+
+    <h4 class="web-title">脚部容器（同头部容器）footer</h4>
+    <div class="yu-footer">123</div>
+
+
+    <h4 class="web-title">侧边栏容器 sidebar</h4>
+    <div style="width: 100%;height: 300px">
+        <div class="yu-sidebar">123</div>
+    </div>
+
+    <h4 class="web-title">居中容器 center</h4>
+    <div style="width: 100%;height: 600px;border: 1px solid #eee;">
+        <div class="yu-center">
+            <div class="center">123</div>
+        </div>
+    </div>
+
+
+</div>
+</body>
+</html>

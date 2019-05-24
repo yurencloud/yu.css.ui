@@ -91,6 +91,73 @@
             </ul>
     </ul>
 
+    <h4 class="web-title">树动画</h4>
+    <div style="border: 1px solid #eee;">
+        <ul class="yu-tree">
+            <li class="leaf">
+                <div class="tree-title">
+                    <i class="iconfont icon-angle-down"></i>
+                    <label class="yu-checkbox">
+                        <span class="checkbox"><input type="checkbox"></span>
+                        <span>苹果1</span>
+                    </label>
+                </div>
+                <ul class="child-tree">
+                    <li class="leaf">
+                        <div class="tree-title">
+                            <i class="iconfont icon-angle-down"></i>
+                            <label class="yu-checkbox">
+                                <span class="checkbox"><input type="checkbox"></span>
+                                <span>苹果2</span>
+                            </label>
+                        </div>
+                        <ul class="child-tree">
+                            <li class="leaf">
+                                <div class="tree-title">
+                                    <i class="iconfont icon-angle-down"></i>
+                                    <label class="yu-checkbox control part">
+                                        <span class="checkbox"><input type="checkbox"></span>
+                                        <span>苹果</span>
+                                    </label>
+                                </div>
+                                <ul class="child-tree last">
+                                    <li class="leaf">
+                                        <label class="yu-checkbox">
+                                            <span class="checkbox"><input type="checkbox"></span>
+                                            <span>苹果</span>
+                                        </label>
+                                    </li>
+                                    <li class="leaf">
+                                        <label class="yu-checkbox checked">
+                                            <span class="checkbox"><input type="checkbox"></span>
+                                            <span>苹果</span>
+                                        </label>
+                                    </li>
+                                    <li class="leaf">
+                                        <label class="yu-checkbox">
+                                            <span class="checkbox"><input type="checkbox"></span>
+                                            <span>苹果</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
 </div>
+<script>
+    var on = false
+    Array.from(document.querySelectorAll('.tree-title')).forEach((item)=>{
+        item.addEventListener('click', function (e) {
+            e.currentTarget.classList.toggle('active', !on);
+            e.currentTarget.nextElementSibling.style.height = on ? '0' : '120px';
+            on = !on;
+        })
+    })
+</script>
 </body>
 </html>

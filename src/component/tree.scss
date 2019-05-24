@@ -5,6 +5,9 @@
   font-size: 0;
   @include reset-ul();
   .child-tree{
+    transition: height $transition-time ease;
+    height: 0;
+    overflow: hidden;
     @include reset-ul();
     display: block;
     margin-left: 16px;
@@ -36,5 +39,8 @@
     span{
       font-size: $normal;
     }
+  }
+  .tree-title{
+    display: flex;
   }
 }

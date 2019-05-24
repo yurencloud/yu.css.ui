@@ -4,51 +4,258 @@
     <meta charset="UTF-8">
     <title>yu.css.ui</title>
     <link rel="stylesheet" href="../main.css">
-    <link rel="stylesheet" href="/css/component/row.css">
-    <link rel="stylesheet" href="/css/component/col.css">
+    <link rel="stylesheet" href="/css/component/grid.css">
 </head>
 <body>
 <style>
-    body, html{
+    body, html {
         width: 100%;
     }
-    .block{
+
+    .block {
+        color: #fff;
         text-align: center;
         line-height: 80px;
-        width: 100%;
         height: 80px;
-        background-color: #67C23A;
-        border: 4px solid #409EFF;
+        border: 1px solid #409EFF;
     }
-    .yu-row{
+
+    .yu-col:nth-child(2n) .block {
+        background-color: rgba(0, 160, 233, 0.7);
+    }
+
+    .yu-col:nth-child(2n+1) .block {
+        background-color: rgb(0, 160, 233);;
+    }
+
+    .block.big {
+        height: 120px;
+    }
+
+    .block.small {
+        height: 60px;
+    }
+
+    .yu-row {
         margin: 14px 0;
     }
 </style>
 <div class="web-container">
-    <h4 class="web-title">标记</h4>
+    <h4 class="web-title">比例</h4>
     <div class="yu-row">
-        <div class="yu-col" style="width: 25%">
+        <div class="yu-col col-6">
             <div class="block">1</div>
         </div>
-        <div class="yu-col" style="width: 25%">
+        <div class="yu-col col-6">
             <div class="block">2</div>
         </div>
-        <div class="yu-col" style="width: 25%">
+        <div class="yu-col col-6">
             <div class="block">3</div>
         </div>
-        <div class="yu-col" style="width: 25%">
+        <div class="yu-col col-6">
             <div class="block">4</div>
         </div>
     </div>
     <div class="yu-row">
-        <div class="yu-col" style="width: 33.333%">
+        <div class="yu-col col-8">
             <div class="block">1</div>
         </div>
-        <div class="yu-col" style="width: 33.333%">
+        <div class="yu-col col-8">
             <div class="block">2</div>
         </div>
-        <div class="yu-col" style="width: 33.333%">
+        <div class="yu-col col-8">
             <div class="block">3</div>
+        </div>
+    </div>
+
+
+    <h4 class="web-title">对齐 align</h4>
+    <div class="yu-row align-top">
+        <div class="yu-col col-6">
+            <div class="block big">1</div>
+        </div>
+        <div class="yu-col col-6">
+            <div class="block">2</div>
+        </div>
+        <div class="yu-col col-6">
+            <div class="block small">3</div>
+        </div>
+        <div class="yu-col col-6">
+            <div class="block big">4</div>
+        </div>
+    </div>
+    <div class="yu-row align-middle">
+        <div class="yu-col col-8">
+            <div class="block small">1</div>
+        </div>
+        <div class="yu-col col-8">
+            <div class="block">2</div>
+        </div>
+        <div class="yu-col col-8">
+            <div class="block big">3</div>
+        </div>
+    </div>
+    <div class="yu-row align-bottom">
+        <div class="yu-col col-8">
+            <div class="block small">1</div>
+        </div>
+        <div class="yu-col col-8">
+            <div class="block">2</div>
+        </div>
+        <div class="yu-col col-8">
+            <div class="block big">3</div>
+        </div>
+    </div>
+
+
+    <h4 class="web-title">排序 order</h4>
+    <div class="yu-row">
+        <div class="yu-col col-6" style="order:2;">
+            <div class="block big">1</div>
+        </div>
+        <div class="yu-col col-6" style="order:1;">
+            <div class="block">2</div>
+        </div>
+        <div class="yu-col col-6" style="order:4;">
+            <div class="block small">3</div>
+        </div>
+        <div class="yu-col col-6" style="order:3;">
+            <div class="block big">4</div>
+        </div>
+    </div>
+
+
+    <h4 class="web-title">布局 justify</h4>
+    <div class="yu-row justify-start">
+        <div class="yu-col col-3">
+            <div class="block big">1</div>
+        </div>
+        <div class="yu-col col-3">
+            <div class="block">2</div>
+        </div>
+        <div class="yu-col col-3">
+            <div class="block small">3</div>
+        </div>
+        <div class="yu-col col-3">
+            <div class="block big">4</div>
+        </div>
+    </div>
+    <div class="yu-row justify-center">
+        <div class="yu-col col-3">
+            <div class="block big">1</div>
+        </div>
+        <div class="yu-col col-3">
+            <div class="block">2</div>
+        </div>
+        <div class="yu-col col-3">
+            <div class="block small">3</div>
+        </div>
+        <div class="yu-col col-3">
+            <div class="block big">4</div>
+        </div>
+    </div>
+    <div class="yu-row justify-end">
+        <div class="yu-col col-3">
+            <div class="block big">1</div>
+        </div>
+        <div class="yu-col col-3">
+            <div class="block">2</div>
+        </div>
+        <div class="yu-col col-3">
+            <div class="block small">3</div>
+        </div>
+        <div class="yu-col col-3">
+            <div class="block big">4</div>
+        </div>
+    </div>
+    <div class="yu-row justify-space-between">
+        <div class="yu-col col-3">
+            <div class="block big">1</div>
+        </div>
+        <div class="yu-col col-3">
+            <div class="block">2</div>
+        </div>
+        <div class="yu-col col-3">
+            <div class="block small">3</div>
+        </div>
+        <div class="yu-col col-3">
+            <div class="block big">4</div>
+        </div>
+    </div>
+    <div class="yu-row justify-space-around">
+        <div class="yu-col col-3">
+            <div class="block big">1</div>
+        </div>
+        <div class="yu-col col-3">
+            <div class="block">2</div>
+        </div>
+        <div class="yu-col col-3">
+            <div class="block small">3</div>
+        </div>
+        <div class="yu-col col-3">
+            <div class="block big">4</div>
+        </div>
+    </div>
+
+    <h4 class="web-title">间隔 gutter</h4>
+    <div class="yu-row">
+        <div class="yu-col col-6" style="padding: 0 8px">
+            <div class="block">1</div>
+        </div>
+        <div class="yu-col col-6" style="padding: 0 8px">
+            <div class="block">2</div>
+        </div>
+        <div class="yu-col col-6" style="padding: 0 8px">
+            <div class="block">3</div>
+        </div>
+        <div class="yu-col col-6" style="padding: 0 8px">
+            <div class="block">4</div>
+        </div>
+    </div>
+    <h4 class="web-title">偏移 offset</h4>
+    <div class="yu-row">
+        <div class="yu-col col-6">
+            <div class="block">1</div>
+        </div>
+        <div class="yu-col col-6  offset-12">
+            <div class="block">2</div>
+        </div>
+    </div>
+    <div class="yu-row">
+        <div class="yu-col col-6 offset-6">
+            <div class="block">1</div>
+        </div>
+        <div class="yu-col col-6 offset-6">
+            <div class="block">2</div>
+        </div>
+    </div>
+
+
+    <h4 class="web-title">响应式 xs sm md lg xl xxl</h4>
+    <div class="yu-row">
+        <div class="yu-col col-xl-6 col-sm-12">
+            <div class="block">1</div>
+        </div>
+        <div class="yu-col col-xl-6 col-sm-12">
+            <div class="block">2</div>
+        </div>
+        <div class="yu-col col-xl-6 col-sm-12">
+            <div class="block">3</div>
+        </div>
+        <div class="yu-col col-xl-6 col-sm-12">
+            <div class="block">4</div>
+        </div>
+    </div>
+
+    <h4 class="web-title">排序 push pull</h4>
+    <h4 class="web-description">push向左推，向右拉</h4>
+    <h4 class="web-description">pull向左拉，向右推</h4>
+    <div class="yu-row">
+        <div class="yu-col col-6 push-18">
+            <div class="block">1</div>
+        </div>
+        <div class="yu-col col-18 pull-6">
+            <div class="block">2</div>
         </div>
     </div>
 </div>

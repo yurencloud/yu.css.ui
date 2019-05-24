@@ -2,4 +2,29 @@
 .yu-row{
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
+  &.align-top{
+    align-items: flex-start;
+  }
+  &.align-middle{
+    align-items: center;
+  }
+  &.align-bottom{
+    align-items: flex-end;
+  }
+  &.justify-start{
+    justify-content: flex-start;
+  }
+  &.justify-center{
+    justify-content: center;
+  }
+  &.justify-end{
+    justify-content: flex-end;
+  }
+  &.justify-space-between{
+    justify-content: space-between;
+  }
+  &.justify-space-around{
+    justify-content: space-around;
+  }
 }

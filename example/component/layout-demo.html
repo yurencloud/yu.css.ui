@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>yu.css.ui</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="/css/component/layout.css">
+    <link rel="stylesheet" href="/css/component/grid.css">
+    <link rel="stylesheet" href="/css/component/breadcrumb.css">
+</head>
+<style>
+    .yu-header, .yu-footer {
+        background-color: #7dbcea;
+        color: #fff;
+    }
+
+    .yu-content {
+        background-color: rgba(16, 142, 233, 1);;
+        color: #fff;
+    }
+
+    .yu-sidebar {
+        background-color: rgb(13, 93, 157);;
+        color: #fff;
+    }
+
+    body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+</style>
+<body>
+<div class="web-container">
+    <h4 class="web-title">简单用法</h4>
+    <div style="width: 1000px;height: 500px">
+        <div class="yu-layout">
+            <div class="yu-header">header</div>
+            <div class="yu-content">content</div>
+            <div class="yu-footer">footer</div>
+        </div>
+    </div>
+
+    <h4 class="web-title">简单用法</h4>
+    <div style="width: 1000px;height: 500px">
+        <div class="yu-layout">
+            <div class="yu-header">header</div>
+            <div class="yu-layout-inline">
+                <div class="yu-sidebar">sidebar</div>
+                <div class="yu-content">content</div>
+            </div>
+            <div class="yu-footer">footer</div>
+        </div>
+    </div>
+
+    <h4 class="web-title">简单用法</h4>
+    <div style="width: 1000px;height: 500px">
+        <div class="yu-layout">
+            <div class="yu-layout-inline">
+                <div class="yu-sidebar">sidebar</div>
+                <div class="yu-layout-block">
+                    <div class="yu-header">header</div>
+                    <div class="yu-content">content</div>
+                    <div class="yu-footer">footer</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h4 class="web-title">简单用法</h4>
+    <div style="width: 1000px;height: 500px">
+        <div class="yu-layout">
+            <div class="yu-layout-inline">
+                <div class="yu-sidebar">sidebar</div>
+                <div class="yu-layout-block">
+                    <div class="yu-header">header</div>
+                    <div class="yu-content">content</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h4 class="web-title">简单用法</h4>
+    <div style="width: 1000px;height: 500px">
+        <div class="yu-layout">
+            <div class="yu-header">header</div>
+            <div class="yu-layout-inline">
+                <div class="yu-sidebar">sidebar</div>
+                <div class="yu-layout-block">
+                    <div class="yu-header">
+                        <div class="yu-breadcrumb">
+            <span class="yu-breadcrumb-item">
+                <span>首页</span>
+                <i>/</i>
+            </span>
+                            <span class="yu-breadcrumb-item">
+                <span>用户管理</span>
+                <i>/</i>
+            </span>
+                            <span class="yu-breadcrumb-item current">
+                <span>添加用户</span>
+            </span>
+                        </div>
+                    </div>
+
+                    <div class="yu-content">content</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h4 class="web-title">简单用法</h4>
+    <div style="width: 1000px;height: 500px">
+        <div class="yu-layout">
+            <div class="yu-header">header</div>
+            <div class="yu-layout-block padding">
+                <div class="yu-header">
+                    <div class="yu-breadcrumb">
+            <span class="yu-breadcrumb-item">
+                <span>首页</span>
+                <i>/</i>
+            </span>
+                        <span class="yu-breadcrumb-item">
+                <span>用户管理</span>
+                <i>/</i>
+            </span>
+                        <span class="yu-breadcrumb-item current">
+                <span>添加用户</span>
+            </span>
+                    </div>
+                </div>
+                <div class="yu-layout-inline">
+                    <div class="yu-sidebar">sidebar</div>
+                    <div class="yu-content">content</div>
+                </div>
+                <div class="yu-footer align-center">footer</div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
