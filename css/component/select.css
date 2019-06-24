@@ -14,11 +14,6 @@
   .yu-option.overflow {
     overflow: auto;
     max-height: 175px; }
-    .yu-option.overflow::-webkit-scrollbar {
-      width: 4px; }
-    .yu-option.overflow::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: #E4E7ED; }
   .yu-option > li {
     box-sizing: border-box;
     font-size: 14px;
@@ -162,11 +157,6 @@
   .yu-option.overflow {
     overflow: auto;
     max-height: 175px; }
-    .yu-option.overflow::-webkit-scrollbar {
-      width: 4px; }
-    .yu-option.overflow::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: #E4E7ED; }
   .yu-option > li {
     box-sizing: border-box;
     font-size: 14px;

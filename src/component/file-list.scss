@@ -50,13 +50,12 @@ ul.yu-file-list {
     & > li {
       width: $file-list-picture-length;
       height: $file-list-picture-length;
-      padding: $space-small;
       box-sizing: border-box;
       border: 1px solid $border;
       border-radius: $radius;
       display: inline-block;
       margin: 0 $space-small $space 0;
-      $height: $file-list-picture-length - ($space-small*2) - 2;
+      $height: $file-list-picture-length - 2;
       & > .wrap {
         font-size: 0;
         position: relative;
@@ -102,13 +101,12 @@ ul.yu-file-list {
     & > li {
       position: relative;
       height: $file-list-title-picture-length;
-      padding: $space-tiny;
       box-sizing: border-box;
       border: 1px solid $border;
       border-radius: $radius;
       margin: 0 $space-small $space 0;
       display: flex;
-      $height: $file-list-title-picture-length - ($space-tiny*2) - 2;
+      $height: $file-list-title-picture-length - 2;
       & > .wrap {
         font-size: 0;
         width: $height;

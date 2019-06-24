@@ -55,7 +55,6 @@ ul.yu-file-list {
   ul.yu-file-list.picture > li {
     width: 100px;
     height: 100px;
-    padding: 8px;
     box-sizing: border-box;
     border: 1px solid #E4E7ED;
     border-radius: 4px;
@@ -65,12 +64,12 @@ ul.yu-file-list {
       font-size: 0;
       position: relative;
       height: 100%;
-      line-height: 82px;
+      line-height: 98px;
       text-align: center; }
       ul.yu-file-list.picture > li > .wrap > img {
         vertical-align: middle;
-        max-width: 82px;
-        max-height: 82px; }
+        max-width: 98px;
+        max-height: 98px; }
       ul.yu-file-list.picture > li > .wrap > .mask {
         position: absolute;
         opacity: 0;
@@ -94,7 +93,6 @@ ul.yu-file-list {
   ul.yu-file-list.title-picture > li {
     position: relative;
     height: 60px;
-    padding: 4px;
     box-sizing: border-box;
     border: 1px solid #E4E7ED;
     border-radius: 4px;
@@ -102,20 +100,20 @@ ul.yu-file-list {
     display: flex; }
     ul.yu-file-list.title-picture > li > .wrap {
       font-size: 0;
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
+      width: 58px;
+      height: 58px;
+      line-height: 58px;
       text-align: center;
       display: inline-block;
       align-items: center; }
       ul.yu-file-list.title-picture > li > .wrap > img {
         vertical-align: middle;
-        max-width: 50px;
-        max-height: 50px; }
+        max-width: 58px;
+        max-height: 58px; }
     ul.yu-file-list.title-picture > li > span {
       align-items: center;
       vertical-align: middle;
-      line-height: 50px;
+      line-height: 58px;
       word-break: break-all;
       padding: 0 8px;
       white-space: nowrap;

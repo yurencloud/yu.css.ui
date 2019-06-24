@@ -3,7 +3,7 @@
   font-size: 14px;
   color: #606266;
   cursor: pointer;
-  margin-right: 8px; }
+  margin-right: 14px; }
   .yu-checkbox > span {
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -28,20 +28,18 @@
     border: 1px solid #409EFF;
     border-radius: 2px;
     background-color: #409EFF; }
-    .yu-checkbox.checked > .checkbox + span {
-      color: #409EFF; }
     .yu-checkbox.checked > .checkbox:after {
       content: '\00a0';
       display: inline-block;
       border: 2px solid #fff;
       border-top-width: 0;
       border-right-width: 0;
-      width: 10px;
+      width: 8px;
       height: 4px;
       -webkit-transform: rotate(-50deg);
       position: absolute;
       top: 3px;
-      left: 1px; }
+      left: 2px; }
   .yu-checkbox.checked.disabled > .checkbox {
     border: 1px solid #C0C4CC;
     background-color: #C0C4CC; }

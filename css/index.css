@@ -478,8 +478,6 @@ div.yu-button {
     width: 16px;
     height: 16px;
     border: 5px solid #409EFF; }
-    .yu-radio.checked > .radio + span {
-      color: #409EFF; }
   .yu-radio.disabled {
     color: #C0C4CC; }
     .yu-radio.disabled > .radio:hover {
@@ -504,7 +502,7 @@ div.yu-button {
   font-size: 14px;
   color: #606266;
   cursor: pointer;
-  margin-right: 8px; }
+  margin-right: 14px; }
   .yu-checkbox > span {
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -529,20 +527,18 @@ div.yu-button {
     border: 1px solid #409EFF;
     border-radius: 2px;
     background-color: #409EFF; }
-    .yu-checkbox.checked > .checkbox + span {
-      color: #409EFF; }
     .yu-checkbox.checked > .checkbox:after {
       content: '\00a0';
       display: inline-block;
       border: 2px solid #fff;
       border-top-width: 0;
       border-right-width: 0;
-      width: 10px;
+      width: 8px;
       height: 4px;
       -webkit-transform: rotate(-50deg);
       position: absolute;
       top: 3px;
-      left: 1px; }
+      left: 2px; }
   .yu-checkbox.checked.disabled > .checkbox {
     border: 1px solid #C0C4CC;
     background-color: #C0C4CC; }
@@ -598,11 +594,6 @@ div.yu-button {
   .yu-option.overflow {
     overflow: auto;
     max-height: 175px; }
-    .yu-option.overflow::-webkit-scrollbar {
-      width: 4px; }
-    .yu-option.overflow::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: #E4E7ED; }
   .yu-option > li {
     box-sizing: border-box;
     font-size: 14px;
@@ -973,11 +964,6 @@ div.yu-button {
   .yu-option.overflow {
     overflow: auto;
     max-height: 175px; }
-    .yu-option.overflow::-webkit-scrollbar {
-      width: 4px; }
-    .yu-option.overflow::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: #E4E7ED; }
   .yu-option > li {
     box-sizing: border-box;
     font-size: 14px;
@@ -1240,11 +1226,6 @@ div.yu-button {
   .yu-option.overflow {
     overflow: auto;
     max-height: 175px; }
-    .yu-option.overflow::-webkit-scrollbar {
-      width: 4px; }
-    .yu-option.overflow::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: #E4E7ED; }
   .yu-option > li {
     box-sizing: border-box;
     font-size: 14px;
@@ -1388,11 +1369,6 @@ div.yu-button {
   .yu-option.overflow {
     overflow: auto;
     max-height: 175px; }
-    .yu-option.overflow::-webkit-scrollbar {
-      width: 4px; }
-    .yu-option.overflow::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: #E4E7ED; }
   .yu-option > li {
     box-sizing: border-box;
     font-size: 14px;
@@ -1470,11 +1446,6 @@ div.yu-button {
   .yu-option.overflow {
     overflow: auto;
     max-height: 175px; }
-    .yu-option.overflow::-webkit-scrollbar {
-      width: 4px; }
-    .yu-option.overflow::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: #E4E7ED; }
   .yu-option > li {
     box-sizing: border-box;
     font-size: 14px;
@@ -1509,11 +1480,6 @@ div.yu-button {
     border-right: 1px solid #E4E7ED;
     border-radius: 0;
     box-shadow: none; }
-    .yu-cascader-option > .yu-option::-webkit-scrollbar {
-      width: 4px; }
-    .yu-cascader-option > .yu-option::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: #E4E7ED; }
     .yu-cascader-option > .yu-option:first-child {
       border-radius: 4px 0 0 4px; }
     .yu-cascader-option > .yu-option:last-child {
@@ -1544,11 +1510,6 @@ div.yu-button {
   .yu-option.overflow {
     overflow: auto;
     max-height: 175px; }
-    .yu-option.overflow::-webkit-scrollbar {
-      width: 4px; }
-    .yu-option.overflow::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: #E4E7ED; }
   .yu-option > li {
     box-sizing: border-box;
     font-size: 14px;
@@ -1692,11 +1653,6 @@ div.yu-button {
   .yu-option.overflow {
     overflow: auto;
     max-height: 175px; }
-    .yu-option.overflow::-webkit-scrollbar {
-      width: 4px; }
-    .yu-option.overflow::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: #E4E7ED; }
   .yu-option > li {
     box-sizing: border-box;
     font-size: 14px;
@@ -1731,11 +1687,6 @@ div.yu-button {
     border-right: 1px solid #E4E7ED;
     border-radius: 0;
     box-shadow: none; }
-    .yu-cascader-option > .yu-option::-webkit-scrollbar {
-      width: 4px; }
-    .yu-cascader-option > .yu-option::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: #E4E7ED; }
     .yu-cascader-option > .yu-option:first-child {
       border-radius: 4px 0 0 4px; }
     .yu-cascader-option > .yu-option:last-child {
@@ -2039,11 +1990,6 @@ div.yu-button {
   .yu-option.overflow {
     overflow: auto;
     max-height: 175px; }
-    .yu-option.overflow::-webkit-scrollbar {
-      width: 4px; }
-    .yu-option.overflow::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: #E4E7ED; }
   .yu-option > li {
     box-sizing: border-box;
     font-size: 14px;
@@ -2327,7 +2273,6 @@ ul.yu-file-list {
   ul.yu-file-list.picture > li {
     width: 100px;
     height: 100px;
-    padding: 8px;
     box-sizing: border-box;
     border: 1px solid #E4E7ED;
     border-radius: 4px;
@@ -2337,12 +2282,12 @@ ul.yu-file-list {
       font-size: 0;
       position: relative;
       height: 100%;
-      line-height: 82px;
+      line-height: 98px;
       text-align: center; }
       ul.yu-file-list.picture > li > .wrap > img {
         vertical-align: middle;
-        max-width: 82px;
-        max-height: 82px; }
+        max-width: 98px;
+        max-height: 98px; }
       ul.yu-file-list.picture > li > .wrap > .mask {
         position: absolute;
         opacity: 0;
@@ -2366,7 +2311,6 @@ ul.yu-file-list {
   ul.yu-file-list.title-picture > li {
     position: relative;
     height: 60px;
-    padding: 4px;
     box-sizing: border-box;
     border: 1px solid #E4E7ED;
     border-radius: 4px;
@@ -2374,20 +2318,20 @@ ul.yu-file-list {
     display: flex; }
     ul.yu-file-list.title-picture > li > .wrap {
       font-size: 0;
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
+      width: 58px;
+      height: 58px;
+      line-height: 58px;
       text-align: center;
       display: inline-block;
       align-items: center; }
       ul.yu-file-list.title-picture > li > .wrap > img {
         vertical-align: middle;
-        max-width: 50px;
-        max-height: 50px; }
+        max-width: 58px;
+        max-height: 58px; }
     ul.yu-file-list.title-picture > li > span {
       align-items: center;
       vertical-align: middle;
-      line-height: 50px;
+      line-height: 58px;
       word-break: break-all;
       padding: 0 8px;
       white-space: nowrap;
@@ -3021,11 +2965,6 @@ ul.yu-file-list {
   .yu-option.overflow {
     overflow: auto;
     max-height: 175px; }
-    .yu-option.overflow::-webkit-scrollbar {
-      width: 4px; }
-    .yu-option.overflow::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: #E4E7ED; }
   .yu-option > li {
     box-sizing: border-box;
     font-size: 14px;
@@ -3169,11 +3108,6 @@ ul.yu-file-list {
   .yu-option.overflow {
     overflow: auto;
     max-height: 175px; }
-    .yu-option.overflow::-webkit-scrollbar {
-      width: 4px; }
-    .yu-option.overflow::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: #E4E7ED; }
   .yu-option > li {
     box-sizing: border-box;
     font-size: 14px;
@@ -3251,11 +3185,6 @@ ul.yu-file-list {
   .yu-option.overflow {
     overflow: auto;
     max-height: 175px; }
-    .yu-option.overflow::-webkit-scrollbar {
-      width: 4px; }
-    .yu-option.overflow::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background-color: #E4E7ED; }
   .yu-option > li {
     box-sizing: border-box;
     font-size: 14px;
@@ -4367,7 +4296,7 @@ body.lock {
   font-size: 14px;
   color: #606266;
   cursor: pointer;
-  margin-right: 8px; }
+  margin-right: 14px; }
   .yu-checkbox > span {
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -4392,20 +4321,18 @@ body.lock {
     border: 1px solid #409EFF;
     border-radius: 2px;
     background-color: #409EFF; }
-    .yu-checkbox.checked > .checkbox + span {
-      color: #409EFF; }
     .yu-checkbox.checked > .checkbox:after {
       content: '\00a0';
       display: inline-block;
       border: 2px solid #fff;
       border-top-width: 0;
       border-right-width: 0;
-      width: 10px;
+      width: 8px;
       height: 4px;
       -webkit-transform: rotate(-50deg);
       position: absolute;
       top: 3px;
-      left: 1px; }
+      left: 2px; }
   .yu-checkbox.checked.disabled > .checkbox {
     border: 1px solid #C0C4CC;
     background-color: #C0C4CC; }
@@ -4488,7 +4415,7 @@ body.lock {
   font-size: 14px;
   color: #606266;
   cursor: pointer;
-  margin-right: 8px; }
+  margin-right: 14px; }
   .yu-checkbox > span {
     -moz-user-select: none;
     -webkit-user-select: none;
@@ -4513,20 +4440,18 @@ body.lock {
     border: 1px solid #409EFF;
     border-radius: 2px;
     background-color: #409EFF; }
-    .yu-checkbox.checked > .checkbox + span {
-      color: #409EFF; }
     .yu-checkbox.checked > .checkbox:after {
       content: '\00a0';
       display: inline-block;
       border: 2px solid #fff;
       border-top-width: 0;
       border-right-width: 0;
-      width: 10px;
+      width: 8px;
       height: 4px;
       -webkit-transform: rotate(-50deg);
       position: absolute;
       top: 3px;
-      left: 1px; }
+      left: 2px; }
   .yu-checkbox.checked.disabled > .checkbox {
     border: 1px solid #C0C4CC;
     background-color: #C0C4CC; }
