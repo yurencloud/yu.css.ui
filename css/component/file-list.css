@@ -26,9 +26,9 @@ ul.yu-file-list {
     ul.yu-file-list.simple > li.success > span {
       color: #67C23A; }
     ul.yu-file-list.simple > li.warning > i:first-child {
-      color: #e6b322; }
+      color: #fecf20; }
     ul.yu-file-list.simple > li.warning > span {
-      color: #e6b322; }
+      color: #fecf20; }
     ul.yu-file-list.simple > li.info > i:first-child {
       color: #909399; }
     ul.yu-file-list.simple > li.info > span {

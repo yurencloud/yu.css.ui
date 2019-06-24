@@ -18,8 +18,8 @@
   .yu-field > label {
     font-size: 14px;
     width: 80px;
-    height: 28px;
-    line-height: 28px;
+    height: 32px;
+    line-height: 32px;
     box-sizing: border-box;
     padding-right: 14px; }
     .yu-field > label.top {
@@ -58,5 +58,5 @@
     .yu-field.error > .field > .error {
       margin: 0;
       font-size: 14px;
-      line-height: 28px;
+      line-height: 32px;
       color: #F56C6C; }

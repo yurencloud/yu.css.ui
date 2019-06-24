@@ -12,7 +12,7 @@ $iconfont-path: '/dist/iconfont' !default;
 // 背景颜色
 $primary: #409EFF !default;
 $success: #67C23A !default;
-$warning: #e6b322 !default;
+$warning: #fecf20 !default;
 $danger: #F56C6C !default;
 $info: #909399 !default;
 
@@ -53,10 +53,10 @@ $space: 14px !default;
 $space-small: 8px !default;
 $space-tiny: 4px !default;
 
-// 元素高度， ant-design 主要有 large 32 normal 28 small 22
-$height-large: 32px !default;
-$height: 28px !default;
-$height-small: 22px !default;
+// 元素高度， ant-design 主要有 large 40 normal 32 small 24
+$height-large: 40px !default;
+$height: 32px !default;
+$height-small: 24px !default;
 
 $types: primary, success, warning, info, danger !default;
 $colors: (

@@ -43,9 +43,9 @@
     color: #67C23A;
     border: 1px solid #c1e7ae; }
   .yu-message.warning {
-    background-color: #fbf2d9;
-    color: #e6b322;
-    border: 1px solid #f6e2ab; }
+    background-color: #fffbeb;
+    color: #fecf20;
+    border: 1px solid #fff0b8; }
   .yu-message.info {
     background-color: #f2f3f3;
     color: #909399;

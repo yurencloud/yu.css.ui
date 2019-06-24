@@ -47,7 +47,7 @@
       background-color: #67C23A;
       transition: all .3s ease; }
     .yu-switch > .switch.on.warning {
-      background-color: #e6b322;
+      background-color: #fecf20;
       transition: all .3s ease; }
     .yu-switch > .switch.on.info {
       background-color: #909399;
@@ -63,7 +63,7 @@
     .yu-switch.disabled .switch.on.success {
       background-color: #b2e19b; }
     .yu-switch.disabled .switch.on.warning {
-      background-color: #f3da95; }
+      background-color: #ffea9f; }
     .yu-switch.disabled .switch.on.info {
       background-color: #d2d4d6; }
     .yu-switch.disabled .switch.on.danger {

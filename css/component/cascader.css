@@ -61,7 +61,7 @@
     color: #606266;
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
     box-sizing: border-box;
-    height: 28px;
+    height: 32px;
     border: 1px solid #E4E7ED;
     border-radius: 4px;
     transition: all ease 0.4s; }
@@ -77,9 +77,9 @@
     .yu-input > input.suffix {
       padding-right: 32px; }
     .yu-input > input.large {
-      height: 32px; }
+      height: 40px; }
     .yu-input > input.small {
-      height: 22px; }
+      height: 24px; }
     .yu-input > input.full {
       width: 100%; }
   .yu-input.textarea {

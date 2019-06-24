@@ -12,9 +12,9 @@
   background-color: #f3f9ff;
   border: 1px solid #a6d2ff;
   display: inline-block;
-  height: 28px;
+  height: 32px;
   font-size: 14px;
-  line-height: 28px;
+  line-height: 32px;
   color: #409EFF;
   border-radius: 4px;
   white-space: nowrap; }
@@ -42,13 +42,13 @@
       .yu-tag.success i.icon-close:hover {
         color: #67C23A; }
   .yu-tag.warning {
-    background-color: #fbf2d9;
-    color: #e6b322;
-    border: 1px solid #e6b322; }
+    background-color: #fffbeb;
+    color: #fecf20;
+    border: 1px solid #fecf20; }
     .yu-tag.warning i.icon-close {
-      color: #ebc350; }
+      color: #feda53; }
       .yu-tag.warning i.icon-close:hover {
-        color: #e6b322; }
+        color: #fecf20; }
   .yu-tag.info {
     background-color: #f2f3f3;
     color: #909399;
@@ -66,15 +66,15 @@
       .yu-tag.danger i.icon-close:hover {
         color: #F56C6C; }
   .yu-tag.small {
-    height: 22px;
+    height: 24px;
     font-size: 12px;
-    line-height: 22px; }
+    line-height: 24px; }
     .yu-tag.small i.icon-close {
       font-size: 12px; }
   .yu-tag.large {
-    height: 32px;
+    height: 40px;
     font-size: 16px;
-    line-height: 32px; }
+    line-height: 40px; }
     .yu-tag.large i.icon-close {
       font-size: 16px; }
   .yu-tag.border-none {
