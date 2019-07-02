@@ -1,6 +1,6 @@
 {
   "name": "yu.css.ui",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "纯CSS通用UI模块和组件",
   "main": "src/index.scss",
   "scripts": {
