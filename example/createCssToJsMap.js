@@ -24,7 +24,7 @@ fs.readdir(filePath, function (err, files) {
                     if (name === 'alert') {
                         name = 'alerts'
                     }
-                    if (name === 'checkbox') {
+                    if (name === 'checkbox' || name === 'transfer' || name === 'tree') {
                         content = content.replace(/\\/g, '\\\\')
                     }
                     if (name === 'iconfont') {

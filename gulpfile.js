@@ -19,7 +19,7 @@ task('scss', function () {
 });
 
 task('compress', function () {
-    return src(['css/*.css', 'src/*/*.css'])
+    return src(['css/*.css', 'css/*/*.css'])
         .pipe(cssnano())
         .pipe(dest('dist/'));
 });
