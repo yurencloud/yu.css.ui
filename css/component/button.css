@@ -1,4 +1,5 @@
 div.yu-button {
+  vertical-align: top;
   line-height: 32px; }
   div.yu-button.large {
     line-height: 40px; }

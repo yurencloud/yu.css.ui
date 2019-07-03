@@ -218,6 +218,7 @@
   content: "\e6c8"; }
 
 div.yu-button {
+  vertical-align: top;
   line-height: 32px; }
   div.yu-button.large {
     line-height: 40px; }
@@ -722,6 +723,7 @@ div.yu-button {
     z-index: 1000; }
 
 div.yu-button {
+  vertical-align: top;
   line-height: 32px; }
   div.yu-button.large {
     line-height: 40px; }
@@ -1169,7 +1171,7 @@ div.yu-button {
       height: 24px; }
       .yu-counter-side > div.button.small > button > i:before {
         display: block;
-        margin-top: -16px; }
+        margin-top: -19px; }
     .yu-counter-side > div.button > button {
       cursor: pointer;
       height: 50%;
@@ -2903,7 +2905,7 @@ ul.yu-file-list {
     position: absolute;
     right: -10px;
     top: -10px;
-    z-index: 1;
+    z-index: 1000;
     height: 20px;
     line-height: 20px;
     border-radius: 10px;
@@ -2931,7 +2933,7 @@ ul.yu-file-list {
     position: absolute;
     right: -4px;
     top: -4px;
-    z-index: 1;
+    z-index: 1000;
     background-color: #F56C6C;
     width: 8px;
     height: 8px;
@@ -3734,6 +3736,7 @@ ul.yu-file-list {
     border-bottom: none; }
 
 div.yu-button {
+  vertical-align: top;
   line-height: 32px; }
   div.yu-button.large {
     line-height: 40px; }
@@ -4492,6 +4495,7 @@ body.lock {
     margin-bottom: 14px; }
 
 div.yu-button {
+  vertical-align: top;
   line-height: 32px; }
   div.yu-button.large {
     line-height: 40px; }

@@ -1,6 +1,7 @@
 @import "../common/varible";
 @import "../common/function";
 div.yu-button{
+  vertical-align: top;
   line-height: $height;
   &.large {
     line-height: $height-large;
