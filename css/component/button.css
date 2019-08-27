@@ -99,6 +99,19 @@ div.yu-button {
       color: #fff;
       border: 1px solid #f89c9c;
       background-color: #f89c9c; }
+  .yu-button.error {
+    color: #fff;
+    border: 1px solid #F56C6C;
+    background-color: #F56C6C;
+    transition: all .3s ease; }
+    .yu-button.error.disabled {
+      border: 1px solid #fde3e3;
+      background-color: #fde3e3;
+      cursor: not-allowed; }
+    .yu-button.error:hover:not(.disabled), .yu-button.error:focus:not(.disabled) {
+      color: #fff;
+      border: 1px solid #f89c9c;
+      background-color: #f89c9c; }
   .yu-button.circle {
     padding: 0;
     width: 32px;
@@ -175,6 +188,20 @@ div.yu-button {
       background-color: #fef6f6;
       cursor: not-allowed; }
     .yu-button.plain.danger:hover:not(.disabled), .yu-button.plain.danger:focus:not(.disabled) {
+      border: 1px solid #F56C6C;
+      background-color: #F56C6C;
+      color: #fff; }
+  .yu-button.plain.error {
+    color: #F56C6C;
+    border: 1px solid #F56C6C;
+    background-color: #feeded;
+    transition: all .3s ease; }
+    .yu-button.plain.error.disabled {
+      color: #fbcccc;
+      border: 1px solid #fde3e3;
+      background-color: #fef6f6;
+      cursor: not-allowed; }
+    .yu-button.plain.error:hover:not(.disabled), .yu-button.plain.error:focus:not(.disabled) {
       border: 1px solid #F56C6C;
       background-color: #F56C6C;
       color: #fff; }

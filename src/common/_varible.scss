@@ -58,12 +58,13 @@ $height-large: 40px !default;
 $height: 32px !default;
 $height-small: 24px !default;
 
-$types: primary, success, warning, info, danger !default;
+$types: primary, success, warning, info, danger, error !default;
 $colors: (
         primary: $primary,
         success: $success,
         warning: $warning,
         danger: $danger,
+        error: $danger,
         info: $info
 ) !default;
 $background-colors: (
@@ -71,6 +72,7 @@ $background-colors: (
         success: $background-success,
         warning: $background-warning,
         danger: $background-danger,
+        error: $background-danger,
         info: $background-info
 ) !default;
 

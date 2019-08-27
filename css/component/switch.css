@@ -55,6 +55,9 @@
     .yu-switch > .switch.on.danger {
       background-color: #F56C6C;
       transition: all .3s ease; }
+    .yu-switch > .switch.on.error {
+      background-color: #F56C6C;
+      transition: all .3s ease; }
   .yu-switch.disabled {
     color: #a0a2a6;
     cursor: not-allowed; }
@@ -67,4 +70,6 @@
     .yu-switch.disabled .switch.on.info {
       background-color: #d2d4d6; }
     .yu-switch.disabled .switch.on.danger {
+      background-color: #fde3e3; }
+    .yu-switch.disabled .switch.on.error {
       background-color: #fde3e3; }

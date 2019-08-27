@@ -318,6 +318,19 @@ div.yu-button {
       color: #fff;
       border: 1px solid #f89c9c;
       background-color: #f89c9c; }
+  .yu-button.error {
+    color: #fff;
+    border: 1px solid #F56C6C;
+    background-color: #F56C6C;
+    transition: all .3s ease; }
+    .yu-button.error.disabled {
+      border: 1px solid #fde3e3;
+      background-color: #fde3e3;
+      cursor: not-allowed; }
+    .yu-button.error:hover:not(.disabled), .yu-button.error:focus:not(.disabled) {
+      color: #fff;
+      border: 1px solid #f89c9c;
+      background-color: #f89c9c; }
   .yu-button.circle {
     padding: 0;
     width: 32px;
@@ -394,6 +407,20 @@ div.yu-button {
       background-color: #fef6f6;
       cursor: not-allowed; }
     .yu-button.plain.danger:hover:not(.disabled), .yu-button.plain.danger:focus:not(.disabled) {
+      border: 1px solid #F56C6C;
+      background-color: #F56C6C;
+      color: #fff; }
+  .yu-button.plain.error {
+    color: #F56C6C;
+    border: 1px solid #F56C6C;
+    background-color: #feeded;
+    transition: all .3s ease; }
+    .yu-button.plain.error.disabled {
+      color: #fbcccc;
+      border: 1px solid #fde3e3;
+      background-color: #fef6f6;
+      cursor: not-allowed; }
+    .yu-button.plain.error:hover:not(.disabled), .yu-button.plain.error:focus:not(.disabled) {
       border: 1px solid #F56C6C;
       background-color: #F56C6C;
       color: #fff; }
@@ -822,6 +849,19 @@ div.yu-button {
       color: #fff;
       border: 1px solid #f89c9c;
       background-color: #f89c9c; }
+  .yu-button.error {
+    color: #fff;
+    border: 1px solid #F56C6C;
+    background-color: #F56C6C;
+    transition: all .3s ease; }
+    .yu-button.error.disabled {
+      border: 1px solid #fde3e3;
+      background-color: #fde3e3;
+      cursor: not-allowed; }
+    .yu-button.error:hover:not(.disabled), .yu-button.error:focus:not(.disabled) {
+      color: #fff;
+      border: 1px solid #f89c9c;
+      background-color: #f89c9c; }
   .yu-button.circle {
     padding: 0;
     width: 32px;
@@ -898,6 +938,20 @@ div.yu-button {
       background-color: #fef6f6;
       cursor: not-allowed; }
     .yu-button.plain.danger:hover:not(.disabled), .yu-button.plain.danger:focus:not(.disabled) {
+      border: 1px solid #F56C6C;
+      background-color: #F56C6C;
+      color: #fff; }
+  .yu-button.plain.error {
+    color: #F56C6C;
+    border: 1px solid #F56C6C;
+    background-color: #feeded;
+    transition: all .3s ease; }
+    .yu-button.plain.error.disabled {
+      color: #fbcccc;
+      border: 1px solid #fde3e3;
+      background-color: #fef6f6;
+      cursor: not-allowed; }
+    .yu-button.plain.error:hover:not(.disabled), .yu-button.plain.error:focus:not(.disabled) {
       border: 1px solid #F56C6C;
       background-color: #F56C6C;
       color: #fff; }
@@ -1800,6 +1854,9 @@ div.yu-button {
     .yu-switch > .switch.on.danger {
       background-color: #F56C6C;
       transition: all .3s ease; }
+    .yu-switch > .switch.on.error {
+      background-color: #F56C6C;
+      transition: all .3s ease; }
   .yu-switch.disabled {
     color: #a0a2a6;
     cursor: not-allowed; }
@@ -1812,6 +1869,8 @@ div.yu-button {
     .yu-switch.disabled .switch.on.info {
       background-color: #d2d4d6; }
     .yu-switch.disabled .switch.on.danger {
+      background-color: #fde3e3; }
+    .yu-switch.disabled .switch.on.error {
       background-color: #fde3e3; }
 
 .yu-slider {
@@ -2252,6 +2311,10 @@ ul.yu-file-list {
       color: #F56C6C; }
     ul.yu-file-list.simple > li.danger > span {
       color: #F56C6C; }
+    ul.yu-file-list.simple > li.error > i:first-child {
+      color: #F56C6C; }
+    ul.yu-file-list.simple > li.error > span {
+      color: #F56C6C; }
     ul.yu-file-list.simple > li:hover {
       background-color: #f5f5f9; }
       ul.yu-file-list.simple > li:hover > i.icon-close {
@@ -2463,6 +2526,8 @@ ul.yu-file-list {
     color: #909399; }
   .yu-loading.danger {
     color: #F56C6C; }
+  .yu-loading.error {
+    color: #F56C6C; }
   .yu-loading.inline {
     display: inline-block; }
     .yu-loading.inline > p {
@@ -2512,8 +2577,10 @@ ul.yu-file-list {
     font-size: 14px; }
     .yu-alert > i.icon-close {
       vertical-align: middle;
-      line-height: 19px;
-      float: right;
+      line-height: 20px;
+      position: absolute;
+      right: 8px;
+      top: 8px;
       color: #909399;
       cursor: pointer;
       margin: 0; }
@@ -2539,12 +2606,18 @@ ul.yu-file-list {
     background-color: #feeded;
     color: #F56C6C;
     border-color: #fbcccc; }
+  .yu-alert.error {
+    background-color: #feeded;
+    color: #F56C6C;
+    border-color: #fbcccc; }
   .yu-alert.center {
     text-align: center; }
   .yu-alert > .title {
     margin: 0;
     font-size: 14px;
     font-weight: bold; }
+    .yu-alert > .title > i {
+      margin-right: 4px; }
   .yu-alert > .description {
     margin: 0;
     padding-top: 8px;
@@ -2812,6 +2885,14 @@ ul.yu-file-list {
       color: #f89c9c; }
       .yu-tag.danger i.icon-close:hover {
         color: #F56C6C; }
+  .yu-tag.error {
+    background-color: #feeded;
+    color: #F56C6C;
+    border: 1px solid #F56C6C; }
+    .yu-tag.error i.icon-close {
+      color: #f89c9c; }
+      .yu-tag.error i.icon-close:hover {
+        color: #F56C6C; }
   .yu-tag.small {
     height: 24px;
     font-size: 12px;
@@ -2924,6 +3005,8 @@ ul.yu-file-list {
       background-color: #909399; }
     .yu-badge > .badge.danger {
       background-color: #F56C6C; }
+    .yu-badge > .badge.error {
+      background-color: #F56C6C; }
   .yu-badge > .dot {
     position: absolute;
     right: -4px;
@@ -2944,6 +3027,8 @@ ul.yu-file-list {
     .yu-badge > .dot.info {
       background-color: #909399; }
     .yu-badge > .dot.danger {
+      background-color: #F56C6C; }
+    .yu-badge > .dot.error {
       background-color: #F56C6C; }
 
 .yu-option {
@@ -3638,6 +3723,10 @@ ul.yu-file-list {
       background-color: #feeded; }
       .yu-table tbody tr.danger:hover {
         background-color: #fff; }
+    .yu-table tbody tr.error {
+      background-color: #feeded; }
+      .yu-table tbody tr.error:hover {
+        background-color: #fff; }
     .yu-table tbody tr:hover {
       background-color: #f5f5f9; }
   .yu-table.celled {
@@ -3706,6 +3795,10 @@ ul.yu-file-list {
     .yu-table tbody tr.danger {
       background-color: #feeded; }
       .yu-table tbody tr.danger:hover {
+        background-color: #fff; }
+    .yu-table tbody tr.error {
+      background-color: #feeded; }
+      .yu-table tbody tr.error:hover {
         background-color: #fff; }
     .yu-table tbody tr:hover {
       background-color: #f5f5f9; }
@@ -3829,6 +3922,19 @@ div.yu-button {
       color: #fff;
       border: 1px solid #f89c9c;
       background-color: #f89c9c; }
+  .yu-button.error {
+    color: #fff;
+    border: 1px solid #F56C6C;
+    background-color: #F56C6C;
+    transition: all .3s ease; }
+    .yu-button.error.disabled {
+      border: 1px solid #fde3e3;
+      background-color: #fde3e3;
+      cursor: not-allowed; }
+    .yu-button.error:hover:not(.disabled), .yu-button.error:focus:not(.disabled) {
+      color: #fff;
+      border: 1px solid #f89c9c;
+      background-color: #f89c9c; }
   .yu-button.circle {
     padding: 0;
     width: 32px;
@@ -3905,6 +4011,20 @@ div.yu-button {
       background-color: #fef6f6;
       cursor: not-allowed; }
     .yu-button.plain.danger:hover:not(.disabled), .yu-button.plain.danger:focus:not(.disabled) {
+      border: 1px solid #F56C6C;
+      background-color: #F56C6C;
+      color: #fff; }
+  .yu-button.plain.error {
+    color: #F56C6C;
+    border: 1px solid #F56C6C;
+    background-color: #feeded;
+    transition: all .3s ease; }
+    .yu-button.plain.error.disabled {
+      color: #fbcccc;
+      border: 1px solid #fde3e3;
+      background-color: #fef6f6;
+      cursor: not-allowed; }
+    .yu-button.plain.error:hover:not(.disabled), .yu-button.plain.error:focus:not(.disabled) {
       border: 1px solid #F56C6C;
       background-color: #F56C6C;
       color: #fff; }
@@ -4203,6 +4323,10 @@ body.lock {
     color: #909399;
     border: 1px solid #e0e1e2; }
   .yu-message.danger {
+    background-color: #feeded;
+    color: #F56C6C;
+    border: 1px solid #fffbfb; }
+  .yu-message.error {
     background-color: #feeded;
     color: #F56C6C;
     border: 1px solid #fffbfb; }
@@ -4588,6 +4712,19 @@ div.yu-button {
       color: #fff;
       border: 1px solid #f89c9c;
       background-color: #f89c9c; }
+  .yu-button.error {
+    color: #fff;
+    border: 1px solid #F56C6C;
+    background-color: #F56C6C;
+    transition: all .3s ease; }
+    .yu-button.error.disabled {
+      border: 1px solid #fde3e3;
+      background-color: #fde3e3;
+      cursor: not-allowed; }
+    .yu-button.error:hover:not(.disabled), .yu-button.error:focus:not(.disabled) {
+      color: #fff;
+      border: 1px solid #f89c9c;
+      background-color: #f89c9c; }
   .yu-button.circle {
     padding: 0;
     width: 32px;
@@ -4664,6 +4801,20 @@ div.yu-button {
       background-color: #fef6f6;
       cursor: not-allowed; }
     .yu-button.plain.danger:hover:not(.disabled), .yu-button.plain.danger:focus:not(.disabled) {
+      border: 1px solid #F56C6C;
+      background-color: #F56C6C;
+      color: #fff; }
+  .yu-button.plain.error {
+    color: #F56C6C;
+    border: 1px solid #F56C6C;
+    background-color: #feeded;
+    transition: all .3s ease; }
+    .yu-button.plain.error.disabled {
+      color: #fbcccc;
+      border: 1px solid #fde3e3;
+      background-color: #fef6f6;
+      cursor: not-allowed; }
+    .yu-button.plain.error:hover:not(.disabled), .yu-button.plain.error:focus:not(.disabled) {
       border: 1px solid #F56C6C;
       background-color: #F56C6C;
       color: #fff; }

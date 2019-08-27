@@ -37,6 +37,10 @@ ul.yu-file-list {
       color: #F56C6C; }
     ul.yu-file-list.simple > li.danger > span {
       color: #F56C6C; }
+    ul.yu-file-list.simple > li.error > i:first-child {
+      color: #F56C6C; }
+    ul.yu-file-list.simple > li.error > span {
+      color: #F56C6C; }
     ul.yu-file-list.simple > li:hover {
       background-color: #f5f5f9; }
       ul.yu-file-list.simple > li:hover > i.icon-close {

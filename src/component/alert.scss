@@ -17,8 +17,10 @@
     font-size: $normal;
     &.icon-close{
       vertical-align: middle;
-      line-height: 19px;
-      float: right;
+      line-height: 20px;
+      position: absolute;
+      right: $space-small;
+      top: $space-small;
       color: $text-light;
       cursor: pointer;
       margin: 0;
@@ -35,6 +37,9 @@
     margin: 0;
     font-size: $normal;
     font-weight: bold;
+    &>i{
+      margin-right: $space-tiny;
+    }
   }
   & > .description {
     margin: 0;

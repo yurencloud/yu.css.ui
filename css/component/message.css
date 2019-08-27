@@ -54,5 +54,9 @@
     background-color: #feeded;
     color: #F56C6C;
     border: 1px solid #fffbfb; }
+  .yu-message.error {
+    background-color: #feeded;
+    color: #F56C6C;
+    border: 1px solid #fffbfb; }
   .yu-message.center {
     text-align: center; }

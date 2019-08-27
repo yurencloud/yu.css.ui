@@ -14,6 +14,8 @@
     color: #909399; }
   .yu-loading.danger {
     color: #F56C6C; }
+  .yu-loading.error {
+    color: #F56C6C; }
   .yu-loading.inline {
     display: inline-block; }
     .yu-loading.inline > p {

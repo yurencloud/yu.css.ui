@@ -42,6 +42,8 @@
       background-color: #909399; }
     .yu-badge > .badge.danger {
       background-color: #F56C6C; }
+    .yu-badge > .badge.error {
+      background-color: #F56C6C; }
   .yu-badge > .dot {
     position: absolute;
     right: -4px;
@@ -62,4 +64,6 @@
     .yu-badge > .dot.info {
       background-color: #909399; }
     .yu-badge > .dot.danger {
+      background-color: #F56C6C; }
+    .yu-badge > .dot.error {
       background-color: #F56C6C; }

@@ -65,6 +65,14 @@
       color: #f89c9c; }
       .yu-tag.danger i.icon-close:hover {
         color: #F56C6C; }
+  .yu-tag.error {
+    background-color: #feeded;
+    color: #F56C6C;
+    border: 1px solid #F56C6C; }
+    .yu-tag.error i.icon-close {
+      color: #f89c9c; }
+      .yu-tag.error i.icon-close:hover {
+        color: #F56C6C; }
   .yu-tag.small {
     height: 24px;
     font-size: 12px;

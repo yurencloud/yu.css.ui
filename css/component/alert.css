@@ -14,8 +14,10 @@
     font-size: 14px; }
     .yu-alert > i.icon-close {
       vertical-align: middle;
-      line-height: 19px;
-      float: right;
+      line-height: 20px;
+      position: absolute;
+      right: 8px;
+      top: 8px;
       color: #909399;
       cursor: pointer;
       margin: 0; }
@@ -41,12 +43,18 @@
     background-color: #feeded;
     color: #F56C6C;
     border-color: #fbcccc; }
+  .yu-alert.error {
+    background-color: #feeded;
+    color: #F56C6C;
+    border-color: #fbcccc; }
   .yu-alert.center {
     text-align: center; }
   .yu-alert > .title {
     margin: 0;
     font-size: 14px;
     font-weight: bold; }
+    .yu-alert > .title > i {
+      margin-right: 4px; }
   .yu-alert > .description {
     margin: 0;
     padding-top: 8px;
